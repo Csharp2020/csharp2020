@@ -1,0 +1,11 @@
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\bin\Debug\netcoreapp2.1\1.2.algoritmi.deps.json
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\bin\Debug\netcoreapp2.1\1.2.algoritmi.runtimeconfig.json
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\bin\Debug\netcoreapp2.1\1.2.algoritmi.runtimeconfig.dev.json
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\bin\Debug\netcoreapp2.1\1.2.algoritmi.dll
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\bin\Debug\netcoreapp2.1\1.2.algoritmi.pdb
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.csprojAssemblyReference.cache
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.csproj.CoreCompileInputs.cache
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.AssemblyInfoInputs.cache
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.AssemblyInfo.cs
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.dll
+C:\Users\office10\Code\pmrvic\1.2.algoritmi\obj\Debug\netcoreapp2.1\1.2.algoritmi.pdb

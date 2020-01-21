@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp2020", "CSharp2020\CSharp2020.csproj", "{FEA67B01-49C6-4467-8D66-D699AFC233C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2.algoritmi", "1.2.algoritmi\1.2.algoritmi.csproj", "{C771BE06-6EC1-43D5-AAFE-52D3BF8A1164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA67B01-49C6-4467-8D66-D699AFC233C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA67B01-49C6-4467-8D66-D699AFC233C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA67B01-49C6-4467-8D66-D699AFC233C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA67B01-49C6-4467-8D66-D699AFC233C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C771BE06-6EC1-43D5-AAFE-52D3BF8A1164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C771BE06-6EC1-43D5-AAFE-52D3BF8A1164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C771BE06-6EC1-43D5-AAFE-52D3BF8A1164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C771BE06-6EC1-43D5-AAFE-52D3BF8A1164}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
+	EndGlobalSection
+EndGlobal
