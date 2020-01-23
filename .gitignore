@@ -2,5 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/mcuric/.vs
 /mcuric/OsnoveCsharp/.vs
 /mcuric/csharp2020/pmrvic
