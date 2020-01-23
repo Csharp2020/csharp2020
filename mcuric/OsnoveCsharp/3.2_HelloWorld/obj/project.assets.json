@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\mcuric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
-      "projectName": "1.2.algoritmi",
-      "projectPath": "C:\\mcuric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
+      "projectUniqueName": "C:\\mcuric\\csharp2020\\mcuric\\OsnoveCsharp\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
+      "projectName": "3.2_HelloWorld",
+      "projectPath": "C:\\mcuric\\csharp2020\\mcuric\\OsnoveCsharp\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
       "packagesPath": "C:\\Users\\mcuri\\.nuget\\packages\\",
-      "outputPath": "C:\\mcuric\\csharp2020\\pmrvic\\1.2.algoritmi\\obj\\",
+      "outputPath": "C:\\mcuric\\csharp2020\\mcuric\\OsnoveCsharp\\3.2_HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
