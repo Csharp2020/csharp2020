@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\office10\\Code\\pmrvic\\CSharp2020\\CSharp2020.csproj": {}
+    "D:\\DanijelaK\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj": {}
   },
   "projects": {
-    "C:\\Users\\office10\\Code\\pmrvic\\CSharp2020\\CSharp2020.csproj": {
+    "D:\\DanijelaK\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\office10\\Code\\pmrvic\\CSharp2020\\CSharp2020.csproj",
+        "projectUniqueName": "D:\\DanijelaK\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj",
         "projectName": "CSharp2020",
-        "projectPath": "C:\\Users\\office10\\Code\\pmrvic\\CSharp2020\\CSharp2020.csproj",
+        "projectPath": "D:\\DanijelaK\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj",
         "packagesPath": "C:\\Users\\office10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\office10\\Code\\pmrvic\\CSharp2020\\obj\\",
+        "outputPath": "D:\\DanijelaK\\csharp2020\\pmrvic\\CSharp2020\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
