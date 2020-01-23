@@ -1,0 +1,11 @@
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.deps.json
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.runtimeconfig.json
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.runtimeconfig.dev.json
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.dll
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.pdb
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.csprojAssemblyReference.cache
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.csproj.CoreCompileInputs.cache
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.AssemblyInfoInputs.cache
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.AssemblyInfo.cs
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.dll
+D:\azoric\csharp2020\azoric\3.2_HelloWorld\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.pdb

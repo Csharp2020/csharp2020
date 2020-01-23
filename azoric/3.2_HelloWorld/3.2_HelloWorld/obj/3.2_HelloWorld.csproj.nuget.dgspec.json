@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\azoric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj": {}
+    "D:\\azoric\\csharp2020\\azoric\\3.2_HelloWorld\\3.2_HelloWorld\\3.2_HelloWorld.csproj": {}
   },
   "projects": {
-    "D:\\azoric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj": {
+    "D:\\azoric\\csharp2020\\azoric\\3.2_HelloWorld\\3.2_HelloWorld\\3.2_HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\azoric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
-        "projectName": "1.2.algoritmi",
-        "projectPath": "D:\\azoric\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
+        "projectUniqueName": "D:\\azoric\\csharp2020\\azoric\\3.2_HelloWorld\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
+        "projectName": "3.2_HelloWorld",
+        "projectPath": "D:\\azoric\\csharp2020\\azoric\\3.2_HelloWorld\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
         "packagesPath": "C:\\Users\\office10\\.nuget\\packages\\",
-        "outputPath": "D:\\azoric\\csharp2020\\pmrvic\\1.2.algoritmi\\obj\\",
+        "outputPath": "D:\\azoric\\csharp2020\\azoric\\3.2_HelloWorld\\3.2_HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
