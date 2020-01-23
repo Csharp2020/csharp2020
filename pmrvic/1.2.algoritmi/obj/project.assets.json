@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\office10\\Code\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
+      "projectUniqueName": "D:\\FVidovic\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
       "projectName": "1.2.algoritmi",
-      "projectPath": "C:\\Users\\office10\\Code\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
+      "projectPath": "D:\\FVidovic\\csharp2020\\pmrvic\\1.2.algoritmi\\1.2.algoritmi.csproj",
       "packagesPath": "C:\\Users\\office10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\office10\\Code\\pmrvic\\1.2.algoritmi\\obj\\",
+      "outputPath": "D:\\FVidovic\\csharp2020\\pmrvic\\1.2.algoritmi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

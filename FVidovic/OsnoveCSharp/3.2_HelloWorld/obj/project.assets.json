@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FVidovic\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj",
-      "projectName": "CSharp2020",
-      "projectPath": "D:\\FVidovic\\csharp2020\\pmrvic\\CSharp2020\\CSharp2020.csproj",
+      "projectUniqueName": "D:\\FVidovic\\csharp2020\\FVidovic\\OsnoveCSharp\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
+      "projectName": "3.2_HelloWorld",
+      "projectPath": "D:\\FVidovic\\csharp2020\\FVidovic\\OsnoveCSharp\\3.2_HelloWorld\\3.2_HelloWorld.csproj",
       "packagesPath": "C:\\Users\\office10\\.nuget\\packages\\",
-      "outputPath": "D:\\FVidovic\\csharp2020\\pmrvic\\CSharp2020\\obj\\",
+      "outputPath": "D:\\FVidovic\\csharp2020\\FVidovic\\OsnoveCSharp\\3.2_HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
