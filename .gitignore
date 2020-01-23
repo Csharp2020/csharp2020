@@ -4,3 +4,6 @@
 
 /dvukasovic/OsnoveCSharp/.vs
 /pmrvic
+bin
+Debug
+.vs
