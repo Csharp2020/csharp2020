@@ -1,0 +1,10 @@
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.deps.json
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.runtimeconfig.json
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.runtimeconfig.dev.json
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.dll
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\bin\Debug\netcoreapp2.1\3.2_HelloWorld.pdb
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.csproj.CoreCompileInputs.cache
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.AssemblyInfoInputs.cache
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.AssemblyInfo.cs
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.dll
+D:\dvukasovic\csharp2020\dvukasovic\OsnoveCSharp\3.2_HelloWorld\obj\Debug\netcoreapp2.1\3.2_HelloWorld.pdb
