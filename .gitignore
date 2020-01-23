@@ -3,7 +3,7 @@
 ################################################################################
 
 /test/OsnoveCSharp/.vs/OsnoveCSharp
-.vs/
+.vs/*
 
 
 # Created by https://www.gitignore.io/api/aspnetcore
