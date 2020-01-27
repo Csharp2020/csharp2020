@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSharp2020
 {
+    /**
+     * summary Glavna tvornica
+     * */
     class Automobil
     {
         private string markaAutomobila; // privatna varijabla, tipa string, dostupna samo vlastitoj klasi
@@ -12,6 +15,9 @@ namespace CSharp2020
             get => markaAutomobila;   // expression-bodied member property
             set => markaAutomobila = value;
         }
+        /**
+         * summary Postavljanje svojstava
+         * */
         public string MarkaAutomobila2
         {
             get {
