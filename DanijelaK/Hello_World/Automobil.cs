@@ -23,6 +23,6 @@ namespace Hello_World
         }
 
         void Kreni() { }
-        void Kreni(int brzina) { }
+        void Kreni(int brzina) {  }
     }
 }
