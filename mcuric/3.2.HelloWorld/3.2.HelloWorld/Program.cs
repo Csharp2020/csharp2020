@@ -13,7 +13,6 @@ namespace _3._2.HelloWorld
             A1.MarkaAutomobila = "Chrysler";
             Console.WriteLine(A1.MarkaAutomobila2);
             Console.ReadKey();
-
         }
     }
 }
