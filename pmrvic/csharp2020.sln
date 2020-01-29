@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_osnove", "2_osnove", "{9B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_5_primjeroperator", "2_2_5_primjeroperator\2_2_5_primjeroperator.csproj", "{1874C205-E06C-4D68-B262-9FFBF45C2DF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{1874C205-E06C-4D68-B262-9FFBF45C2DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1874C205-E06C-4D68-B262-9FFBF45C2DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1874C205-E06C-4D68-B262-9FFBF45C2DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1874C205-E06C-4D68-B262-9FFBF45C2DF6} = {9B1E0DD0-378D-48A0-9028-E8D7BFA8B6A2}
+		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C} = {9B1E0DD0-378D-48A0-9028-E8D7BFA8B6A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
