@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_osnove", "2_osnove", "{51
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_5", "2_2_5\2_2_5.csproj", "{DB95C127-EEC2-4CFA-AF74-672B50A46E1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{B893A50A-A89C-450B-8AC0-9195D8B0897F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{DB95C127-EEC2-4CFA-AF74-672B50A46E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB95C127-EEC2-4CFA-AF74-672B50A46E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB95C127-EEC2-4CFA-AF74-672B50A46E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B893A50A-A89C-450B-8AC0-9195D8B0897F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B893A50A-A89C-450B-8AC0-9195D8B0897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B893A50A-A89C-450B-8AC0-9195D8B0897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B893A50A-A89C-450B-8AC0-9195D8B0897F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DB95C127-EEC2-4CFA-AF74-672B50A46E1F} = {517D452F-1270-466D-94B2-68F6FD40A010}
+		{B893A50A-A89C-450B-8AC0-9195D8B0897F} = {517D452F-1270-466D-94B2-68F6FD40A010}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F120C1F-5FA7-401E-B41E-A17233E41F05}
