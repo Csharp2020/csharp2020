@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uvod", "Uvod.csproj", "{126678CC-0A1F-44D6-B354-342E0D002004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uvod", "Uvod.csproj", "{126678CC-0A1F-44D6-B354-342E0D002004}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_osnove", "2_osnove", "{48618011-98DA-4CC1-8AA5-58E746D6B8E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjeroperator", "..\primjeroperator\primjeroperator.csproj", "{CD44CD7A-D4A3-4542-BC8D-534433B2A428}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{126678CC-0A1F-44D6-B354-342E0D002004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{126678CC-0A1F-44D6-B354-342E0D002004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{126678CC-0A1F-44D6-B354-342E0D002004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD44CD7A-D4A3-4542-BC8D-534433B2A428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD44CD7A-D4A3-4542-BC8D-534433B2A428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD44CD7A-D4A3-4542-BC8D-534433B2A428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD44CD7A-D4A3-4542-BC8D-534433B2A428}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD44CD7A-D4A3-4542-BC8D-534433B2A428} = {48618011-98DA-4CC1-8AA5-58E746D6B8E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6356102-16AB-4DA2-9949-84828C142761}

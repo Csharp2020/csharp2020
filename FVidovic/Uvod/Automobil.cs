@@ -6,7 +6,7 @@ namespace Uvod
 {
     class Automobil
     {
-        string markaAutomobila; // privatna varijabla , tuoa string , dostupna samo vlastitoj klasi
+        private string markaAutomobila; // privatna varijabla , tuoa string , dostupna samo vlastitoj klasi
 
         public string MarkaAutomobila {
             get => markaAutomobila;     // expression bodied member property
