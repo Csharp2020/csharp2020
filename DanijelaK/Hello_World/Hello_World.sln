@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello_World", "Hello_World.csproj", "{69D45992-59EC-4209-AF2F-6E6832B169CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello_World", "Hello_World.csproj", "{69D45992-59EC-4209-AF2F-6E6832B169CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_osnove", "2_osnove", "{30D39B1A-EBCF-47AC-BE1C-8E29038EB084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_5_primjeroperator", "..\2_2_5_primjeroperator\2_2_5_primjeroperator.csproj", "{51E1350C-F6E4-4041-84B7-58AC37A804E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{69D45992-59EC-4209-AF2F-6E6832B169CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69D45992-59EC-4209-AF2F-6E6832B169CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69D45992-59EC-4209-AF2F-6E6832B169CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E1350C-F6E4-4041-84B7-58AC37A804E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E1350C-F6E4-4041-84B7-58AC37A804E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E1350C-F6E4-4041-84B7-58AC37A804E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E1350C-F6E4-4041-84B7-58AC37A804E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51E1350C-F6E4-4041-84B7-58AC37A804E2} = {30D39B1A-EBCF-47AC-BE1C-8E29038EB084}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
