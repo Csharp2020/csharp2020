@@ -22,6 +22,7 @@ namespace CSharp2020
         {
             get {
                 return markaAutomobila;   // Ovo je uobicajeni način
+                
             }
             set {
                 this.markaAutomobila = value;
