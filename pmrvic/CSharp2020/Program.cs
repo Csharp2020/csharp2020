@@ -20,6 +20,8 @@ namespace CSharp2020
             A1.MarkaAutomobila2 = "Lada";
             Console.WriteLine(A1.MarkaAutomobila2);
             Console.WriteLine(A1.MarkaAutomobila);
+            Console.ReadKey();
         }
     }
 }
+
