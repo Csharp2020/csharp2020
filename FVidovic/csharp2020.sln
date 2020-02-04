@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.2_kalkulator", "5.2.2_k
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.3_velikibroj", "5.2.3_velikibroj\5.2.3_velikibroj.csproj", "{0872BDC7-DC7C-4959-8584-E7D47F1676A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.3_velikibroj_druginacin", "5.2.3_velikibroj_druginacin\5.2.3_velikibroj_druginacin.csproj", "{5B112552-6D46-492C-8280-8BFA11CAD65E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{0872BDC7-DC7C-4959-8584-E7D47F1676A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0872BDC7-DC7C-4959-8584-E7D47F1676A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0872BDC7-DC7C-4959-8584-E7D47F1676A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{1058DE53-94EF-4191-A40F-7B26EC3C9822} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 		{FA4C4AB0-E1CF-4361-AC2B-77B0D12181C7} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 		{0872BDC7-DC7C-4959-8584-E7D47F1676A1} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
+		{5B112552-6D46-492C-8280-8BFA11CAD65E} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
