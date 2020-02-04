@@ -18,6 +18,7 @@ namespace Pr1
             get
             {
                 return markaAutomobila;
+                
             }
             set
             {
