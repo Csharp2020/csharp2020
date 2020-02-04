@@ -1,11 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <ApplicationIcon />
-    <Win32Resource />
-    <StartupObject></StartupObject>
+    <RootNamespace>_2_2_10_2_operatori</RootNamespace>
   </PropertyGroup>
 
 </Project>
