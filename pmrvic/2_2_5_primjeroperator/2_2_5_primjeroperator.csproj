@@ -3,9 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <ApplicationIcon />
-    <Win32Resource />
-    <StartupObject></StartupObject>
+    <RootNamespace>_2_2_5_primjeroperator</RootNamespace>
+    <StartupObject>_2_2_5_primjeroperator.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
