@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uvod", "uvod.csproj", "{05C7498B-9605-4ED1-A725-B5EE378CDCC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uvod", "uvod.csproj", "{05C7498B-9605-4ED1-A725-B5EE378CDCC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_uvjetno_grananje", "5_uvjetno_grananje", "{BDE942AE-08E1-44C9-BAE2-1E2C0B7DB582}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

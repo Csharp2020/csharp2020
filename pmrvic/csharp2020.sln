@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.2.algoritmi", "1.2.algori
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_osnove", "2_osnove", "{9B1E0DD0-378D-48A0-9028-E8D7BFA8B6A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_5_primjeroperator", "2_2_5_primjeroperator\2_2_5_primjeroperator.csproj", "{1874C205-E06C-4D68-B262-9FFBF45C2DF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_5_primjeroperator", "2_2_5_primjeroperator\2_2_5_primjeroperator.csproj", "{1874C205-E06C-4D68-B262-9FFBF45C2DF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_1_3_ucitavanje_s_tipkovnice", "5_1_3_ucitavanje_s_tipkovnice\5_1_3_ucitavanje_s_tipkovnice.csproj", "{DF07665C-91F7-456C-AC9A-D5D233B4D12C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF07665C-91F7-456C-AC9A-D5D233B4D12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF07665C-91F7-456C-AC9A-D5D233B4D12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF07665C-91F7-456C-AC9A-D5D233B4D12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF07665C-91F7-456C-AC9A-D5D233B4D12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
