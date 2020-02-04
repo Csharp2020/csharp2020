@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_2_1_prosireni_if", "5_2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_2_kalkulator", "5_2_2_kalkulator\5_2_2_kalkulator.csproj", "{FF0B0B8D-AE64-498A-92E2-746AE5A06A31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_3_velik_broj", "5_2_3_velik_broj\5_2_3_velik_broj.csproj", "{297A8D39-8076-40CF-8C3F-68ABF9CC3487}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{FF0B0B8D-AE64-498A-92E2-746AE5A06A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF0B0B8D-AE64-498A-92E2-746AE5A06A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF0B0B8D-AE64-498A-92E2-746AE5A06A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297A8D39-8076-40CF-8C3F-68ABF9CC3487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297A8D39-8076-40CF-8C3F-68ABF9CC3487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297A8D39-8076-40CF-8C3F-68ABF9CC3487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297A8D39-8076-40CF-8C3F-68ABF9CC3487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{0E44A988-0E00-454F-8497-9FEA571F8E28} = {A7AE4930-B9AD-46BC-8D97-9B33A2CA4732}
 		{42512E62-BB74-44E9-8001-5C5CBBAA982B} = {A7AE4930-B9AD-46BC-8D97-9B33A2CA4732}
 		{FF0B0B8D-AE64-498A-92E2-746AE5A06A31} = {A7AE4930-B9AD-46BC-8D97-9B33A2CA4732}
+		{297A8D39-8076-40CF-8C3F-68ABF9CC3487} = {A7AE4930-B9AD-46BC-8D97-9B33A2CA4732}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
