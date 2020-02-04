@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Moj_projekt
+﻿namespace Moj_projekt
 {
     class Automobil
     {
         private string markaAutomobila; // privatna varijabla, tipa string, dostupna samo vlastitoj klasi
 
-        public string MarkaAutomobila {
+        public string MarkaAutomobila
+        {
             get => markaAutomobila;   // expression-bodied member property
             set => markaAutomobila = value;
         }
         public string MarkaAutomobila2
         {
-            get {
+            get
+            {
                 return markaAutomobila;   // Ovo je uobicajeni način
             }
-            set {
+            set
+            {
                 this.markaAutomobila = value;
             }
         }

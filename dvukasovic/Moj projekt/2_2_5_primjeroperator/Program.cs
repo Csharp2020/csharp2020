@@ -29,13 +29,16 @@ namespace _2_2_5_primjeroperator
             this.Prezime = v2;
         }
 
-        public string Ime {
-            get {
+        public string Ime
+        {
+            get
+            {
                 return this.v1;
             }
-            set {
+            set
+            {
                 this.v1 = value.Substring(0, 1).ToUpper();
-                 this.v1 = value;
+                this.v1 = value;
             }
         }
         public string Prezime { get => prezime; set => prezime = value; }
