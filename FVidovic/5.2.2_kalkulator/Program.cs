@@ -13,41 +13,72 @@ namespace _5._2._2_kalkulator
         static void Main(string[] args)
         {
             Console.WriteLine("Unesi prvi broj");
-            float br1 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Unesi drugi broj");
-            float br2 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Unesi operater: \n+ , -, * ili /");
-            char op = char.Parse(Console.ReadLine());
-            if ( op == '+')
+            float br1=0;
+            try
             {
-                Console.WriteLine("Riješenje je " + (br1 + br2));
+                br1 = float.Parse(Console.ReadLine());
             }
-            else
+            catch (Exception)
             {
-                if ( op == '-')
-                {
-                    Console.WriteLine("Riješenje je " + (br1 - br2));
+                Console.WriteLine("Ne prepoznajem broj");
+
+            }
+            Console.WriteLine("Unesi drugi broj");
+            float br2 = 0;
+            try
+            {
+                br2 = float.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Ne prepoznajem broj");
+            }
+            Console.WriteLine("Unesi operator: \n+ , -, * ili /");
+            char op = char.Parse(Console.ReadLine());
+
+           
+                
+                if (op == '+')
+                {                    
+                    Console.WriteLine("Riješenje je " + (br1 + br2));
                 }
                 else
                 {
-                    if ( op == '*')
-
+                    if (op == '-')
                     {
-                        Console.WriteLine("Riješenje je " + (br1 * br2));
+                        Console.WriteLine("Riješenje je " + (br1 - br2));
                     }
-
                     else
                     {
-                        if ( op == '/')
+                        if (op == '*')
+
                         {
-                            Console.WriteLine("Riješenje je " + (br1 / br2));
+                            Console.WriteLine("Riješenje je " + (br1 * br2));
                         }
+
+                        else
+                        {
+                            if (op == '/')
+                            {
+                                Console.WriteLine("Riješenje je " + (br1 / br2));
+                            }
+                            else
+
+                            {
+                                Console.WriteLine("Niste unjeli jedan od ponuđenih operatora");
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+           
+            
                     }
                 }
 
 
-            }
-        }
-
-    }
-}
+            
+ 

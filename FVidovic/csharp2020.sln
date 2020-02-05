@@ -13,19 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_5_primjeroperator", "2_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{59021B2C-87ED-42F0-AB74-AC49D9E05E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadLineTest", "ReadLineTest\ReadLineTest.csproj", "{2B24454D-C9C1-4905-B8B5-5D87A5A9F783}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadLineTest", "ReadLineTest\ReadLineTest.csproj", "{2B24454D-C9C1-4905-B8B5-5D87A5A9F783}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_uvjetnogrananje", "5_uvjetnogrananje", "{C68F3413-42B2-4B2C-812F-B32A32066FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "naredba_if", "uvjetnogrananje\naredba_if.csproj", "{FF05CCF8-7735-463D-8A77-760CAC4EA1FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "naredba_if", "uvjetnogrananje\naredba_if.csproj", "{FF05CCF8-7735-463D-8A77-760CAC4EA1FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prosireni_if", "prosireni_if\prosireni_if.csproj", "{1058DE53-94EF-4191-A40F-7B26EC3C9822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prosireni_if", "prosireni_if\prosireni_if.csproj", "{1058DE53-94EF-4191-A40F-7B26EC3C9822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.2_kalkulator", "5.2.2_kalkulator\5.2.2_kalkulator.csproj", "{FA4C4AB0-E1CF-4361-AC2B-77B0D12181C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.2.2_kalkulator", "5.2.2_kalkulator\5.2.2_kalkulator.csproj", "{FA4C4AB0-E1CF-4361-AC2B-77B0D12181C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.3_velikibroj", "5.2.3_velikibroj\5.2.3_velikibroj.csproj", "{0872BDC7-DC7C-4959-8584-E7D47F1676A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.2.3_velikibroj", "5.2.3_velikibroj\5.2.3_velikibroj.csproj", "{0872BDC7-DC7C-4959-8584-E7D47F1676A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.3_velikibroj_druginacin", "5.2.3_velikibroj_druginacin\5.2.3_velikibroj_druginacin.csproj", "{5B112552-6D46-492C-8280-8BFA11CAD65E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.2.3_velikibroj_druginacin", "5.2.3_velikibroj_druginacin\5.2.3_velikibroj_druginacin.csproj", "{5B112552-6D46-492C-8280-8BFA11CAD65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prijestupna_godina", "Prijestupna_godina\Prijestupna_godina.csproj", "{9943E20C-E804-4692-A0A9-B5CD4E73ABE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B112552-6D46-492C-8280-8BFA11CAD65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9943E20C-E804-4692-A0A9-B5CD4E73ABE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9943E20C-E804-4692-A0A9-B5CD4E73ABE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9943E20C-E804-4692-A0A9-B5CD4E73ABE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9943E20C-E804-4692-A0A9-B5CD4E73ABE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{FA4C4AB0-E1CF-4361-AC2B-77B0D12181C7} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 		{0872BDC7-DC7C-4959-8584-E7D47F1676A1} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 		{5B112552-6D46-492C-8280-8BFA11CAD65E} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
+		{9943E20C-E804-4692-A0A9-B5CD4E73ABE8} = {C68F3413-42B2-4B2C-812F-B32A32066FDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
