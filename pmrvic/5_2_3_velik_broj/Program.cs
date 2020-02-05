@@ -28,7 +28,7 @@ namespace _5_2_3_velik_broj
             int n = 0;  // brojac znamenki
             int br = int.Parse(broj);
 
-            while (br>1)
+            while (br=>1) // mala greska kod ovoga jer ako unesemo 1, 1 nece uci u petlju (slucajno ce biti tocan)
             {
                 br /= 10; // broj=broj /10
                 n++;
