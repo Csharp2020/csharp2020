@@ -6,7 +6,11 @@ namespace _5._3._4_faktorijel
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int x = int.Parse(Console.ReadLine());
+            for(int i = 0; i <= x; i++)
+            {
+                
+            }
         }
     }
 }
