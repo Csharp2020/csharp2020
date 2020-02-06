@@ -11,17 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_5_primjeroperator", "2_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_2_10_2_operatori", "2_2_10_2_operatori\2_2_10_2_operatori.csproj", "{E6A0D319-805E-4E4E-B31F-E642053A641F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_1_3_ucitavanje_s_tipkovinice", "5_1_3_ucitavanje_s_tipkovinice\5_1_3_ucitavanje_s_tipkovinice.csproj", "{D4113A83-0DBC-4DEF-8187-85E2488FC80C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_1_3_ucitavanje_s_tipkovinice", "5_1_3_ucitavanje_s_tipkovinice\5_1_3_ucitavanje_s_tipkovinice.csproj", "{D4113A83-0DBC-4DEF-8187-85E2488FC80C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_uvjetno_grananje", "5_uvjetno_grananje", "{74711237-A6CF-4EC3-A212-740808A0E0C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_1_if", "5_2_1_if\5_2_1_if.csproj", "{32E2D29A-A842-4662-A5B8-0BE0CD5E2E30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_1_if", "5_2_1_if\5_2_1_if.csproj", "{32E2D29A-A842-4662-A5B8-0BE0CD5E2E30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_2_ugnjezdeni", "5_2_2_ugnjezdeni\5_2_2_ugnjezdeni.csproj", "{63F86159-B684-4683-B6C2-870A734743E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_2_ugnjezdeni", "5_2_2_ugnjezdeni\5_2_2_ugnjezdeni.csproj", "{63F86159-B684-4683-B6C2-870A734743E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_2_kalkulator", "5_2_2_kalkulator\5_2_2_kalkulator.csproj", "{1F5E2F67-2372-4CF4-802E-C5DA724C12BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_2_kalkulator", "5_2_2_kalkulator\5_2_2_kalkulator.csproj", "{1F5E2F67-2372-4CF4-802E-C5DA724C12BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_3_velikiBroj", "5_2_3_velikiBroj\5_2_3_velikiBroj.csproj", "{D41D423C-8866-41BB-8D77-50E053C29DD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_3_velikiBroj", "5_2_3_velikiBroj\5_2_3_velikiBroj.csproj", "{D41D423C-8866-41BB-8D77-50E053C29DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak_5_2_5", "zadatak_5_2_5\zadatak_5_2_5.csproj", "{CF570607-DAED-4391-8401-62EEF57FAFDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{D41D423C-8866-41BB-8D77-50E053C29DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D41D423C-8866-41BB-8D77-50E053C29DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D41D423C-8866-41BB-8D77-50E053C29DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF570607-DAED-4391-8401-62EEF57FAFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF570607-DAED-4391-8401-62EEF57FAFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF570607-DAED-4391-8401-62EEF57FAFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF570607-DAED-4391-8401-62EEF57FAFDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{63F86159-B684-4683-B6C2-870A734743E6} = {74711237-A6CF-4EC3-A212-740808A0E0C3}
 		{1F5E2F67-2372-4CF4-802E-C5DA724C12BE} = {74711237-A6CF-4EC3-A212-740808A0E0C3}
 		{D41D423C-8866-41BB-8D77-50E053C29DD1} = {74711237-A6CF-4EC3-A212-740808A0E0C3}
+		{CF570607-DAED-4391-8401-62EEF57FAFDB} = {74711237-A6CF-4EC3-A212-740808A0E0C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B3C93F7-A5E1-4E06-B5E3-D643F6138BDD}
