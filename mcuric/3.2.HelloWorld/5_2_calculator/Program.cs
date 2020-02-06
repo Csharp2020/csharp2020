@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Uvod
+namespace _5_2_calculator
 {
     class Program
     {

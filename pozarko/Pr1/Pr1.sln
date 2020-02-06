@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr1", "Pr1.csproj", "{89CD6473-C42C-4FD7-85C2-69294F9BB0B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pr1", "Pr1.csproj", "{89CD6473-C42C-4FD7-85C2-69294F9BB0B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Osnove", "2_Osnove", "{6115786A-279C-4193-98B0-0FE3D560C79B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr2_Operator", "..\Pr2_Operator\Pr2_Operator.csproj", "{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,17 @@ Global
 		{89CD6473-C42C-4FD7-85C2-69294F9BB0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89CD6473-C42C-4FD7-85C2-69294F9BB0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89CD6473-C42C-4FD7-85C2-69294F9BB0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89CD6473-C42C-4FD7-85C2-69294F9BB0B5} = {6115786A-279C-4193-98B0-0FE3D560C79B}
+		{5660CF64-6B6F-4D53-8B7F-27CA345D4CAF} = {6115786A-279C-4193-98B0-0FE3D560C79B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FD14F18-B2BD-403E-B592-2D624430308E}
