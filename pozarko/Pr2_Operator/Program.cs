@@ -2,17 +2,21 @@
 
 namespace Pr2_Operator
 {
-    static class ToUpperFirstLetter(this string source)
+    static class ToUp
     {
-        if (string.IsNullOrEmpty(source))
-            return string.Empty;
-        // convert to char array of the string
-        char[] letters = source.ToCharArray();
-        // upper case the first char
-        letters[0] = char.ToUpper(letters[0]);
-        // return the array made of the new char array
-        return new string(letters);
-    }
+        public static string ToUpperFirstLetter(this string source)
+        {
+            if (string.IsNullOrEmpty(source))
+                return string.Empty;
+            // convert to char array of the string
+            char[] letters = source.ToCharArray();
+            // upper case the first char
+            letters[0] = char.ToUpper(letters[0]);
+            // return the array made of the new char array
+            return new string(letters);
+        }
+        }
+    
 
     class Program
     {
@@ -66,7 +70,7 @@ namespace Pr2_Operator
         }
         public string Prezime {
             get => prezime;
-            set => prezime = ToUpperFirstLetter(value);
+            set => prezime = ToUp.ToUpperFirstLetter(value);
         }
     }
 
