@@ -14,9 +14,9 @@ namespace Prijestupna_godina
             {
                 god = int.Parse(Console.ReadLine());
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("Niste unjeli godinu");
+                Console.WriteLine("Niste unjeli godinu "+ex.Message);
                 Environment.Exit(0);
             }
 
