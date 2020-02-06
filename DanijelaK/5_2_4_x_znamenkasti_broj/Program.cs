@@ -8,8 +8,8 @@ namespace _5_2_4_x_znamenkasti_broj
     {
         static void Main(string[] args)
         {
-             Console.WriteLine("Unesite broj");
-             double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Unesite broj");
+            /* double a = double.Parse(Console.ReadLine());
 
             if (a < 0) a = -a;
 
@@ -28,9 +28,30 @@ namespace _5_2_4_x_znamenkasti_broj
             else
             {
                 Console.WriteLine("Broj je višeznamenkast");
-            } 
+            } */
 
-          
+            int a;
+            
+            a = int.Parse(Console.ReadLine());
+            a = -a;
+                       
+            switch (a)
+            {
+                case int i when i < 10:
+                    Console.WriteLine("Broj je jednoznamenkast");
+                    break;
+                case int i when i < 100:
+                    Console.WriteLine("Broj je dvoznamenkast");
+                    break;
+                case int i when i < 1000:
+                    Console.WriteLine("Broj je troznamenkast");
+                    break;
+                default:
+                    Console.WriteLine("Broj je višeznamenkast");
+                    break;
+
+            }
         }
     }
-} 
+
+}
