@@ -6,8 +6,12 @@ namespace _5._2._7_dobarBroj_2
     {
         static void Main(string[] args)
         {
-            int i = int.Parse(Console.ReadLine());
-            if(((i%4)==0))
+            int x = int.Parse(Console.ReadLine());
+            if (x % 4 == 0 && x >= 100)
+            {
+                Console.WriteLine("Broj je dobar");
+            }
+            else { Console.WriteLine("Broj NIJE dobar"); }
         }
     }
 }
