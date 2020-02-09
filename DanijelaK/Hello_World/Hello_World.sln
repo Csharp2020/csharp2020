@@ -29,19 +29,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadaca1", "Zadaca1", "{A04B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_4_x_znamenkasti_broj", "..\5_2_4_x_znamenkasti_broj\5_2_4_x_znamenkasti_broj.csproj", "{A54949ED-D0F1-48C0-9877-DF63D398FD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_2_danutjednu", "..\5_2_2_danutjednu\5_2_2_danutjednu.csproj", "{2E86374E-9C0C-4365-907E-DFA40B628462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_2_danutjednu", "..\5_2_2_danutjednu\5_2_2_danutjednu.csproj", "{2E86374E-9C0C-4365-907E-DFA40B628462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_3_strukturirano_upr_exceptionima", "..\5_2_3_strukturirano_upr_exceptionima\5_2_3_strukturirano_upr_exceptionima.csproj", "{BB0F22B7-A378-41E5-8A68-21E2B4C5EA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_3_strukturirano_upr_exceptionima", "..\5_2_3_strukturirano_upr_exceptionima\5_2_3_strukturirano_upr_exceptionima.csproj", "{BB0F22B7-A378-41E5-8A68-21E2B4C5EA6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_4_1_user_pass", "..\5_2_4_1_user_pass\5_2_4_1_user_pass.csproj", "{484F08D3-1D6E-4170-A825-949D7A272F12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_4_1_user_pass", "..\5_2_4_1_user_pass\5_2_4_1_user_pass.csproj", "{484F08D3-1D6E-4170-A825-949D7A272F12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_4_2_boolean_ili", "..\5_2_4_2_boolean_ili\5_2_4_2_boolean_ili.csproj", "{4AB2C1E5-AAF1-4323-9829-358FE1B08C52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_4_2_boolean_ili", "..\5_2_4_2_boolean_ili\5_2_4_2_boolean_ili.csproj", "{4AB2C1E5-AAF1-4323-9829-358FE1B08C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_2_4_3_not", "..\5_2_4_3_not\5_2_4_3_not.csproj", "{210ED5A5-572B-400F-A623-09A13BA29E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_2_4_3_not", "..\5_2_4_3_not\5_2_4_3_not.csproj", "{210ED5A5-572B-400F-A623-09A13BA29E19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_ciklicke_petlje", "5_ciklicke_petlje", "{38E70D51-01D6-42F6-9964-AB6B52380347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_1_petlja_for", "..\5_3_1_petlja_for\5_3_1_petlja_for.csproj", "{76B0200C-E95E-4138-BF26-A0F4BCE3F897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_1_petlja_for", "..\5_3_1_petlja_for\5_3_1_petlja_for.csproj", "{76B0200C-E95E-4138-BF26-A0F4BCE3F897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadaca_2_petlje", "..\Zadaca_2_petlje\Zadaca_2_petlje.csproj", "{FA9B98D6-D552-40B9-8682-09890F6BD3DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +115,10 @@ Global
 		{76B0200C-E95E-4138-BF26-A0F4BCE3F897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76B0200C-E95E-4138-BF26-A0F4BCE3F897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76B0200C-E95E-4138-BF26-A0F4BCE3F897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9B98D6-D552-40B9-8682-09890F6BD3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9B98D6-D552-40B9-8682-09890F6BD3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9B98D6-D552-40B9-8682-09890F6BD3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9B98D6-D552-40B9-8682-09890F6BD3DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +139,7 @@ Global
 		{4AB2C1E5-AAF1-4323-9829-358FE1B08C52} = {C4D0AF01-DDF5-4A38-84E9-D88022C6D67B}
 		{210ED5A5-572B-400F-A623-09A13BA29E19} = {C4D0AF01-DDF5-4A38-84E9-D88022C6D67B}
 		{76B0200C-E95E-4138-BF26-A0F4BCE3F897} = {38E70D51-01D6-42F6-9964-AB6B52380347}
+		{FA9B98D6-D552-40B9-8682-09890F6BD3DA} = {38E70D51-01D6-42F6-9964-AB6B52380347}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
