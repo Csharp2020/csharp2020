@@ -24,7 +24,7 @@ namespace _5_2_2_kalkulator
 
             }
 
-        else if (op=='-')
+            else if (op=='-')
             {
                 Console.WriteLine("razlika je " + (a - b));
 
