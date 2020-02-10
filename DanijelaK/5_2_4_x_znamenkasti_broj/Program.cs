@@ -1,6 +1,7 @@
 ﻿using System;
 /**
- * traži se unos broja i ispisuje jeli broj jednozamenkasti,dvoznam., troznam. ili više znam.
+ * traži se unos broja i ispisuje jeli broj 
+ * jednozamenkasti,dvoznam., troznam. ili više znam.
  **/
 namespace _5_2_4_x_znamenkasti_broj
 {
@@ -9,6 +10,7 @@ namespace _5_2_4_x_znamenkasti_broj
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite broj");
+<<<<<<< HEAD
             
             int a;
 
@@ -18,6 +20,16 @@ namespace _5_2_4_x_znamenkasti_broj
             {
                 a = -a;
             }
+=======
+            int a;
+
+            a = int.Parse(Console.ReadLine());
+            if (a < 0)
+            {
+                a = -a; // mogli smo i ovako a *= -1;
+            }
+
+>>>>>>> 806d03656a6a5cfe878e6b8eb153595480cc0cbf
 
             if (a < 10)
             {
@@ -36,8 +48,13 @@ namespace _5_2_4_x_znamenkasti_broj
                 Console.WriteLine("Broj je višeznamenkast");
             } 
 
+<<<<<<< HEAD
             
                        
+=======
+
+
+>>>>>>> 806d03656a6a5cfe878e6b8eb153595480cc0cbf
             
         }
     }
