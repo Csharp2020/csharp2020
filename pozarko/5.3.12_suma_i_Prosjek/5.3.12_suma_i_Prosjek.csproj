@@ -1,9 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>_5._3._11_savrseniBrojevi</RootNamespace>
+    <RootNamespace>_5._3._12_suma_i_Prosjek</RootNamespace>
   </PropertyGroup>
 
 </Project>
