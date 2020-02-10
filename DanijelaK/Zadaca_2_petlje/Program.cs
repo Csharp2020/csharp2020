@@ -93,7 +93,7 @@ namespace Zadaca_2_petlje
             Console.WriteLine();
 
             //Uneseni prirodni broj ispisuje sve njegove djelitelje
-            Console.WriteLine("Unesite prirodan broj:");
+            Console.WriteLine("Unesite prirodan broj (svi djelitelji):");
             int a = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Djelitelji broja {0} su:", a);
@@ -106,8 +106,9 @@ namespace Zadaca_2_petlje
                 }
             }
             Console.WriteLine();
+
             // Savršeni broj je broj koji je jednak zbroju svih djelitelja (bez sebe samoga)
-            Console.WriteLine("Unesite prirodan broj:");
+            Console.WriteLine("Unesite prirodan broj (savršen broj):");
             int b = int.Parse(Console.ReadLine());
             int zbroj = 0;
 
@@ -127,7 +128,50 @@ namespace Zadaca_2_petlje
                 Console.WriteLine("Broj nije savršen!");
             }
 
+            Console.WriteLine();
 
+            // Savršeni brojevi iz intervala [1,1000]
+            Console.WriteLine("Savršeni brojevi iz intervala [1,1000]:");
+            int brojDjeli = 0;
+
+            for (int i = 1; i <= 1000; i++)
+            {
+                brojDjeli = 0;
+                for (int e = 1; e < i; e++)
+                {
+                    if (i % e == 0)
+                    {
+                        brojDjeli += e;
+                    }
+                }
+                if (i== brojDjeli)
+                {
+                    Console.WriteLine("{0}, ", i.ToString());
+                }
+            }    
+
+            Console.WriteLine();
+
+            int min = int.MinValue;
+            int max = int.MaxValue;
+            int broj;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Unesite {0}. prirodan broj:", i.ToString());
+                broj = int.Parse(Console.ReadLine());
+
+                if (broj < min)
+                {
+                    min = broj;
+                }
+                if (broj > max)
+                {
+                    max = broj;
+                }
+            }
+
+            Console.WriteLine("Najmanji = {0}, najveći = {1}", min, max);
 
         }
     }
