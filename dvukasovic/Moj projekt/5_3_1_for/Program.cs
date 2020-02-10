@@ -19,7 +19,7 @@ namespace _5_3_1_for
                 Console.Write(i + " ");
             }
 
-            Console.WriteLine();
+            Console.WriteLine(); // la la asdasdasd
 
             for (int i = 10; i > 0; i--)
             {
