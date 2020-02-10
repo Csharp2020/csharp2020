@@ -65,6 +65,31 @@ namespace _5_3_7_do_10
                 Console.WriteLine("Uneseni broj nijet savrsen");
             }
 
+            Console.WriteLine("Zadatak 5.3.14");
+            Console.WriteLine("Neparni brojevi");
+
+            for (int i = 1; i <=10; i+=2)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("Zadatak 5.3.15");
+            Console.WriteLine("Unatrag");
+
+            for (int i = 10; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("Zadatak 5.3.16");
+            Console.WriteLine("Potencije br 2 su");
+
+            for (int i = 1; i < 1000; i*=2)
+            {
+                Console.WriteLine(i);
+            }
+
+
 
         }
     }
