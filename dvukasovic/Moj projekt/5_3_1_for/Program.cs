@@ -25,6 +25,13 @@ namespace _5_3_1_for
             {
                 Console.Write(i + " ");
             }
+
+            Console.WriteLine();
+
+            for (int i = 10; i > 0; i--)
+            {
+                Console.Write(i + " ");
+            }
         }
     }
 }
