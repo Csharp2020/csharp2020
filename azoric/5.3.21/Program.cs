@@ -13,6 +13,7 @@ namespace _5._3._21
             for (int i = 0; i < broj_pred; i++)
             {
                 Console.WriteLine("Unesi {0}. ocijenu:", (i + 1));
+
                 ulaz = int.Parse(Console.ReadLine());
                 if (ulaz < 2)
                 {
