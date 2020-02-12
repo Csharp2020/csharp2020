@@ -3,8 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Pr2_Operator</RootNamespace>
-    <StartupObject>Pr2_Operator.Program</StartupObject>
+    <RootNamespace>_5._3._1_for</RootNamespace>
   </PropertyGroup>
 
 </Project>
