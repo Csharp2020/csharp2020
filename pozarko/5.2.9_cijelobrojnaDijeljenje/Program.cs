@@ -11,7 +11,7 @@ namespace _5._2._9_cijelobrojnaDijeljenje
                 Console.WriteLine("Broj je neparan, ostatak pri ijeljenju s 3 iznosi {0}", x%3);
             }
             else {
-                Console.WriteLine("Broj je paran\n");
+                Console.WriteLine("Broj je paran");
                 Console.WriteLine("Broj nije djeljiv s tri");
             }
 
