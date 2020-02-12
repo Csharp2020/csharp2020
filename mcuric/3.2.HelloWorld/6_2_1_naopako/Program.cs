@@ -18,17 +18,26 @@ namespace _6_2_1_naopako
                 arr.Add(Console.ReadLine());
             }
             ArrayList arr2 = new ArrayList();
-            //arr2 = arr.Reverse
+            
 
             Console.WriteLine("Vaša originalna lista: ");
             foreach (var item in arr)
             {
                 Console.Write(item + " ");
             }
+            arr2=(ArrayList)arr.Clone();
             arr.Reverse();
+
             Console.WriteLine("");
             Console.WriteLine("Vaša originalna lista okrenuta naopako: ");
             foreach (var item in arr)
+            {
+                Console.Write(item + " ");
+            }
+            Console.ReadLine();
+
+            Console.WriteLine("Klonirana");
+            foreach (var item in arr2)
             {
                 Console.Write(item + " ");
             }
