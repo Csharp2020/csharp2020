@@ -9,7 +9,7 @@ namespace _6_1_2_max
         {
             Console.WriteLine("Unesite 5 brojeva!");
             int[] brojevi = new int[5];
-            for(int i = 0; i < 5; i++)
+            for(int i = 0; i < brojevi.Length; i++)
             {
                 Console.WriteLine("Unesite {0}. broj: ", i+1);
                 brojevi[i] = int.Parse(Console.ReadLine());
