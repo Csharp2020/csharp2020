@@ -9,7 +9,7 @@ namespace _6_2_3_sort_josjednom
         {
             List<int> prirodni = new List<int>();
             int broj;
-            do
+            do   
             {
               broj = int.Parse(Console.ReadLine());
           prirodni.Add(broj);
