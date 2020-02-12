@@ -41,17 +41,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_ciklicke", "5_ciklicke", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_1_for", "5_3\5_3_1_for.csproj", "{78D4A343-4C19-4F11-ADAD-4FC280364572}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_22_kalkulator", "5_3_22_kalkulator\5_3_22_kalkulator.csproj", "{CE48CAD9-2A91-43D9-91B6-3309D7AD9649}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_22_kalkulator", "5_3_22_kalkulator\5_3_22_kalkulator.csproj", "{CE48CAD9-2A91-43D9-91B6-3309D7AD9649}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_21_zavrsni", "5_3_21_zavrsni\5_3_21_zavrsni.csproj", "{8C2E5A65-3017-419A-95BA-18EA115B7913}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_21_zavrsni", "5_3_21_zavrsni\5_3_21_zavrsni.csproj", "{8C2E5A65-3017-419A-95BA-18EA115B7913}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_10_savrsen_broj", "5_3_10_savrsen_broj\5_3_10_savrsen_broj.csproj", "{22EDBC2D-148A-486C-AE91-990BD9456622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_10_savrsen_broj", "5_3_10_savrsen_broj\5_3_10_savrsen_broj.csproj", "{22EDBC2D-148A-486C-AE91-990BD9456622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_3_11_savrseni_interval", "5_3_11_savrseni_interval\5_3_11_savrseni_interval.csproj", "{07E0D1F5-4FBA-401D-AA7D-FDA01F42ED65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_11_savrseni_interval", "5_3_11_savrseni_interval\5_3_11_savrseni_interval.csproj", "{07E0D1F5-4FBA-401D-AA7D-FDA01F42ED65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_nizovi_liste", "6_nizovi_liste", "{9DC2832D-C063-4472-9774-00851F2D4E71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_1_niz", "6_1_niz\6_1_niz.csproj", "{F2AB2320-766A-44E1-8C3B-31E53F9574EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6_1_niz", "6_1_niz\6_1_niz.csproj", "{F2AB2320-766A-44E1-8C3B-31E53F9574EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_1_1_unos_ispis", "6_1_1_unos_ispis\6_1_1_unos_ispis.csproj", "{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_1_2_max", "6_1_2_max\6_1_2_max.csproj", "{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +147,14 @@ Global
 		{F2AB2320-766A-44E1-8C3B-31E53F9574EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AB2320-766A-44E1-8C3B-31E53F9574EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AB2320-766A-44E1-8C3B-31E53F9574EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +179,8 @@ Global
 		{22EDBC2D-148A-486C-AE91-990BD9456622} = {843FCBA3-57EE-45DE-A4A4-441904925594}
 		{07E0D1F5-4FBA-401D-AA7D-FDA01F42ED65} = {843FCBA3-57EE-45DE-A4A4-441904925594}
 		{F2AB2320-766A-44E1-8C3B-31E53F9574EB} = {9DC2832D-C063-4472-9774-00851F2D4E71}
+		{7896CE92-A2F6-4AC5-97C5-BAADBB3042F2} = {9DC2832D-C063-4472-9774-00851F2D4E71}
+		{6F12C9C7-5ED0-499A-9DFE-7ACA5554B5F5} = {9DC2832D-C063-4472-9774-00851F2D4E71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
