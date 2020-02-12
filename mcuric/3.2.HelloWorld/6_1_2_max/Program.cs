@@ -27,8 +27,10 @@ namespace _6_1_2_max
             }
             int pomoc;
             pomoc = brojevi.Max();
-            brojevi[Array.IndexOf(brojevi, brojevi.Max())] = brojevi.Min();
-            brojevi[Array.IndexOf(brojevi, brojevi.Min())] = pomoc;
+            int najveci = Array.IndexOf(brojevi, brojevi.Max());
+            int najmanji = Array.IndexOf(brojevi, brojevi.Min());
+            brojevi[najveci] = brojevi.Min();
+            brojevi[najmanji] = pomoc;
 
             Console.WriteLine("Isti Array sa zamjenjenim mjestima najveceg i najmanjeg broja: ");
             foreach (var item in brojevi)
