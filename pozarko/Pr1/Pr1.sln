@@ -125,6 +125,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_metode", "7_metode", "{10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.1_krug", "..\7.2.1_krug\7.2.1_krug.csproj", "{08336E04-6E9D-474A-A101-D5CF5F43DD59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.2_jednokracanTrokut", "..\7.2.2_jednokracanTrokut\7.2.2_jednokracanTrokut.csproj", "{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,10 @@ Global
 		{08336E04-6E9D-474A-A101-D5CF5F43DD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08336E04-6E9D-474A-A101-D5CF5F43DD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08336E04-6E9D-474A-A101-D5CF5F43DD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -375,6 +381,7 @@ Global
 		{9E95FD57-9110-4ED6-BC6F-82DCB1A6331F} = {5095B1C7-DE81-42E6-8655-34F3F11DEE1C}
 		{10FB6C16-E2F9-42D0-9969-4DE528D5E082} = {017A5F4C-1671-4DEB-8968-ED2099C56AAD}
 		{08336E04-6E9D-474A-A101-D5CF5F43DD59} = {10FB6C16-E2F9-42D0-9969-4DE528D5E082}
+		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE} = {10FB6C16-E2F9-42D0-9969-4DE528D5E082}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FD14F18-B2BD-403E-B592-2D624430308E}
