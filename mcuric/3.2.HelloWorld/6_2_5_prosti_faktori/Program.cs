@@ -16,19 +16,19 @@ namespace _6_2_5_prosti_faktori
             List<int> prosti_faktori = new List<int>();
             for(int i = 1; i <= n; i++)
             {
-                for (int j = 1; j <= i; j++)
-                {
-                    if (i % j == 0)
+                    if (n % i == 0)
                     {
                         k++;
                     }
                     if (k == 2)
                     {
                         prosti_brojevi.Add(i);
+                        k = 0;
                     }
-                    
-                }
-                k = 0;
+            }
+            foreach (var item in prosti_brojevi)
+            {
+                Console.WriteLine(item);
             }
             foreach (var item in prosti_brojevi)
             {
