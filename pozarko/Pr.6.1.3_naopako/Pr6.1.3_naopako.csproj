@@ -3,10 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Pr_6._1._3_naopako</RootNamespace>
+    <AssemblyName>Pr6.1.3_naopako</AssemblyName>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="2_osnove\" />
-  </ItemGroup>
 
 </Project>
