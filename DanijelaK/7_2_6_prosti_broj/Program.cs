@@ -6,32 +6,36 @@ namespace _7_2_6_prosti_broj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite prirodan broj:");
-            int broj = int.Parse(Console.ReadLine());
+            string odg = "d";
+            while (odg == "D" || odg == "d")
+            {
+                Console.WriteLine("Unesite prirodan broj:");
+                int broj = int.Parse(Console.ReadLine());
 
-            if (Prostbroj(broj))
-            {
-                Console.WriteLine("Prost broj.");
-            }
-            else
-            {
-                Console.WriteLine("Složen broj.");
+                if (Prost(broj))
+                {
+                    Console.WriteLine("Prost broj.");
+                }
+                else
+                {
+                    Console.WriteLine("Složen broj.");
+                }
+                Console.WriteLine("Želite li ponovo (D/N)?");
+                odg = Console.ReadLine();
             }
         }
 
-        private static bool Prostbroj(int broj)
+        private static bool Prost(int broj)
         {
-            bool broj = true;
-
             for (int i = 2; i < broj; i++)
             {
                 if (broj % i == 0)
                 {
-                    broj = false;
+                    return false;
                 }
             }
+            return true;
         }
 
-       
     }
 }
