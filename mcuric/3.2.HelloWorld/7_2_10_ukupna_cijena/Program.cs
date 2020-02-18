@@ -7,9 +7,9 @@ namespace _7_2_10_ukupna_cijena
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite ulaznu cijenu proizvoda u dolarima!");
-            double nabavna = double.Parse(Console.ReadLine());
+            double ulazna = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Ukupna cijena danog proizvoda bi bila {0:C} ", KonacnaCijena(nabavna));
+            Console.WriteLine("Ukupna cijena danog proizvoda bi bila {0:C} ", KonacnaCijena(ulazna));
 
             Console.ReadLine();
         }
