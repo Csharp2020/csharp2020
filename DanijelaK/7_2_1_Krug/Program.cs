@@ -1,17 +1,18 @@
 ﻿using System;
 
-namespace _7_2_1_Krug
+namespace _7_2_1_krug
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ispis opsega i površine kruga");
+            Console.WriteLine("Unesite radijus kruga:");
 
-            double r = double.Parse(Console.ReadLine());
+           double r = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Opseg kruga je {0}", Opseg(r));
-            Console.WriteLine("Opseg kruga je {0}", Povrsina(r));
+            Console.WriteLine("Opseg kruga je {0}.", Opseg(r));
+
+            Console.WriteLine("Površina kruga je {0}.", Povrsina(r));
 
         }
 
@@ -19,7 +20,7 @@ namespace _7_2_1_Krug
         {
             return r * r * Math.PI;
         }
-
+         
         private static double Opseg(double r)
         {
             return 2 * r * Math.PI;
