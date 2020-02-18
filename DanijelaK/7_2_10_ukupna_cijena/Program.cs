@@ -6,7 +6,7 @@ namespace _7_2_10_ukupna_cijena
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesite ulaznu cijenu:");
+            Console.WriteLine("Unesite ulaznu cijenu:");  
             double ulaz = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Ukupna cijena je {0}.", UkupnaCijena(ulaz));
