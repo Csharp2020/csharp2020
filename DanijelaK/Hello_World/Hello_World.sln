@@ -73,17 +73,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_1_krug", "..\7_2_1_krug
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_2_jednakokracan_trokut", "..\7_2_2_jednakokracan_trokut\7_2_2_jednakokracan_trokut.csproj", "{3C104840-EE32-45E6-91CD-B3CFD0D2024F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_3_ks_u_kw", "..\7_2_3_ks_u_kw\7_2_3_ks_u_kw.csproj", "{F02FCB26-6763-44FD-AD76-DDA430132153}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_3_ks_u_kw", "..\7_2_3_ks_u_kw\7_2_3_ks_u_kw.csproj", "{F02FCB26-6763-44FD-AD76-DDA430132153}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_4_celzij", "..\7_2_4_celzij\7_2_4_celzij.csproj", "{DEDA7E3E-3199-4E91-B6DE-3EB6D0DC8D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_4_celzij", "..\7_2_4_celzij\7_2_4_celzij.csproj", "{DEDA7E3E-3199-4E91-B6DE-3EB6D0DC8D26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_5_udaljenost", "..\7_2_5_udaljenost\7_2_5_udaljenost.csproj", "{889BD931-2830-420E-A3A2-0F9C918DF858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_5_udaljenost", "..\7_2_5_udaljenost\7_2_5_udaljenost.csproj", "{889BD931-2830-420E-A3A2-0F9C918DF858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_6_prosti_broj", "..\7_2_6_prosti_broj\7_2_6_prosti_broj.csproj", "{BCD1C1DD-7D8D-4B9C-A7FB-1ABCE92715A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_6_prosti_broj", "..\7_2_6_prosti_broj\7_2_6_prosti_broj.csproj", "{BCD1C1DD-7D8D-4B9C-A7FB-1ABCE92715A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_9_prosjek", "..\7_2_8_faktorijel\7_2_9_prosjek.csproj", "{41B46F83-F29B-40B3-A9AF-52142470EA9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_9_prosjek", "..\7_2_8_faktorijel\7_2_9_prosjek.csproj", "{41B46F83-F29B-40B3-A9AF-52142470EA9D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_potprogram", "..\..\pmrvic\7_2_potprogram\7_2_potprogram.csproj", "{D18D48DF-C47D-42C7-A4DD-4A0CF784290A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_10_ukupna_cijena", "..\7_2_10_ukupna_cijena\7_2_10_ukupna_cijena.csproj", "{AC06EE61-A37E-4F00-AABC-D3A516E4B01E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{D18D48DF-C47D-42C7-A4DD-4A0CF784290A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18D48DF-C47D-42C7-A4DD-4A0CF784290A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18D48DF-C47D-42C7-A4DD-4A0CF784290A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC06EE61-A37E-4F00-AABC-D3A516E4B01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC06EE61-A37E-4F00-AABC-D3A516E4B01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC06EE61-A37E-4F00-AABC-D3A516E4B01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC06EE61-A37E-4F00-AABC-D3A516E4B01E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -268,6 +274,7 @@ Global
 		{889BD931-2830-420E-A3A2-0F9C918DF858} = {09E743AC-D029-466C-ACA9-7FBF773470D5}
 		{BCD1C1DD-7D8D-4B9C-A7FB-1ABCE92715A8} = {09E743AC-D029-466C-ACA9-7FBF773470D5}
 		{41B46F83-F29B-40B3-A9AF-52142470EA9D} = {09E743AC-D029-466C-ACA9-7FBF773470D5}
+		{AC06EE61-A37E-4F00-AABC-D3A516E4B01E} = {09E743AC-D029-466C-ACA9-7FBF773470D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
