@@ -67,15 +67,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6_2_3_sort_josjednom", "6_2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6_2_5_prosti_faktori", "..\mcuric\3.2.HelloWorld\6_2_5_prosti_faktori\6_2_5_prosti_faktori.csproj", "{6DF6DB39-F0E3-495D-9D7A-640391971110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_2_5_prostiiii", "6_2_5_prostiiii\6_2_5_prostiiii.csproj", "{4ECA116A-7224-4BE2-8A55-CD7471E010DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6_2_5_prostiiii", "6_2_5_prostiiii\6_2_5_prostiiii.csproj", "{4ECA116A-7224-4BE2-8A55-CD7471E010DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_procedure", "7_procedure", "{EDE9221C-ABD1-4916-A029-E9F6AF0D9752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_potprogram", "7_2_potprogram\7_2_potprogram.csproj", "{F6C4AEF5-D956-4E1C-BA7F-D35CAA1AC67D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_potprogram", "7_2_potprogram\7_2_potprogram.csproj", "{F6C4AEF5-D956-4E1C-BA7F-D35CAA1AC67D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_2_2_unos_imena", "7_2_2_unos_imena\7_2_2_unos_imena.csproj", "{8A235962-339F-41FE-9DE5-3E877B205435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_2_unos_imena", "7_2_2_unos_imena\7_2_2_unos_imena.csproj", "{8A235962-339F-41FE-9DE5-3E877B205435}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7_3_kvadrat", "7_3_kvadrat\7_3_kvadrat.csproj", "{8F432EDB-D297-41CD-9079-34A5810C1209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_3_kvadrat", "7_3_kvadrat\7_3_kvadrat.csproj", "{8F432EDB-D297-41CD-9079-34A5810C1209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8_objekti", "8_objekti", "{1A274C81-34BA-4F96-A09F-653A0A410B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_1_2_ucenik", "8_1_2_ucenik\8_1_2_ucenik.csproj", "{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -211,6 +215,10 @@ Global
 		{8F432EDB-D297-41CD-9079-34A5810C1209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F432EDB-D297-41CD-9079-34A5810C1209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F432EDB-D297-41CD-9079-34A5810C1209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,6 +254,7 @@ Global
 		{F6C4AEF5-D956-4E1C-BA7F-D35CAA1AC67D} = {EDE9221C-ABD1-4916-A029-E9F6AF0D9752}
 		{8A235962-339F-41FE-9DE5-3E877B205435} = {EDE9221C-ABD1-4916-A029-E9F6AF0D9752}
 		{8F432EDB-D297-41CD-9079-34A5810C1209} = {EDE9221C-ABD1-4916-A029-E9F6AF0D9752}
+		{5EDA66BE-1A0A-45C8-9FC0-A0E390D36172} = {1A274C81-34BA-4F96-A09F-653A0A410B84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82948EB5-6E29-47ED-BAC1-7CE74C088546}
