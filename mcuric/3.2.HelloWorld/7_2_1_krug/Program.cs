@@ -19,7 +19,7 @@ namespace _7_2_1_krug
 
         static double Opseg(double x)
         {
-            return 2 * x * Math.PI;
+            return 2 * x* Math.PI;
         }
 
         static double Povrsina(double x)
