@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _8_1_3_Osoba
+namespace _8._1._3.primjer
 {
     class Program
     {
@@ -15,15 +15,8 @@ namespace _8_1_3_Osoba
             Console.WriteLine("Molim unesite prezime osobe:");
             o1.Prezime = Console.ReadLine();
 
-            Console.WriteLine($"Dobrodošli {o1}");
-
-            Console.WriteLine("Molim unesite datum rođenja:");
-
-            o1.Datrod= Console.ReadLine();
-            o1.IspisBrojGodina();
-
-
-
+            Console.WriteLine($"Dobrodosli {o1}");
+            
         }
     }
 }

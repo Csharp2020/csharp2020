@@ -7,7 +7,8 @@ namespace _8_1_3_Osoba
     {
         public static string PrvoVeliko(string value)
         {
-            return char.ToUpper(value.First()) + value.Substring(1).ToLower();
+            value = value.Trim(); // brise prazni prostor sa početka i kraja stringa
+            return char.ToUpper(value.First()) + value.Substring(1).ToLower(); // prvo veliko pocetno slovo
         }
     }
 }
