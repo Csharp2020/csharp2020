@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using _8_1_3_osoba;
 
 namespace _8_1_2_ucenik
 {
