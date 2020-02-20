@@ -29,10 +29,10 @@ namespace _8_1_2_ucenik
             // ne dozvoljava citanje prezimena
             // Console.WriteLine("ucenikovo prezime je:" + u1.Prezime);
 
-            Console.WriteLine("ucenikovo ime i prezime je: " + u1); 
+            Console.WriteLine("ucenikovo ime i prezime je: " + u1);
 
-
-
+            Ucenik u2 = new Ucenik("Ivo", "Ivić");
+            Console.WriteLine("ucenikovo ime i prezime je: " + u2);
 
             /*
             MyClass mc1 = new MyClass();
