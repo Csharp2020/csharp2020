@@ -101,7 +101,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pr6.1.3_naopako", "..\Pr.6.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pr6.1.4_parNepar2", "..\Pr6.1.4_parNepar2\Pr6.1.4_parNepar2.csproj", "{63F71700-284D-443E-861C-830166D0F36A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr6.1.5_sort", "..\Pr6.1.5_sort\Pr6.1.5_sort.csproj", "{5BFFCC74-EA88-4AB9-9F1C-E6450B3A8F6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pr6.1.5_sort", "..\Pr6.1.5_sort\Pr6.1.5_sort.csproj", "{5BFFCC74-EA88-4AB9-9F1C-E6450B3A8F6D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_nizovi", "6_nizovi", "{87F6A55A-B9B4-447B-8E4F-02A26256878F}"
 EndProject
@@ -109,23 +109,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.1_nizovi", "6.1_nizovi", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.2_liste", "6.2_liste", "{09CADA13-AA11-4613-B7F8-CB350C77D323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.2.4_znamenke", "..\6.2.4_znamenke\6.2.4_znamenke.csproj", "{51947AD0-5DBC-49EE-AC48-0D3942C259CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.2.4_znamenke", "..\6.2.4_znamenke\6.2.4_znamenke.csproj", "{51947AD0-5DBC-49EE-AC48-0D3942C259CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.2.5_prostiFaktori", "..\6.2.5_prostiFaktori\6.2.5_prostiFaktori.csproj", "{1B2CF0B1-0180-4167-B90A-A44E6BD485CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.2.5_prostiFaktori", "..\6.2.5_prostiFaktori\6.2.5_prostiFaktori.csproj", "{1B2CF0B1-0180-4167-B90A-A44E6BD485CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_metode", "7_metode", "{5095B1C7-DE81-42E6-8655-34F3F11DEE1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.1_potprogram", "..\7.2.1_potprogram\7.2.1_potprogram.csproj", "{E99255AE-923A-4A2B-9771-06CFE70824F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.1_potprogram", "..\7.2.1_potprogram\7.2.1_potprogram.csproj", "{E99255AE-923A-4A2B-9771-06CFE70824F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.2_unosImena", "..\7.2.2_unosImena\7.2.2_unosImena.csproj", "{5E651580-2C19-4001-BEB6-D7189AB1E5DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.2_unosImena", "..\7.2.2_unosImena\7.2.2_unosImena.csproj", "{5E651580-2C19-4001-BEB6-D7189AB1E5DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.3.1_kvadrat", "..\7.3.1_kvadrat\7.3.1_kvadrat.csproj", "{9E95FD57-9110-4ED6-BC6F-82DCB1A6331F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.3.1_kvadrat", "..\7.3.1_kvadrat\7.3.1_kvadrat.csproj", "{9E95FD57-9110-4ED6-BC6F-82DCB1A6331F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_metode", "7_metode", "{10FB6C16-E2F9-42D0-9969-4DE528D5E082}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.1_krug", "..\7.2.1_krug\7.2.1_krug.csproj", "{08336E04-6E9D-474A-A101-D5CF5F43DD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.1_krug", "..\7.2.1_krug\7.2.1_krug.csproj", "{08336E04-6E9D-474A-A101-D5CF5F43DD59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2.2_jednokracanTrokut", "..\7.2.2_jednokracanTrokut\7.2.2_jednokracanTrokut.csproj", "{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.2.2_jednokracanTrokut", "..\7.2.2_jednokracanTrokut\7.2.2_jednokracanTrokut.csproj", "{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "yNekiBug", "yNekiBug", "{24A7A9CB-8110-4D7A-A012-E5B7A75AB9CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "y8.1.3_Osoba", "..\y8.1.3_Osoba\y8.1.3_Osoba.csproj", "{C380C40B-6263-4668-886E-286FF175D33D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +325,10 @@ Global
 		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C380C40B-6263-4668-886E-286FF175D33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C380C40B-6263-4668-886E-286FF175D33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C380C40B-6263-4668-886E-286FF175D33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C380C40B-6263-4668-886E-286FF175D33D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -382,6 +390,7 @@ Global
 		{10FB6C16-E2F9-42D0-9969-4DE528D5E082} = {017A5F4C-1671-4DEB-8968-ED2099C56AAD}
 		{08336E04-6E9D-474A-A101-D5CF5F43DD59} = {10FB6C16-E2F9-42D0-9969-4DE528D5E082}
 		{954F02C2-9991-4F5C-8725-D5ED5F5D42AE} = {10FB6C16-E2F9-42D0-9969-4DE528D5E082}
+		{C380C40B-6263-4668-886E-286FF175D33D} = {24A7A9CB-8110-4D7A-A012-E5B7A75AB9CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FD14F18-B2BD-403E-B592-2D624430308E}
