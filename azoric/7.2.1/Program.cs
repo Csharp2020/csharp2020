@@ -6,7 +6,7 @@ namespace _7._2._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Unesite broj");
             int broj = int.Parse(Console.ReadLine());
 
             Console.WriteLine("opseg kruga je {1}", broj, Opseg(broj));
