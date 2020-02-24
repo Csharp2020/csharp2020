@@ -7,7 +7,7 @@ namespace _8_1_1_proizvod
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite naziv proizvoda:");
-            Proizvod p = new Proizvod(Console.ReadLine());
+            Proizvod p = new Proizvod();
 
             Console.WriteLine("Unesite cijenu proizvoda:");
             p.Cijena = double.Parse(Console.ReadLine());
