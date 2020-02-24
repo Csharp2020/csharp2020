@@ -24,7 +24,7 @@ namespace _8_2_1_doseg_varijabli
 
             Console.WriteLine("Unesite Celzijuse:");
             double broj = double.Parse(Console.ReadLine());
-            Console.WriteLine("Fahrenheit:" + MojStatic.Fahrenheit(broj));
+            Console.WriteLine("Fahrenheit je:" + MojStatic.Fahrenheit(broj));
 
 
 
