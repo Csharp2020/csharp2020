@@ -6,7 +6,7 @@ namespace _8_Auto_speed
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Graf brzine");
             Auto a1 = new Auto("Nissan", "Qashqai", 130);
 
             a1.Ubrzaj(acc_level: 10, acc_time: 5);  // index ubrzanja [1-10], trajanje ubrzanja [s]

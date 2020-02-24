@@ -10,11 +10,7 @@ namespace _8._1._2_Automobil
         private double ks;
         private double osnovnacijena;
 
-        public string MarkaAutomobila
-        {
-            get => markaautomobila;
-            set => markaautomobila = value;
-        }
+
 
         public double KS
         {
@@ -27,6 +23,8 @@ namespace _8._1._2_Automobil
             get => osnovnacijena;
             set => osnovnacijena = value;
         }
+        public string Markaautomobila { get => markaautomobila;
+            set => markaautomobila = value; }
 
         public double IznosPoreza()
         {
