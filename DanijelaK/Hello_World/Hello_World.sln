@@ -71,7 +71,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8_1_2_ucenikk", "..\8_1_2_u
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8_1_3_Osobaa", "..\8_1_3_Osoba\8_1_3_Osobaa.csproj", "{C9A01B2B-65D5-46BF-9FC2-064F807AD4B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_1_1_proizvod", "..\8_1_1_proizvod\8_1_1_proizvod.csproj", "{15C8A6E6-C77C-4C47-95FD-363452EB162D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8_1_1_proizvod", "..\8_1_1_proizvod\8_1_1_proizvod.csproj", "{15C8A6E6-C77C-4C47-95FD-363452EB162D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_2_1_doseg_varijabli", "..\8_2_1_doseg_varijabli\8_2_1_doseg_varijabli.csproj", "{59860D13-2644-4BCB-8063-9E392DF212DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7_2_4_celzij", "..\7_2_4_celzij\7_2_4_celzij.csproj", "{2AAE55DF-EA32-4110-AF43-B7619AE3E078}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +199,14 @@ Global
 		{15C8A6E6-C77C-4C47-95FD-363452EB162D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C8A6E6-C77C-4C47-95FD-363452EB162D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C8A6E6-C77C-4C47-95FD-363452EB162D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59860D13-2644-4BCB-8063-9E392DF212DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59860D13-2644-4BCB-8063-9E392DF212DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59860D13-2644-4BCB-8063-9E392DF212DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59860D13-2644-4BCB-8063-9E392DF212DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AAE55DF-EA32-4110-AF43-B7619AE3E078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAE55DF-EA32-4110-AF43-B7619AE3E078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAE55DF-EA32-4110-AF43-B7619AE3E078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAE55DF-EA32-4110-AF43-B7619AE3E078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +240,7 @@ Global
 		{4E021E5A-211A-4306-82D6-394040B508F4} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
 		{C9A01B2B-65D5-46BF-9FC2-064F807AD4B4} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
 		{15C8A6E6-C77C-4C47-95FD-363452EB162D} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
+		{59860D13-2644-4BCB-8063-9E392DF212DF} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
