@@ -6,6 +6,7 @@ namespace zadatak_voce
 {
     class Apples:System.Collections.CollectionBase
     {
+
         public int Add(object apple)
         {
             return base.InnerList.Add(apple);
@@ -19,6 +20,15 @@ namespace zadatak_voce
             get
             {
                 return (Apple)base.InnerList[index];
+            }
+        }
+
+
+        internal void Ispis()
+        {
+            foreach (Apple item in this)
+            {
+                Console.Write("jabuka "+ item.Meassure + " opsega ");
             }
         }
     }

@@ -26,18 +26,20 @@ namespace zadatak_voce
             apples.Add(a2);
 
             Console.WriteLine("Sve banane: ");
-            for (int i=0; i<= bananas.Length; i++)
+            for (int i=0; i< bananas.Length; i++)
             {
-                Console.Write(bananas[i] + " ");
+                Console.WriteLine("banana, " + bananas[i].Length + " duljine ");
             }
 
             Console.WriteLine("Sve narance: ");
             foreach (var item in oranges) 
             {
-                Console.Write(item + " ");
+                Console.WriteLine("naranca " + item.Radius + " radijusa");
             }
 
-            apples.ToString();
+            apples.Ispis();
+
+            Console.ReadLine();
         }
     }
 }
