@@ -2,6 +2,13 @@
 {
     internal class Apple : Voce
     {
-        public int Kila { get; internal set; }
+        private double tezina;
+
+        public Apple(double Tezina)
+        {
+            tezina = Tezina;
+        }
+
+        
     }
 }

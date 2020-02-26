@@ -7,6 +7,7 @@
         public Naranca(int v)
         {
             this.radijus = v;
+           
         }
 
         public int Radijus { get; internal set; }

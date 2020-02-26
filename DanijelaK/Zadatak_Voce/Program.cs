@@ -20,20 +20,21 @@ namespace Zadatak_Voce
             n1.Radijus = 10;
             n2.Radijus = 8;
 
-            Apple a1 = new Apple();
-            Apple a2 = new Apple();
-            a1.Kila = 0,2;
-            a2.Kila = 0,3;
+            Apple a1 = new Apple(Tezina: 0.2);
+            Apple a2 = new Apple(0.3);
+            
 
             Banana[] bananas = new Banana[2];
             bananas[0] = b1;
             bananas[1] = b2;
             for (int i = 0; i < bananas.Length; i++)
             {
-                Console.WriteLine();
+                Console.WriteLine(bananas[i]);
             }
 
-            List<int> arr = new List<int>();
+            List <Naranca> naras = new List <Naranca>();
+            naras.Add(n1);
+            naras.Add(n2);
 
 
 

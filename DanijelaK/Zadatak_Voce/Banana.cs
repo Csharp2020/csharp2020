@@ -8,5 +8,10 @@
         }
 
         public int Duljina { get; internal set; }
+
+        public override string ToString()
+        {
+            return $"Voće: banana duljina {Duljina}"; 
+        }
     }
 }
