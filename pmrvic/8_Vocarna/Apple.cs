@@ -4,22 +4,20 @@ namespace _8_Vocarna
 {
     internal class Apple:Voce
     {
-        public double Tezina {
-            get { return Tezina; }
-            private set { Tezina = value; } }
-
+        public static int kolikopromjena;
+        private double tezina;
         public delegate void del_promjena_tezine(object sender, EventArgs e);
         public event del_promjena_tezine promjenaTezine;
-        /*
+        
         public double Tezina
         {
-            get => Tezina;
+            get => tezina;
             set
             {
-               // promjenaTezine?.Invoke(this, new EventArgs());
-                this.Tezina = value;
+                promjenaTezine?.Invoke(this, new EventArgs());
+                this.tezina = value;
             }
-        }*/
+        }
 
     public Apple(double Tezina)
         {

@@ -20,6 +20,11 @@ namespace _8_Vocarna
 
             // a1.promjenaTezine += A1_promjenaTezine;
             a1.promjenaTezine += new Apple.del_promjena_tezine(A1_promjenaTezine);
+            a1.Tezina = 300;
+            a1.Tezina = 200;
+            a1.Tezina = 150;
+
+
 
             Banana[] bananas = new Banana[3];
             Banana[] truleBanane = new Banana[2];
@@ -87,7 +92,8 @@ namespace _8_Vocarna
         //Ova se funkcioja izvrsi kada okine event promjena boje kod jabuke
         private static void A1_promjenaTezine(object sender, EventArgs e)
         {
-            Console.WriteLine("tezina jabuke je promjenjena!");
+            Apple.kolikopromjena++;
+            Console.WriteLine("tezina jabuke je promjenjena! ukupno promjenjeno puta "+ Apple.kolikopromjena);
         }
     }
 }
