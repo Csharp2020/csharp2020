@@ -29,6 +29,10 @@ namespace _8_Vocarna
         internal void ispis()
         {
             Console.WriteLine($"Košara s jabukama, količina:{InnerList.Count} Ukupna težina:{ukupnaTezina/1000} kg");
+            foreach (Apple item in InnerList)
+            {
+                Console.WriteLine($"Jabuka:{item.Tezina}");
+            }
         }
     }
 }
