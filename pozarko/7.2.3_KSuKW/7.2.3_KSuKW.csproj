@@ -1,12 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_7._2._3_KSuKW</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="2_osnove\" />
-  </ItemGroup>
 
 </Project>
