@@ -7,14 +7,14 @@ namespace _8_Vocarna
         public static int kolikopromjena;
         private double tezina;
         public delegate void del_promjena_tezine(object sender, EventArgs e);
-        public event del_promjena_tezine promjenaTezine;
+        public event del_promjena_tezine PromjenaTezine;
         
         public double Tezina
         {
             get => tezina;
             set
             {
-                promjenaTezine?.Invoke(this, new EventArgs());
+                PromjenaTezine?.Invoke(this, new EventArgs());
                 this.tezina = value;
             }
         }
