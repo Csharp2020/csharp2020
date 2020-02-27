@@ -4,6 +4,7 @@ namespace _7._3._1_kvadrat
 {
     class Program
     {
+        /*U ovom programu koristimo metode od kojih ocekujemo povratnu vrijednost koja je tipa int*/
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadriramo broj");
@@ -15,11 +16,11 @@ namespace _7._3._1_kvadrat
 
         private static int NeCetvrtu(int broj)
         {
-            //return Kub(broj) * broj;
-            //return Kvadrat(broj) * Kvadrat(broj); 
-            //return broj * broj * broj * broj;
-            //return Kvadrat(Kvadrat(broj));
-            return (int)Math.Pow(broj, 4);// Zato što math.poew vraca double
+            //-return Kub(broj) * broj;
+            //-return Kvadrat(broj) * Kvadrat(broj); 
+            //-return broj * broj * broj * broj;
+            //-return Kvadrat(Kvadrat(broj));
+            return (int)Math.Pow(broj, 4);//-Zato što math.poew vraca double
         }
 
         private static int Kub(int broj)

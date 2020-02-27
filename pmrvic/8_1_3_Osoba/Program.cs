@@ -16,7 +16,13 @@ namespace _8_1_3_Osoba
             o1.Prezime = Console.ReadLine();
 
             Console.WriteLine($"Dobrodošli {o1}");
-            
+
+            Console.WriteLine("Molim unesite datum rođenja:");
+
+            o1.Datrod = Console.ReadLine();
+            o1.IspisBrojGodina();
+
+
 
         }
     }
