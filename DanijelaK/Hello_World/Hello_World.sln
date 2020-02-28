@@ -81,6 +81,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8_3_1_vozila_nasljedivanje"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak_Voce", "..\Zadatak_Voce\Zadatak_Voce.csproj", "{D23A2A74-303A-4089-8701-4164C245EFCE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vanjski", "Vanjski", "{9D8B9C8C-0797-40C8-B977-03436BC4A61E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8_Vocarna", "..\..\pmrvic\8_Vocarna\8_Vocarna.csproj", "{58C4BD12-7907-4378-8A8A-D8C2F43968F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +223,10 @@ Global
 		{D23A2A74-303A-4089-8701-4164C245EFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D23A2A74-303A-4089-8701-4164C245EFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D23A2A74-303A-4089-8701-4164C245EFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C4BD12-7907-4378-8A8A-D8C2F43968F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C4BD12-7907-4378-8A8A-D8C2F43968F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C4BD12-7907-4378-8A8A-D8C2F43968F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C4BD12-7907-4378-8A8A-D8C2F43968F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -255,6 +263,7 @@ Global
 		{59860D13-2644-4BCB-8063-9E392DF212DF} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
 		{51DFCD4F-DA16-4659-BC73-1094774DFB31} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
 		{D23A2A74-303A-4089-8701-4164C245EFCE} = {DF2A73C4-B11B-418F-AC12-55DC4A153379}
+		{58C4BD12-7907-4378-8A8A-D8C2F43968F2} = {9D8B9C8C-0797-40C8-B977-03436BC4A61E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
