@@ -4,9 +4,22 @@ namespace _8_Vocarna
 {
     internal class Apple:Voce
     {
-        public double Tezina;
+        public static int kolikopromjena;
+        private double tezina;
+        public delegate void del_promjena_tezine(object sender, EventArgs e);
+        public event del_promjena_tezine promjenaTezine;
+        
+        public double Tezina
+        {
+            get => tezina;
+            set
+            {
+                promjenaTezine?.Invoke(this, new EventArgs());
+                this.tezina = value;
+            }
+        }
 
-        public Apple(double Tezina)
+    public Apple(double Tezina)
         {
             this.Tezina = Tezina;
             Random r = new Random();
@@ -16,6 +29,7 @@ namespace _8_Vocarna
                 case 2: this.Boja = "Žuta"; break;
                 case 3: this.Boja = "Crvena"; break;
             }
+
 
         }
     }
