@@ -4,37 +4,36 @@ namespace _8_1_1_proizvod
 {
     internal class Proizvod
     {
-        private double cijena =0;
-        private double marza= 0;
-        private double porez= 0;
-        private string naziv= "";
-
-        public Proizvod(string n)
-        {
-            naziv = n; 
-        }
+        private double cijena;
+        private double marza;
+        private double porez;
+        private string naziv;
 
         public double Cijena
         {
             get => cijena;
-            set => cijena;
+            set => cijena = value;
         }
         public double Marza
         {
             get => marza;
-            set => porez;
+            set => marza = value;
         }
         public double Porez
         {
             get => porez;
-            set => porez;
+            set => porez = value;
         }
 
-        public int Naziv { get; internal set; }
+        public string Naziv
+        {
+            get => naziv;
+            set => naziv = value;
+        }
 
         public double MPC()
         {
-            return cijena + marza + porez;
+            return this.Cijena + this.Marza + this.Porez;
         }
     }
 }
