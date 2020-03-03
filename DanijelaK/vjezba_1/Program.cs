@@ -7,12 +7,7 @@ namespace vjezba_1
     {
         static void Main(string[] args)
         {
-            //Zadatak2: Napišite program koji traži unos riječi sve dok se ne unese riječ "kraj".
-            //1.Program ispisuje:
-            //            Riječi koje počinju slovom A: ...
-            //Riječi koje počinju slovom B: ...
-            //Riječi koje počinju slovom C: ...
-            //Ostale riječi: ...
+            
             string rijec="";
 
             List<string> reci = new List<string>();
