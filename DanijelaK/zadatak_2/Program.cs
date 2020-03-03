@@ -13,7 +13,6 @@ namespace zadatak_2
             string rijec = Console.ReadLine();
             string [] r = rijec.Split();
          
-
             List<string> a_lista = new List<string>();
             List<string> i_lista = new List<string>();
             List<string> o_lista = new List<string>();

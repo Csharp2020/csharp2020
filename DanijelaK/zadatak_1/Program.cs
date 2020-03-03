@@ -11,11 +11,12 @@ namespace zadatak_1
             Console.WriteLine("Unesite rečenicu:");
             string recenica = Console.ReadLine();
             recenica = recenica.Replace(" ", "");
+            string[] r = recenica.Split();
 
 
             for (int i = 0; i < recenica.Length;i +=4)
             {
-              
+                Console.WriteLine();
             }
         }
     }
