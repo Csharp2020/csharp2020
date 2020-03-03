@@ -1,6 +1,7 @@
 ﻿using System;
 /**
- * traži se unos broja i ispisuje jeli broj jednozamenkasti,dvoznam., troznam. ili više znam.
+ * traži se unos broja i ispisuje jeli broj 
+ * jednozamenkasti,dvoznam., troznam. ili više znam.
  **/
 namespace _5_2_4_x_znamenkasti_broj
 {
@@ -9,9 +10,26 @@ namespace _5_2_4_x_znamenkasti_broj
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite broj");
-            /* double a = double.Parse(Console.ReadLine());
+<<<<<<< HEAD
+            
+            int a;
 
-            if (a < 0) a = -a;
+            a = int.Parse(Console.ReadLine());
+            
+            if (a < 0)
+            {
+                a = -a;
+            }
+=======
+            int a;
+
+            a = int.Parse(Console.ReadLine());
+            if (a < 0)
+            {
+                a = -a; // mogli smo i ovako a *= -1;
+            }
+
+>>>>>>> 806d03656a6a5cfe878e6b8eb153595480cc0cbf
 
             if (a < 10)
             {
@@ -28,29 +46,16 @@ namespace _5_2_4_x_znamenkasti_broj
             else
             {
                 Console.WriteLine("Broj je višeznamenkast");
-            } */
+            } 
 
-            int a;
+<<<<<<< HEAD
             
-            a = int.Parse(Console.ReadLine());
-            a = -a;
                        
-            switch (a)
-            {
-                case int i when i < 10:
-                    Console.WriteLine("Broj je jednoznamenkast");
-                    break;
-                case int i when i < 100:
-                    Console.WriteLine("Broj je dvoznamenkast");
-                    break;
-                case int i when i < 1000:
-                    Console.WriteLine("Broj je troznamenkast");
-                    break;
-                default:
-                    Console.WriteLine("Broj je višeznamenkast");
-                    break;
+=======
 
-            }
+
+>>>>>>> 806d03656a6a5cfe878e6b8eb153595480cc0cbf
+            
         }
     }
 
