@@ -8,11 +8,11 @@ namespace zadatak_2
         static void Main(string[] args)
         {
             //unesi tekst : Ivica ide u školu Antuna Antunovića
-            // napravi 3 liste
+            //napravi 3 liste
             Console.WriteLine("Unesite rečenicu:");
             string rijec = Console.ReadLine();
-            string [] r = rijec.Split();
-         
+            string[] r = rijec.Split();
+
             List<string> a_lista = new List<string>();
             List<string> i_lista = new List<string>();
             List<string> o_lista = new List<string>();
@@ -21,7 +21,7 @@ namespace zadatak_2
             {
                 if (item.StartsWith("a") || item.StartsWith("A"))
                 {
-                    a_lista.Add(item); 
+                    a_lista.Add(item);
                 }
             }
 
@@ -34,15 +34,12 @@ namespace zadatak_2
             }
             foreach (var item in r)
             {
-                   
-                if (item.StartsWith("i") || item.StartsWith("I") || item.StartsWith("a") || item.StartsWith("A"))
-                {
-                 
-                }
-                else
+
+                if (!(item.StartsWith("i") || item.StartsWith("I") || item.StartsWith("a") || item.StartsWith("A")))
                 {
                     o_lista.Add(item);
                 }
+
             }
 
             Console.WriteLine($"Broj rijeci u a_listi: {a_lista.Count} ");
