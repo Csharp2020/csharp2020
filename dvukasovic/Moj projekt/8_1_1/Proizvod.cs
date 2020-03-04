@@ -11,8 +11,9 @@ namespace _8_1_1
         public double Marza= 0;
         public double Porez =0;
 
-        public Proizvod()
+        public Proizvod(string naziv)
         {
+            Naziv = naziv;
         }
 
         public double MPC ()

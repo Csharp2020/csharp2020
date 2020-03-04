@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace zadatak_2
 {
@@ -15,27 +16,39 @@ namespace zadatak_2
               ipisi koliko koja lista ima rijci
 
             */
-            string recenica = "Ivica ide u skolu Antuna Antunovica";
-            ArrayList a = new ArrayList();
-            ArrayList b = new ArrayList();
-            ArrayList c = new ArrayList();
-            string[] rijec = recenica.Split();
+            List<string> a = new List<string>();
+            List<string> b = new List<string>();
+            List<string> o = new List<string>();
 
-            foreach (string s in rijec)
+            string t = Console.ReadLine();
+
+            string[] rijeci = t.Split(" ");
+            for (int i = 0; i < rijeci.Length; i++)
             {
-                Console.Write(s[0] + " ");
-                if (s == "A" || s == "a")
+                if (rijeci[i].Substring(0, 1) == "a")
                 {
-                    a.Add(s);
-                    Console.WriteLine(a.Count);
+                    a.Add(rijeci[i]);
                 }
-                else if ( s == "I" || s == "i")
+                else if (rijeci[i].Substring(0, 1) == "A")
                 {
-                    b.Add(rijec);
+                    a.Add(rijeci[i]);
                 }
-                
+                if (rijeci[i].Substring(0, 1) == "i")
+                {
+                    b.Add(rijeci[i]);
+                }
+                else if (rijeci[i].Substring(0, 1) == "I")
+                {
+                    b.Add(rijeci[i]);
+                }
+                else
+                {
+                    o.Add(rijeci[i]);
+                }
             }
-            Console.WriteLine(a.Count);
+            Console.WriteLine("a " + a.Count);
+            Console.WriteLine("i " + b.Count);
+            Console.WriteLine("ostalo " + o.Count);
 
 
 

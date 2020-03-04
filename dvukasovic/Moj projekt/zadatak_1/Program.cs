@@ -8,17 +8,16 @@ namespace zadatak_1
         {
             Console.WriteLine("Zadatak 1");
            // Ispisati svako drugo slovu stringu
-            string recenica = "Bio sam u zološkom vrtu";
             
-            Console.WriteLine(recenica.Replace(" ", ""));
-            for (int i = 0; i < recenica.Length; i+=1)
+
+            string a = "Bio sam u zoloskom vrtu";
+            a = a.Replace(" ", "");
+            for (int i = 0; i < a.Length; i += 4)
             {
-
-                Console.WriteLine(recenica[i].ToString());
+                Console.WriteLine(a.Substring(i, 2));
             }
-            
 
-           
+
 
         }
     }

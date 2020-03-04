@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace _8_1_1
 {
@@ -7,10 +9,10 @@ namespace _8_1_1
         static void Main(string[] args)
         {
             Console.WriteLine("Proizvod");
-            
-            Proizvod proizvod = new Proizvod();
             Console.WriteLine("Unesi naziv proizvoda!");
-            proizvod.Naziv = Console.ReadLine();
+            Proizvod proizvod = new Proizvod(Console.ReadLine());
+            
+            
 
             Console.WriteLine("Unesi cijenu proizvoda!");
             proizvod.Cijena = double.Parse(Console.ReadLine());
@@ -21,7 +23,7 @@ namespace _8_1_1
             Console.WriteLine("Unesi porez proizvoda!");
             proizvod.Porez = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("MPC za proizvod " + proizvod.Naziv + "a mpc je" + proizvod.MPC());
+            Console.WriteLine("MPC za proizvod " + proizvod.Naziv +  " a mpc je " + proizvod.MPC());
         }
     }
 }
