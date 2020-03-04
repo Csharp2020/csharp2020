@@ -107,9 +107,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9_1_6_palindrom", "..\9_1_6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_3_2_dijeljivi_s_5", "..\5_3_2_dijeljivi_s_5\5_3_2_dijeljivi_s_5.csproj", "{709A9ABA-C32C-43BF-A54D-B9F604E82E10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trazi_rijec", "..\ConsoleApp1\trazi_rijec.csproj", "{1EF0EDFE-BBBB-4DC0-9D48-6760E9DC1B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "trazi_rijec", "..\ConsoleApp1\trazi_rijec.csproj", "{1EF0EDFE-BBBB-4DC0-9D48-6760E9DC1B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vjezba_1", "..\vjezba_1\vjezba_1.csproj", "{4C92892B-66D0-4806-B841-F2B69880DCE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vjezba_1", "..\vjezba_1\vjezba_1.csproj", "{4C92892B-66D0-4806-B841-F2B69880DCE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -344,6 +344,7 @@ Global
 		{ECB22137-EDBE-4A33-81E2-BF0BA11E0F30} = {EB3CD8E3-AFAB-44EE-B9E2-C763A9FB3209}
 		{709A9ABA-C32C-43BF-A54D-B9F604E82E10} = {38E70D51-01D6-42F6-9964-AB6B52380347}
 		{1EF0EDFE-BBBB-4DC0-9D48-6760E9DC1B7D} = {EB3CD8E3-AFAB-44EE-B9E2-C763A9FB3209}
+		{4C92892B-66D0-4806-B841-F2B69880DCE0} = {EB3CD8E3-AFAB-44EE-B9E2-C763A9FB3209}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E4464-96C8-4102-B0A5-E88B8D3F3198}
