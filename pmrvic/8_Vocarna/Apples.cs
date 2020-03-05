@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace _8_Vocarna
 {
-    internal class Apples:CollectionBase
+    internal class Apples : CollectionBase, IApples
     {
         private double ukupnaTezina;
         public Apples()
@@ -28,11 +28,16 @@ namespace _8_Vocarna
 
         internal void ispis()
         {
-            Console.WriteLine($"Košara s jabukama, količina:{InnerList.Count} Ukupna težina:{ukupnaTezina/1000} kg");
+            Console.WriteLine($"Košara s jabukama, količina:{InnerList.Count} Ukupna težina:{ukupnaTezina / 1000} kg");
             foreach (Apple item in InnerList)
             {
                 Console.WriteLine($"Jabuka:{item.Tezina}");
             }
+        }
+
+        public string MjenjajBoju(string boja)
+        {
+            return $"Boja je{boja}";
         }
     }
 }

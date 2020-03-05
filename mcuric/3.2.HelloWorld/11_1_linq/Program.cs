@@ -45,6 +45,15 @@ namespace _11_1_linq
             string firstDir = (from dir in sDir
                                orderby sDir ascending
                                select dir).FirstOrDefault();
+
+            string [] dvadir = (from dir in sDir
+                               orderby sDir ascending
+                               select dir).Take(2).ToArray();
+            
+            foreach (var item in dvadir)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine($"Prvi direktorij na ovom pathu, abecedno određen je {firstDir}");
 
             //11_1_3_automobili
@@ -59,10 +68,12 @@ namespace _11_1_linq
                 string model = Console.ReadLine();
                 Console.WriteLine("Unesite zapreminu automobila!");
                 int zapremina = int.Parse(Console.ReadLine());
-                Automobil a = new Automobil();
+                Automobil a = new Automobil(marka,model,zapremina);
+                /*
                 a.Marka = marka;
                 a.Model = model;
                 a.Zapremina = zapremina;
+                */
                 automobili.Add(a);
                 Console.WriteLine("Želite li unijeti novi automobil?");
                 answer = Console.ReadLine();
@@ -70,9 +81,9 @@ namespace _11_1_linq
 
             List<Automobil> listaAutomobila = (from auto in automobili
                                          orderby auto.Marka ascending
-                                         where auto.Zapremina >= 1600
+                                         where auto.Zapremina >= 1600 && auto.Zapremina < 2000
                                          select auto).ToList();
-            Console.WriteLine("Abecedno poredana lista automobila s vise od 1600ccm:::");
+            Console.WriteLine("Abecedno poredana lista automobila s vise od 1600ccm a manje od 2k:::");
             foreach (var item in listaAutomobila)
             {
                 Console.WriteLine($"{item.Marka} {item.Model} {item.Zapremina}ccm");

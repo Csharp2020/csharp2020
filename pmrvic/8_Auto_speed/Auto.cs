@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _8_Auto_speed
 {
-    internal class Auto
+    public class Auto
     {
         private string marka;
         private string model;
@@ -23,7 +23,7 @@ namespace _8_Auto_speed
         }
 
 
-        internal void Ubrzaj(int acc_level, int acc_time)
+        public void Ubrzaj(int acc_level, int acc_time)
         {
             double tempspeed = 0;
             double faktorubrzanja = (acc_level / 10);
