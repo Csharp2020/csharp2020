@@ -6,11 +6,6 @@ namespace zadatak
     {
         static void Main(string[] args)
         {
-
-            // Napišite program koji traži unos prirodnog broja, a zatim:
-            //1.ispisuje taj broj "naopako"  1 bod
-            //(Na primjer, za unešeni broj 1234 treba se ispisati 4321)
-
             Console.WriteLine("Unesite broj");
             string broj = Console.ReadLine();
             string broj_naopako = "";

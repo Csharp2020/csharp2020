@@ -125,11 +125,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_1_sucelja", "..\14_1_int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "broj_naopako", "..\broj_naopako\broj_naopako.csproj", "{3437FC9D-99CA-4B2B-8130-137871A6584E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vjezbe", "Vjezbe", "{507B90A6-4936-4476-B0FB-ED1731572F9A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vanjski2", "Vanjski2", "{507B90A6-4936-4476-B0FB-ED1731572F9A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vjezba_klasa", "..\vjezba_klasa\vjezba_klasa.csproj", "{FF0ED2E0-5D75-4D08-B4C5-8E2A758A5744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak", "..\zadatak\zadatak.csproj", "{44D7BC31-05C1-4336-B019-FDF658806C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zadatak", "..\zadatak\zadatak.csproj", "{44D7BC31-05C1-4336-B019-FDF658806C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

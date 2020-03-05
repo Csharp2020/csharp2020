@@ -17,7 +17,7 @@ namespace vjezba_klasa
 
             Console.WriteLine($"Naziv automobila je: {a1.Naziv}");
            
-            Console.WriteLine($"Cijena automobila je: {Math.Round( a1.UkupnaCijena(), 2)}");
+            Console.WriteLine($"Cijena automobila je: { a1.UkupnaCijena(), 2:f2}");
 
 
         }
