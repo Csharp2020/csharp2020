@@ -7,28 +7,22 @@ namespace vjezba_1
     {
         static void Main(string[] args)
         {
-            
-            string rijec="";
+
+            string rijec = "";
 
             List<string> reci = new List<string>();
             List<string> ostaleRijeci = new List<string>();
             while (rijec != "kraj")
             {
                 Console.WriteLine("Unesite riječ: ");
-
                 rijec = Console.ReadLine();
-                if (rijec!="kraj")
+                if (rijec != "kraj")
                 {
                     reci.Add(rijec);
                     ostaleRijeci.Add(rijec);
                 }
-               
-                //if (rijec=="kraj")
-                //{
-                //    break;
-                //}
             }
-            // ostaleRijeci = reci;
+
 
             Console.WriteLine("Riječi koje počinju sa slovom a: ");
 
@@ -38,7 +32,6 @@ namespace vjezba_1
                 {
                     Console.Write(item + " ");
                     ostaleRijeci.Remove(item);
-
                 }
             }
             Console.WriteLine();
@@ -49,7 +42,6 @@ namespace vjezba_1
                 {
                     Console.Write(item + " ");
                     ostaleRijeci.Remove(item);
-
                 }
             }
 
@@ -61,14 +53,20 @@ namespace vjezba_1
                 {
                     Console.Write(item + " ");
                     ostaleRijeci.Remove(item);
-
                 }
             }
             Console.WriteLine();
             Console.WriteLine("Ostale rijeci:");
             foreach (var item in ostaleRijeci)
             {
-                Console.Write(item +" ");
+                if (!(item.StartsWith("a") || item.StartsWith("A") || item.StartsWith("b") || item.StartsWith("B") || item.ToLower().StartsWith("c")))
+                {
+                    ostaleRijeci.Add(item);
+                    Console.Write(item);
+                }
+
+
+
             }
         }
     }

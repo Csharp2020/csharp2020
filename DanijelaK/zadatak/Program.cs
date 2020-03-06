@@ -9,7 +9,7 @@ namespace zadatak
             Console.WriteLine("Unesite broj");
             string broj = Console.ReadLine();
             string broj_naopako = "";
-
+            // prvi nacin
             for (int i = broj.Length-1; i >= 0; i--)
             {
                 broj_naopako += broj[i];
@@ -17,7 +17,7 @@ namespace zadatak
 
             Console.WriteLine("Beoj naopako je {0}", broj_naopako);
 
-
+            // drugi nacin
             Console.WriteLine("Unesite broj");
             int broj1 = int.Parse(Console.ReadLine());
 
