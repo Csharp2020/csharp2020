@@ -1,6 +1,6 @@
 ﻿namespace _8_Vocarna
 {
-    internal class Naranca:Voce
+    internal class Naranca : Voce, INaranca
     {
         private double Radijus;
 
@@ -10,7 +10,10 @@
             this.Boja = "Narančasta";
         }
 
-        public string Kvaliteta { get {
+        public string Kvaliteta
+        {
+            get
+            {
                 if (Radijus < 9)
                 {
                     return "Nula";
@@ -23,7 +26,8 @@
                 {
                     return "Izvrsna";
                 }
-            } }
+            }
+        }
 
         public override string ToString()
         {

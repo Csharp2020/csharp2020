@@ -18,8 +18,26 @@ namespace _8_Vocarna
 
             Apple a1 = new Apple(Tezina: 200);
 
+            // kreirali smo listu svog voća i ubacili sve objekte u nju
+            List<Voce> svoVoce = new List<Voce> { b1, b2, b3, n1, n2 };
+
+            // na svako voće smo nakačili event
+            svoVoce.ForEach(item => item.PromjenaBoje+=BojaSePromjenila);
+
+            // ispis liste voća
+            Console.WriteLine("Ispis liste svog voća: ");
+            foreach (var item in svoVoce)
+            {
+                // event smo mogli nakačiti i u ovoj petlji, primjer kao ovo:
+                //item.PromjenaBoje += new Voce.del_promjena_boje(BojaSePromjenila);
+                Console.WriteLine("  ---> "+item);
+            }
+
+            // pokušamo promjeniti boju kako bi smo vidjeli je li se event digao
+            n2.Boja = "Siva";
+
             // a1.promjenaTezine += A1_promjenaTezine;
-            a1.promjenaTezine += new Apple.del_promjena_tezine(A1_promjenaTezine);
+            a1.PromjenaTezine += new Apple.del_promjena_tezine(A1_promjenaTezine);
             a1.Tezina = 300;
             a1.Tezina = 200;
             a1.Tezina = 150;
@@ -73,6 +91,10 @@ namespace _8_Vocarna
                 Console.WriteLine(item);
             }
 
+            // ponovo pokušamo promjeniti boju na drugom mjesu u programu 
+            // kako bi smo vidjeli je li se event digao
+            b2.Boja = "Crna";
+
             /////////////////
             ///  Jabuke iz collectionbase
 
@@ -89,11 +111,20 @@ namespace _8_Vocarna
 
         }
 
+        private static void BojaSePromjenila(object sender, EventArgs e)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Boja voća se promjenila: {sender.ToString()}");
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+
         //Ova se funkcioja izvrsi kada okine event promjena boje kod jabuke
         private static void A1_promjenaTezine(object sender, EventArgs e)
         {
             Apple.kolikopromjena++;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("tezina jabuke je promjenjena! ukupno promjenjeno puta "+ Apple.kolikopromjena);
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }
