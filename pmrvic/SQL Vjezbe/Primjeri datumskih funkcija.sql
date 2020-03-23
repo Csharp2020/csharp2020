@@ -1,0 +1,8 @@
+print dateadd(d,42,getdate())
+print datediff(d,'7-15-2007','7-19-2007')
+print datename(month,getdate())
+print datepart(m,getdate())
+print day(getdate())
+print day('9-7-2007')
+print month(getdate())
+print year(getdate())
