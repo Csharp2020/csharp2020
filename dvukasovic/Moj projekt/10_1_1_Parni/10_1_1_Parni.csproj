@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>_10_1_1_Parni</RootNamespace>
+    <StartupObject>_10_1_1_Parni.Program</StartupObject>
+  </PropertyGroup>
+
+</Project>

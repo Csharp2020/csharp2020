@@ -6,16 +6,38 @@ namespace zadatak_5_2_5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Unesibroj");
-            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Bilo koji broj znamenki");
 
-            if (a >= 100 && a <= 200)
+            string broj = Console.ReadLine();
+
+            broj = broj.Replace("-", ""); // -3,14 postaje 3,14
+            broj = broj.Replace(",", ""); // 3,14 postaje 314
+
+
+            if (broj.Length >= 3)
             {
-                Console.WriteLine("Broj je intervalu od 100 do 200");
+                Console.WriteLine("Broj je velik");
             }
             else
             {
-                Console.WriteLine("Try again");
+                Console.WriteLine("Broj nije velik");
+            }
+
+            int n = 0;  // brojac znamenki
+            int br = int.Parse(broj);
+
+            while (br <= 1) // mala greska kod ovoga jer ako unesemo 1, 1 nece uci u petlju (slucajno ce biti tocan)
+            {
+                br /= 10; // broj=broj /10
+                n++;
+            }
+            if (n >= 3)
+            {
+                Console.WriteLine("2.način: Broj je velik");
+            }
+            else
+            {
+                Console.WriteLine("2.način: Broj nije velik");
             }
         }
     }

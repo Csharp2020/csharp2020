@@ -2,8 +2,11 @@
 
 # git
 git fetch --all
+
 git reset --hard origin/master
+
 git pull origin master
+
 
 # za sinhronizaciju sa glavnim repo:
 git pull algebra master
