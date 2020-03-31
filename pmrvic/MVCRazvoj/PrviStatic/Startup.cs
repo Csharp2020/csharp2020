@@ -41,6 +41,10 @@ namespace PrviStatic
             }
 
             app.UseHttpsRedirection();
+
+            /**
+             * omogucava koristenje staticnih web stranica u folderu /wwwroot
+             * */
             app.UseStaticFiles();
 
             app.UseRouting();
