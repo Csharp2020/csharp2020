@@ -1,0 +1,15 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Podaci iz querystringa";
+}
+
+<h1>Zadatak 3.1.2.</h1>
+<span class="badge-success">
+
+    @foreach (var item in @Model)
+    {
+        @item <br />
+    }
+    Kompletan QueryString
+</span>
+
