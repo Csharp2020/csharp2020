@@ -22,6 +22,11 @@ namespace _3_Kontrolori.Controllers
         {
             return View();
         }
+        public IActionResult Matematika()
+        {
+            string rez="Rezultat operacije: 4 + 3 * 3 = ";
+            return View((object)rez);
+        }
 
         public IActionResult Privacy()
         {
