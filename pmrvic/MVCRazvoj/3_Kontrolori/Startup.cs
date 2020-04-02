@@ -24,6 +24,10 @@ namespace _3_Kontrolori
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+/*
+            services.AddDbContext<BloggingContext>(options =>
+       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+       */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
