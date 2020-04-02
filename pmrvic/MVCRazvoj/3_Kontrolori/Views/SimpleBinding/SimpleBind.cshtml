@@ -1,0 +1,28 @@
+﻿@model string
+@{
+    ViewData["Title"] = "SimpleBind";
+}
+
+<h1>SimpleBind</h1>
+
+<div>
+    <form method="post" asp-action="SimpleBind">
+        <label for="ime">Unesi ime</label>
+        <input type="text" name="ime" value="" />
+        <button type="submit">Posalji</button>
+    </form>
+
+</div>
+<br />
+<div>
+    <form method="post" asp-action="SimpleBindEngleski">
+        <label for="ime">Unesi ime</label>
+        <input type="text" name="ime" value="" />
+        <button type="submit">Posalji</button>
+    </form>
+
+</div>
+
+<hr />
+
+@Model

@@ -23,11 +23,20 @@ namespace _3_Kontrolori
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
             services.AddControllersWithViews();
-/*
-            services.AddDbContext<BloggingContext>(options =>
-       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
-       */
+            
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            /*
+                        services.AddDbContext<BloggingContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+                   */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,11 +54,13 @@ namespace _3_Kontrolori
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            //app.UseHttpContextItemsMiddleware();
+            
             app.UseRouting();
-
+            
+            
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
