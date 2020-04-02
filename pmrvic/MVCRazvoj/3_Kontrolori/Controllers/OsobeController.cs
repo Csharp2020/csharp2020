@@ -22,12 +22,24 @@ namespace _3_Kontrolori.Controllers
         public IActionResult PrikaziOsobu(Osoba osoba)
         {
             List<Osoba> listica = new List<Osoba>();
+            
+            if (HttpContext.Session.Get<List<Osoba>>("ListaOsoba")!=null)
+            {
+                listica = HttpContext.Session.Get<List<Osoba>>("ListaOsoba");
+            }
+            
             listica.Add(osoba);
-            string SessionName = null;
-        
-          //  HttpContext.Session.SetString(SessionName, "Jarvik");
-            // Session["PodaciOsobe"] = listica;
+           
+            HttpContext.Session.Set<List<Osoba>>("ListaOsoba", listica);
+
+
+
+            HttpContext.Session.SetString("NekoIme","Dubravka");            
+            ViewBag.name = HttpContext.Session.GetString("NekoIme");
+            ViewBag.ListaOsoba= HttpContext.Session.Get<List<Osoba>>("ListaOsoba");
+
             return View(osoba);
+
         }
     }
 }
