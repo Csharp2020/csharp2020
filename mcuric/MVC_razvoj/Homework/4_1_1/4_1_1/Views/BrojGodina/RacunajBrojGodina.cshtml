@@ -1,0 +1,25 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RacunajBrojGodina</title>
+</head>
+<body>
+    <form method="post">
+        <label>Unesite datum svog rođenja:</label>
+        @Html.Editor("datum")
+        <button type="submit">Pošalji</button>
+    </form>
+    <div>
+        <label>Broj godina @Model</label>
+    </div>
+
+
+</body>
+</html>
