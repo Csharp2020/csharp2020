@@ -27,7 +27,7 @@ namespace Firma
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromSeconds(120);
+                options.IdleTimeout = TimeSpan.FromSeconds(20*60);  //20minuta session
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
