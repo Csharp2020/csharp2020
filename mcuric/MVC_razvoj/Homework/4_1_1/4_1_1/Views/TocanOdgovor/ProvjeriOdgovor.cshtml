@@ -1,0 +1,27 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProvjeriOdgovor</title>
+</head>
+<body>
+    <form method="post">
+        <label>Koliko je 5+7*3-6 ?</label>
+        <div>
+            @Html.RadioButton("rb", "rb1", true) 19
+            @Html.RadioButton("rb", "rb2", false) 20
+            @Html.RadioButton("rb", "rb3", false) 21
+            @Html.RadioButton("rb", "rb4", false) 22
+        </div>
+        <button type="submit">Odgovori!</button>
+    </form>
+
+    <label>@Model</label>
+</body>
+</html>
