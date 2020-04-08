@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Firma.Models.Voce>
+
+@{
+    //
+    //List<Voce>
+    ViewData["Title"] = "Index";
+    double sveukupno = 0;
+    foreach (var item in Model)
+    {
+        sveukupno += item.Ukupno;
+    }
+}
+
+<h1>Index</h1>
+<div>  @if (ViewBag.Placeno == true)
+{
+    <span class="alert-info"> Zahvaljujemo na uplati!</span>
+}</div>
+
+Ovo je defaultni view , tu cemo prikazati sadrzaj kosarice
+<a asp-controller="Voce" asp-action="Index"> Lista voca</a>
+<br />
+<a asp-controller="Voce" asp-action="UnosVoca"> Dodaj novo voce u kosaricu</a>
+
+<ol>
+    @foreach (var item in Model)
+    {
+    <li>
+        <b>@item.Ime</b> 
+    
+        @item.Kategorija @item.Cijena @item.Kolicina @item.Ukupno
+    </li>
+    }
+</ol>
+
+<div class="alert-info">Sveukupno:@sveukupno</div>
+<br />
+<form asp-action="Plati" asp-controller="Voce" method="post">
+    <input class="badge-warning" type="submit" name="submit" value="Plati" />
+</form>

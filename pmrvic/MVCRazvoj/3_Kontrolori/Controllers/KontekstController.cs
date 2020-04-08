@@ -26,7 +26,9 @@ namespace _3_Kontrolori.Controllers
             // stara sintaksa is ASP.NET
             //Microsoft.AspNetCore.Http.QueryString qs =Request.QueryString;
             //= Request.QueryString["ime"];
-            
+
+            ViewBag.upit = Request.QueryString;
+            ViewBag.upitlista = Request.Query;
 
             List<string> osobnoimeiprezime = new List<string>();
             osobnoimeiprezime.Add(ime);

@@ -4,12 +4,34 @@
 }
 
 <h1>Zadatak 3.1.2.</h1>
+<hr />
+<a href="/Kontekst/QueryPodaci?ime=Pero&prezime=Peric">/Kontekst/QueryPodaci?ime=Pero&prezime=Peric</a>
+<br />
 <span class="badge-success">
 
     @foreach (var item in @Model)
     {
         @item <br />
     }
-    Kompletan QueryString
+
 </span>
+
+<h3> Kompletan QueryString</h3>
+<span class="badge-success"> @ViewBag.upit</span>
+
+<h3> Lista Queristringa</h3>
+
+<ol class="badge-success">
+    @foreach (var item in @ViewBag.upitlista)
+    {
+        <li>@item</li>
+    }
+</ol>
+
+<h3> Lista Queristringa</h3>
+
+<ol class="badge-success">
+    <li> @ViewBag.upitlista["ime"]    </li>
+    <li> @ViewBag.upitlista["prezime"]</li>
+</ol>
 

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace _3_Kontrolori
+namespace Firma
 {
     public class Startup
     {
@@ -24,8 +24,6 @@ namespace _3_Kontrolori
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDistributedMemoryCache();
-            services.AddControllersWithViews();
-            
 
             services.AddSession(options =>
             {
@@ -33,10 +31,7 @@ namespace _3_Kontrolori
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
-            /*
-                        services.AddDbContext<BloggingContext>(options =>
-                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
-                   */
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,12 +50,13 @@ namespace _3_Kontrolori
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             //app.UseHttpContextItemsMiddleware();
-            
+
             app.UseRouting();
-            
-            
+
             app.UseAuthorization();
+
             app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
