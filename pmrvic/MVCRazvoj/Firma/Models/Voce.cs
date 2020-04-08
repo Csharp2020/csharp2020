@@ -10,7 +10,7 @@ namespace Firma.Models
     public class Voce
     {
 
-        private decimal cijena;  //TODO prebaci ovo u int
+        //private decimal cijena;  //TODO prebaci ovo u int
        
         [Required]
         [StringLength(10, ErrorMessage = "Ime mora imati manje od 10 znakova")]
@@ -19,7 +19,7 @@ namespace Firma.Models
         [Required]
         [Range(1, 100), DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")] // cijena po kg
-        public double Cijena   // U Centima, Lipama, Pennies
+        public decimal Cijena   // U Centima, Lipama, Pennies
         { get;set;
            // get => cijena / 100;
            // set => cijena = value * 100;
@@ -34,7 +34,7 @@ namespace Firma.Models
 
         public double Ukupno
         {
-            get => Cijena * Kolicina;
+            get => Decimal.ToDouble(Cijena) * Kolicina;
         }
     }
 }
