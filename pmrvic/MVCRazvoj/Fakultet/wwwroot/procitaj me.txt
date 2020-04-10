@@ -1,4 +1,7 @@
-﻿kreirav MVC projekt
+﻿https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
+
+
+kreirav MVC projekt
 
 Dodaj connection na Sqlserver/Fakultet
 Data Source=POWERRYZEN\SQLEXPRESS;Initial Catalog=Fakultet;Integrated Security=True
@@ -14,4 +17,5 @@ ako se javi greska:
 Unable to find provider assembly with name Microsoft.EntityFrameworkCore.SqlServer
 
 PMC>Install-Package Microsoft.EntityFrameworkCore.SqlServer
+
 

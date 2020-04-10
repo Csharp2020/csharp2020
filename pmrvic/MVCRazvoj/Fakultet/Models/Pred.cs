@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
-namespace Firma.Models
+namespace Fakultet.Models
 {
     public partial class Pred
     {
-        [Key]
         public int SifPred { get; set; }
         public string KratPred { get; set; }
         public string NazPred { get; set; }
