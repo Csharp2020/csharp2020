@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrviStatic", "PrviStatic\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3_Kontrolori", "3_Kontrolori\3_Kontrolori.csproj", "{671E2FC8-D285-460B-BD8A-B97304EFCEF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firma", "Firma\Firma.csproj", "{FC2109B1-CEE2-44FA-BE7A-2B30CB43686C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firma", "Firma\Firma.csproj", "{FC2109B1-CEE2-44FA-BE7A-2B30CB43686C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionTest", "..\..\mcuric\MVC_razvoj\SessionTest\SessionTest\SessionTest.csproj", "{C3390F53-D4EA-4858-9210-780D5F9ED7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FC2109B1-CEE2-44FA-BE7A-2B30CB43686C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC2109B1-CEE2-44FA-BE7A-2B30CB43686C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC2109B1-CEE2-44FA-BE7A-2B30CB43686C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3390F53-D4EA-4858-9210-780D5F9ED7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3390F53-D4EA-4858-9210-780D5F9ED7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3390F53-D4EA-4858-9210-780D5F9ED7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3390F53-D4EA-4858-9210-780D5F9ED7F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

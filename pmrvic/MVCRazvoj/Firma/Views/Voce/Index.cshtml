@@ -1,21 +1,34 @@
 ﻿@model IEnumerable<Firma.Models.Voce>
-
+@{
+    Layout = "nastemplate";
+}
+@section Navig{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Voce" asp-action="UnosVoca">Unesi voce</a>
+    </li>
+}
 @{
     //
     //List<Voce>
     ViewData["Title"] = "Index";
     double sveukupno = 0;
-    foreach (var item in Model)
+    if (Model != null)
     {
-        sveukupno += item.Ukupno;
+        foreach (var item in Model)
+        {
+            sveukupno += item.Ukupno;
+        }
     }
+
 }
 
 <h1>Index</h1>
-<div>  @if (ViewBag.Placeno == true)
-{
-    <span class="alert-info"> Zahvaljujemo na uplati!</span>
-}</div>
+<div>
+    @if (ViewBag.Placeno == true)
+    {
+        <span class="alert-info"> Zahvaljujemo na uplati!</span>
+    }
+</div>
 
 Ovo je defaultni view , tu cemo prikazati sadrzaj kosarice
 <a asp-controller="Voce" asp-action="Index"> Lista voca</a>
@@ -23,14 +36,23 @@ Ovo je defaultni view , tu cemo prikazati sadrzaj kosarice
 <a asp-controller="Voce" asp-action="UnosVoca"> Dodaj novo voce u kosaricu</a>
 
 <ol>
-    @foreach (var item in Model)
+    @if (Model != null)
     {
-    <li>
-        <b>@item.Ime</b> 
-    
-        @item.Kategorija @item.Cijena @item.Kolicina @item.Ukupno
-    </li>
+        @foreach (var item in Model)
+        {
+            <li>
+                <!-- controller/action/id -->
+                <b><a href="/Voce/Detalji/@item.Ime">@item.Ime</a> </b>
+
+                @item.Kategorija @item.Cijena @item.Kolicina @item.Ukupno &nbsp; 
+            </li>
+        }
     }
+    else
+    {
+        <li>Kosarica je prazna!</li>
+    }
+
 </ol>
 
 <div class="alert-info">Sveukupno:@sveukupno</div>
