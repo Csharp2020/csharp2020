@@ -1,4 +1,5 @@
 ﻿https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
+https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings
 
 
 kreirav MVC projekt
