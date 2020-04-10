@@ -15,7 +15,7 @@ namespace Firma.Controllers
             return View("Index", HttpContext.Session.Get<List<Voce>>("kosarica"));
            
         }
-        public IActionResult Detalji(string id)
+        public IActionResult Detalji(string id, string? oznaka)
         {
             // pripremimo listu
             List<Voce> kosarica = new List<Voce>();
