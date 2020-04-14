@@ -11,9 +11,9 @@ namespace Entity.Controllers
 {
     public class ZupanijasController : Controller
     {
-        private readonly FakultetContext _context;
+        private readonly fakultetContext _context;
 
-        public ZupanijasController(FakultetContext context)
+        public ZupanijasController(fakultetContext context)
         {
             _context = context;
         }

@@ -9,5 +9,8 @@ namespace Entity.Models
         public string OznVrstaDan { get; set; }
         public short Sat { get; set; }
         public int SifPred { get; set; }
+
+        public virtual Dvorana OznDvoranaNavigation { get; set; }
+        public virtual Pred SifPredNavigation { get; set; }
     }
 }

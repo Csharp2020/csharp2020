@@ -12,5 +12,8 @@ namespace Entity.Models
         public int PbrStan { get; set; }
         public DateTime? DatRodStud { get; set; }
         public string JmbgStud { get; set; }
+
+        public virtual Mjesto PbrRodNavigation { get; set; }
+        public virtual Mjesto PbrStanNavigation { get; set; }
     }
 }

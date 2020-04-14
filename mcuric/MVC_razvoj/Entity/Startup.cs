@@ -25,7 +25,7 @@ namespace Entity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Models.FakultetContext>(options =>
+            services.AddDbContext<Models.fakultetContext>(options =>
        options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
         }
 
