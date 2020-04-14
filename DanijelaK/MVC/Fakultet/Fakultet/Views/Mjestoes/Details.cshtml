@@ -1,0 +1,30 @@
+﻿@model Fakultet.Models.Mjesto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mjesto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NazMjesto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NazMjesto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SifZupanijaNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SifZupanijaNavigation.NazZupanija)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Pbr">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
