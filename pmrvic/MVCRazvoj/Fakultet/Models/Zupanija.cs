@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fakultet.Models
 {
     public partial class Zupanija
     {
+        
         string nazZupanija;
         public Zupanija()
         {
@@ -12,6 +14,8 @@ namespace Fakultet.Models
         }
 
         public short SifZupanija { get; set; }
+
+        [Display(Name = "Naziv županije")]
         public string NazZupanija { 
             get => nazZupanija.Trim(); // Mutators, u letu preoblikuje povratni tip
             set => nazZupanija = value.Trim(); }
