@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace _3_kontrolori
+namespace _3_Kontrolori
 {
     public class Program
     {

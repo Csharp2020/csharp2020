@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace _3_kontrolori
+namespace _3_Kontrolori
 {
     public class Startup
     {
@@ -23,7 +23,20 @@ namespace _3_kontrolori
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
             services.AddControllersWithViews();
+            
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(120);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            /*
+                        services.AddDbContext<BloggingContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+                   */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,11 +54,13 @@ namespace _3_kontrolori
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            //app.UseHttpContextItemsMiddleware();
+            
             app.UseRouting();
-
+            
+            
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using _3_kontrolori.Models;
+using _3_Kontrolori.Models;
 
-namespace _3_kontrolori.Controllers
+namespace _3_Kontrolori.Controllers
 {
     public class HomeController : Controller
     {
@@ -22,8 +22,17 @@ namespace _3_kontrolori.Controllers
         {
             return View();
         }
+        public IActionResult Matematika()
+        {
+            string rez="Rezultat operacije: 4 + 3 * 3 = ";
+            return View((object)rez);
+        }
 
         public IActionResult Privacy()
+        {
+            return View("Privatno");
+        }
+        public IActionResult Privatno()
         {
             return View();
         }

@@ -1,6 +1,6 @@
 using System;
 
-namespace _3_kontrolori.Models
+namespace _3_Kontrolori.Models
 {
     public class ErrorViewModel
     {
