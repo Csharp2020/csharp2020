@@ -11,5 +11,7 @@ namespace Fakultet.Models
         public int? SifOrgjed { get; set; }
         public int? UpisanoStud { get; set; }
         public int? BrojSatiTjedno { get; set; }
+
+        public virtual Orgjed SifOrgjedNavigation { get; set; }
     }
 }
