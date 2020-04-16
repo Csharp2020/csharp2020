@@ -8,23 +8,42 @@
 
 <div>
     <h4>Mjesto</h4>
+    <span class="badge-info">@Html.DisplayNameFor(model => model.Pbr): @Html.DisplayFor(model => model.Pbr)</span>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.NazMjesto)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.NazMjesto)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.SifZupanijaNavigation)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SifZupanijaNavigation.NazZupanija)
         </dd>
     </dl>
+    <hr />
+    <iframe width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=@ViewBag.apiKey
+    &q=caffe,@Html.DisplayFor(model => model.NazMjesto)" allowfullscreen>
+    </iframe>
+
+    
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Pbr">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+<hr />
+<h4>Primjer staticke karte, uvijek prikazuje Maribor</h4>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1497.6021794020003!2d15.645264724954467!3d46.55408945156718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shr!2shr!4v1587062839888!5m2!1shr!2shr" 
+        width="400" height="300" 
+        frameborder="0" style="border:0;" 
+        allowfullscreen="" aria-hidden="false" tabindex="0">
+
+</iframe>

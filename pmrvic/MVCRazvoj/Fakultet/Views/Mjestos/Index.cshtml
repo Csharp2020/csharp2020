@@ -25,7 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.NazMjesto)
+                @Html.DisplayFor(modelItem => item.NazMjesto) (@Html.DisplayFor(modelItem => item.Pbr))
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SifZupanijaNavigation.NazZupanija)

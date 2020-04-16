@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -13,6 +14,7 @@ namespace Fakultet.Models
             StudPbrStanNavigation = new HashSet<Stud>();
         }
 
+        [HiddenInput(DisplayValue = true)]
         [Display(Name = "Poštanski broj")]
         public int Pbr { get; set; }
 

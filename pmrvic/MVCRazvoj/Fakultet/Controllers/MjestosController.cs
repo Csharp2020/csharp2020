@@ -6,21 +6,31 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
+//using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
 namespace Fakultet.Controllers
 {
     public class MjestosController : Controller
     {
         private readonly FakultetContext _context;
+        private readonly IConfiguration Configuration;
 
-        public MjestosController(FakultetContext context)
+        public MjestosController(FakultetContext context, IConfiguration configuration)
         {
+            this.Configuration = configuration;
             _context = context;
         }
+
+        
+
+
 
         // GET: Mjestos
         public async Task<IActionResult> Index()
         {
+            
+            //var identitySettingsSection =_configuration.GetSection("ApiKeys").GetSection("googleMaps");
             var fakultetContext = _context.Mjesto.Include(m => m.SifZupanijaNavigation);
             return View(await fakultetContext.ToListAsync());
         }
@@ -41,6 +51,8 @@ namespace Fakultet.Controllers
                 return NotFound();
             }
 
+            ViewBag.apiKey = Configuration.GetSection("ApiKeys").GetSection("googleMaps").Value;
+             
             return View(mjesto);
         }
 
