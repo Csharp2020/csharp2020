@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Fakultet.Models.Stud>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImeStud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrezStud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatRodStud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JmbgStud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PbrRodNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PbrStanNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImeStud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrezStud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatRodStud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JmbgStud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PbrRodNavigation.NazMjesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PbrStanNavigation.NazMjesto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MbrStud">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MbrStud">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MbrStud">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
