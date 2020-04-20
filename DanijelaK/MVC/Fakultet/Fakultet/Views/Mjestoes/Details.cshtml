@@ -8,7 +8,7 @@
 
 <div>
     <h4>Mjesto</h4>
-    <span class="badge-info">@Html.DisplayNameFor(model => model.Pbr) @Html.DisplayFor(model => model.Pbr)</span>
+    <span class="badge-info">@Html.DisplayNameFor(model => model.Pbr): @Html.DisplayFor(model => model.Pbr)</span>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -24,8 +24,10 @@
             @Html.DisplayFor(model => model.SifZupanijaNavigation.NazZupanija)
         </dd>
     </dl>
+    
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Pbr">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
