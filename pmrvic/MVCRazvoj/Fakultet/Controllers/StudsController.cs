@@ -19,10 +19,50 @@ namespace Fakultet.Controllers
         }
 
         // GET: Studs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            var fakultetContext = _context.Stud.Include(s => s.PbrRodNavigation).Include(s => s.PbrStanNavigation);
-            return View(await fakultetContext.ToListAsync());
+            var fakultetContext = from s 
+                                  in _context.Stud.Include(s => s.PbrRodNavigation)
+                                  .Include(s => s.PbrStanNavigation) 
+                                  select s;
+            
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["LastNameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "last_name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["currentFilter"]= String.IsNullOrEmpty(searchString) ?  "": searchString;
+
+            //var students = from s in _context.Stud select s;
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s => s.ImeStud);
+                    break;
+                case "last_name_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s=>s.PrezStud);
+                    break;
+                case "Date":
+                    fakultetContext = fakultetContext.OrderBy(s => s.DatRodStud);
+                    break;
+                case "date_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s => s.DatRodStud);
+                    break;
+                default:
+                    fakultetContext = fakultetContext.OrderBy(s => s.PrezStud);
+                    break;
+            }
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                fakultetContext = fakultetContext.Where(
+                    s => s.PrezStud.Contains(searchString)
+                    || s.ImeStud.Contains(searchString));
+            }
+
+            return View(await fakultetContext.AsNoTracking().ToListAsync());
+
+
+            //return View(await fakultetContext.ToListAsync());
         }
 
         // GET: Studs/Details/5

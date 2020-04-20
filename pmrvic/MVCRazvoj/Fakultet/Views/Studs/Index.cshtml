@@ -4,7 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Index  <span class="badge-info">302 </span></h1> 
+<p><a asp-action="Index" asp-route-hrana="Pizza">neki link sa varijablom hrana</a></p>
+<div>
+    <form asp-action="Index" method="get">
+        <input type="text" name="searchString" value="@ViewData["currentFilter"]" />
+        <input type="submit" value="Search" />
+    </form>
+</div>
+
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,14 +21,14 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ImeStud)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.ImeStud)</a>
+</th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["LastNameSortParm"]">@Html.DisplayNameFor(model => model.PrezStud)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PrezStud)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DatRodStud)
-            </th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">@Html.DisplayNameFor(model => model.DatRodStud)</a>
+</th>
             <th>
                 @Html.DisplayNameFor(model => model.JmbgStud)
             </th>
