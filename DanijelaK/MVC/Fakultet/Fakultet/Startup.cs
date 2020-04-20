@@ -25,7 +25,7 @@ namespace Fakultet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Models.FakultetContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
+            //oservices.AddDbContext<Models.FakultetContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
             services.AddDbContext<Models.FakultetContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase1")));
         }
 
