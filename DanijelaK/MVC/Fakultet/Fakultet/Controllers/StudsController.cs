@@ -19,10 +19,50 @@ namespace Fakultet.Controllers
         }
 
         // GET: Studs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            var fakultetContext = _context.Stud.Include(s => s.PbrRodNavigation).Include(s => s.PbrStanNavigation);
-            return View(await fakultetContext.ToListAsync());
+            var fakultetContext = from s
+                                  in _context.Stud.Include(s => s.PbrRodNavigation)
+                                  .Include(s => s.PbrStanNavigation)
+                                  select s;
+
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["LastNameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "last_name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["currentFilter"] = String.IsNullOrEmpty(searchString) ? "" : searchString;
+
+            //var students = from s in _context.Stud select s;
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s => s.ImeStud);
+                    break;
+                case "last_name_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s => s.PrezStud);
+                    break;
+                case "Date":
+                    fakultetContext = fakultetContext.OrderBy(s => s.DatRodStud);
+                    break;
+                case "date_desc":
+                    fakultetContext = fakultetContext.OrderByDescending(s => s.DatRodStud);
+                    break;
+                default:
+                    fakultetContext = fakultetContext.OrderBy(s => s.PrezStud);
+                    break;
+            }
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                fakultetContext = fakultetContext.Where(
+                    s => s.PrezStud.Contains(searchString)
+                    || s.ImeStud.Contains(searchString));
+            }
+
+            return View(await fakultetContext.AsNoTracking().ToListAsync());
+
+
+            //return View(await fakultetContext.ToListAsync());
         }
 
         // GET: Studs/Details/5
@@ -71,7 +111,7 @@ namespace Fakultet.Controllers
             return View(stud);
         }
 
-        // GET: Studs/Edit/5
+        // GET: Studs/Edit/5  // samo prikazuje formu
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -89,7 +129,7 @@ namespace Fakultet.Controllers
             return View(stud);
         }
 
-        // POST: Studs/Edit/5
+        // POST: Studs/Edit/5  // Prima podatke sa forme i obradjuje ih
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -105,8 +145,8 @@ namespace Fakultet.Controllers
             {
                 try
                 {
-                    _context.Update(stud);
-                    await _context.SaveChangesAsync();
+                    _context.Update(stud);              // ovo sprema u context
+                    await _context.SaveChangesAsync(); // ovo sprema u bazu 
                 }
                 catch (DbUpdateConcurrencyException)
                 {

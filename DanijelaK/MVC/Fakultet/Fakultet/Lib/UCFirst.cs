@@ -7,9 +7,10 @@ namespace Fakultet.Lib
 {
     public static class UCFirst
     {
-        public static string UpperCaseME(string value)
+        public static string UpperCaseMe(string value)
         {
             return value.First().ToString().ToUpper() + value.Substring(1);
+
         }
     }
 }
