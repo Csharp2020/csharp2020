@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
 
+
+//TODO napraviti view koji vraca ispite studente i nastavnike  u jednom komplexan!
+
 namespace Fakultet.Controllers
 {
     public class StudsController : Controller
@@ -20,11 +23,16 @@ namespace Fakultet.Controllers
         }
 
         // GET: Studs
-        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        public async Task<IActionResult> Index(
+            string sortOrder, 
+            string searchString,
+            string currentFilter,
+            int? pageNumber)
         {
             var fakultetContext = from s 
                                   in _context.Stud.Include(s => s.PbrRodNavigation)
-                                  .Include(s => s.PbrStanNavigation).Skip(10).Take(10) 
+ //                                 .Include(s => s.PbrStanNavigation).Skip(10).Take(10) 
+                                    .Include(s => s.PbrStanNavigation)
                                   select s;
             
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
@@ -32,7 +40,16 @@ namespace Fakultet.Controllers
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
             ViewData["currentFilter"]= String.IsNullOrEmpty(searchString) ?  "": searchString;
             ViewData["TotalCount"] = fakultetContext.Count();
-            //var students = from s in _context.Stud select s;
+
+
+            if (searchString != null) // ukoliko netko pretrazuje resetiraj paging
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
 
             switch (sortOrder)
             {
@@ -59,11 +76,14 @@ namespace Fakultet.Controllers
                     s => s.PrezStud.Contains(searchString)
                     || s.ImeStud.Contains(searchString));
             }
-            ViewData["Count"] = fakultetContext.Count();
-            return View(await fakultetContext.AsNoTracking().ToListAsync());
 
 
-            //return View(await fakultetContext.ToListAsync());
+            //ViewData["Count"] = fakultetContext.Count();
+            int pageSize = 3;  // broj rekorda koje zelimo prikazati
+
+            return View(await Lib.PaginatedList<Stud>.CreateAsync(fakultetContext.AsNoTracking(), pageNumber ?? 1, pageSize));
+           // return View(await fakultetContext.AsNoTracking().ToListAsync());
+
         }
 
         // GET: Studs/Details/5

@@ -14,6 +14,7 @@ namespace Fakultet.Lib
         public PaginatedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             PageIndex = pageIndex;
+            // ukupno sto po 19 zapisa na svakoj stranici  (100 / 19 ) = 5,26  => 6
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
 
             this.AddRange(items);
