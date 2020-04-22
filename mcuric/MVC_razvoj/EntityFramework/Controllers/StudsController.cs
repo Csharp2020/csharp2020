@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EntityFramework.Models;
+using EntityFramework.Lib;
 
 namespace EntityFramework.Controllers
 {
@@ -25,16 +26,27 @@ namespace EntityFramework.Controllers
              return View(await fakultetContext.ToListAsync());
          } */
 
-        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber)
         {
-            var fakultetContext = _context.Stud.Include(s => s.PbrRodNavigation).Include(s => s.PbrStanNavigation);
+            //var fakultetContext = _context.Stud.Include(s => s.PbrRodNavigation).Include(s => s.PbrStanNavigation);
             //return View(await fakultetContext.ToListAsync());
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["LastNameSortParm"] = sortOrder == "lastname_asc" ? "lastname_desc" : "lastname_asc";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            //ViewData["CurrentFilter"] = searchString;
+            ViewData["CurrentSort"] = sortOrder;
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
             ViewData["CurrentFilter"] = searchString;
             var students = from s in _context.Stud
                            select s;
+            ViewData["Total"] = students.Count();
             if (!String.IsNullOrEmpty(searchString))
             {
                 students = students.Where(s => s.PrezStud.Contains(searchString)
@@ -62,7 +74,11 @@ namespace EntityFramework.Controllers
                     students = students.OrderBy(s => s.ImeStud).Include(s => s.PbrRodNavigation).Include(s => s.PbrStanNavigation);
                     break;
             }
-            return View(await students.AsNoTracking().ToListAsync());
+            //return View(await students.AsNoTracking().ToListAsync());
+            int pageSize = 20;
+            ViewData["CurrentPageNo"] = pageNumber;
+            ViewData["TotalPages"] = Math.Ceiling(students.Count()/(double)20);
+            return View(await PaginatedList<Stud>.CreateAsync(students.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Studs/Details/5
