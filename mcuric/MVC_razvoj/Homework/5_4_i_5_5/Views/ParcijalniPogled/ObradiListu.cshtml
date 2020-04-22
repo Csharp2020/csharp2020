@@ -1,0 +1,22 @@
+﻿@model List<Artikl>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ObradiListu</title>
+</head>
+<body>
+    @if (Model != null)
+    {
+        @foreach (var item in Model)
+        {
+            @Html.Partial("PrikaziArtikl", item)
+        }
+    }
+</body>
+</html>

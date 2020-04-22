@@ -25,8 +25,8 @@ namespace _4_2_1.Controllers
             if (artikl.Kolicina > 10)
                 ViewBag.Message = "Nedovoljno robe na skladištu!";
             else
-                ViewBag.Message = $"Narudžba uspješno zaprimljena! Ukupna cijena: ";
-                return View(artikl);
+                ViewBag.Message = $"Narudžba uspješno zaprimljena! Ukupna cijena: " + artikl.Kolicina*artikl.Cijena;
+                return View();
         }
     }
 }

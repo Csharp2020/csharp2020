@@ -1,0 +1,43 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Izracunaj";
+}
+
+<h1>Izracunaj</h1>
+
+<form method="post">
+    <div>
+        <label>Unesite prvi broj: </label>
+        <input type="text" name="a" value="@ViewBag.prviBroj" />
+
+        <label>Unesite drugi broj: </label>
+        <input type="text" name="b" value="@ViewBag.drugiBroj" />
+    </div><br />
+    <div>
+        <input type="submit" name="operacija" value="+" />
+        <input type="submit" name="operacija" value="-" />
+        <input type="submit" name="operacija" value="*" />
+        <input type="submit" name="operacija" value="%" />
+    </div>
+</form>
+          <div>
+              @if (Model != null)
+              {
+                  @:Rezultat:
+                  switch (Model)
+                  {
+                      case "+": <div>@(ViewBag.prviBroj + ViewBag.drugiBroj)</div>
+                          break;
+                      case "-": <div>@(ViewBag.prviBroj - ViewBag.drugiBroj)</div>
+                          break;
+                      case "*": <div>@(ViewBag.prviBroj * ViewBag.drugiBroj)</div>
+                          break;
+                      case "%": <div>@(ViewBag.prviBroj / ViewBag.drugiBroj)</div>
+                          break;
+                      default: <div>Nepoznata operacija!</div>
+                          break;
+                  }
+              }
+          </div>
+
+

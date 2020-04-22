@@ -1,0 +1,18 @@
+﻿@model int
+@{
+    ViewData["Title"] = "RavrstajSlucajniBroj";
+}
+
+@if (Model < 10)
+{
+    <div>@Model je jednoznamenkast broj </div>
+}
+else if (Model < 100)
+{
+    <div>@Model je dvoznamenkast broj </div>
+}
+else if (Model < 1000)
+{
+    <div>@Model je troznamenkast broj </div>
+}
+
