@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="FakultetContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="3.1.3" Annotations="Relational:MaxIdentifierLength: 128
+SqlServer:ValueGenerationStrategy: IdentityColumn" Category="Model" Group="Expanded" />
+<Node Id = "Dvorana" Label="Dvorana" Name="Dvorana" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: dvorana" Category="EntityType" Group="Expanded" />
+<Node Id = "Ispit" Label="Ispit" Name="Ispit" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: ispit" Category="EntityType" Group="Expanded" />
+<Node Id = "Dvorana.OznDvorana" Label="OznDvorana" Name="OznDvorana" Category="Property Primary" Type="string" MaxLength="5" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 5
+Relational:ColumnName: oznDvorana
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping
+Unicode: False" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="False" ValueGenerated="None" />
+<Node Id = "Dvorana.Kapacitet" Label="Kapacitet" Name="Kapacitet" Category="Property Optional" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: kapacitet
+Relational:DefaultValueSql: ((40))
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Mjesto" Label="Mjesto" Name="Mjesto" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: mjesto" Category="EntityType" Group="Expanded" />
+<Node Id = "Ispit.DatIspit" Label="DatIspit" Name="DatIspit" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: datIspit
+Relational:ColumnType: datetime
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ispit.MbrStudNavigation" Label="MbrStudNavigation (1)" Name="MbrStudNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Stud" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.SifNastavnikNavigation" Label="SifNastavnikNavigation (1)" Name="SifNastavnikNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Nastavnik" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.SifPredNavigation" Label="SifPredNavigation (1)" Name="SifPredNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Pred" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.Ispit" Label="Ispit (1)" Name="Ispit" Category="Navigation Property" Type="-"  Field="&apos;MbrStud&apos;" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.Ispit" Label="Ispit (1)" Name="Ispit" Category="Navigation Property" Type="-"  Field="&apos;SifNastavnik&apos;" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.Ispit" Label="Ispit (1)" Name="Ispit" Category="Navigation Property" Type="-"  Field="&apos;SifPred&apos;" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ispit.MbrStud" Label="MbrStud" Name="MbrStud" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: mbrStud
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ispit.Ocjena" Label="Ocjena" Name="Ocjena" Category="Property Required" Type="short" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: ocjena
+Relational:DefaultValueSql: ((1))
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Ispit.SifNastavnik" Label="SifNastavnik" Name="SifNastavnik" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifNastavnik
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ispit.SifPred" Label="SifPred" Name="SifPred" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifPred
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik" Label="Nastavnik" Name="Nastavnik" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: nastavnik" Category="EntityType" Group="Expanded" />
+<Node Id = "Mjesto.Pbr" Label="Pbr" Name="Pbr" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: pbr
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Mjesto.Nastavnik" Label="Nastavnik (1)" Name="Nastavnik" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Nastavnik&gt;" Dependent="Nastavnik" Principal="" Inverse="PbrStanNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Mjesto.SifZupanijaNavigation" Label="SifZupanijaNavigation (1)" Name="SifZupanijaNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Zupanija" Dependent="" Principal="" Inverse="Mjesto" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Mjesto.StudPbrRodNavigation" Label="StudPbrRodNavigation (1)" Name="StudPbrRodNavigation" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Stud&gt;" Dependent="Stud" Principal="" Inverse="PbrRodNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Mjesto.StudPbrStanNavigation" Label="StudPbrStanNavigation (1)" Name="StudPbrStanNavigation" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Stud&gt;" Dependent="Stud" Principal="" Inverse="PbrStanNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Mjesto.NazMjesto" Label="NazMjesto" Name="NazMjesto" Category="Property Required" Type="string" MaxLength="40" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 40
+Relational:ColumnName: nazMjesto
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Mjesto.SifZupanija" Label="SifZupanija" Name="SifZupanija" Category="Property Foreign" Type="Nullable&lt;short&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifZupanija
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Orgjed" Label="Orgjed" Name="Orgjed" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: orgjed" Category="EntityType" Group="Expanded" />
+<Node Id = "Nastavnik.SifNastavnik" Label="SifNastavnik" Name="SifNastavnik" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifNastavnik
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik.PbrStanNavigation" Label="PbrStanNavigation (1)" Name="PbrStanNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Mjesto" Dependent="" Principal="" Inverse="Nastavnik" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Nastavnik.SifOrgjedNavigation" Label="SifOrgjedNavigation (1)" Name="SifOrgjedNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Orgjed" Dependent="" Principal="" Inverse="Nastavnik" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Nastavnik.ImeNastavnik" Label="ImeNastavnik" Name="ImeNastavnik" Category="Property Required" Type="string" MaxLength="25" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 25
+Relational:ColumnName: imeNastavnik
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik.Koef" Label="Koef" Name="Koef" Category="Property Required" Type="decimal" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: koef
+Relational:ColumnType: decimal(3, 2)
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik.PbrStan" Label="PbrStan" Name="PbrStan" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: pbrStan
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik.PrezNastavnik" Label="PrezNastavnik" Name="PrezNastavnik" Category="Property Required" Type="string" MaxLength="25" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 25
+Relational:ColumnName: prezNastavnik
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Nastavnik.SifOrgjed" Label="SifOrgjed" Name="SifOrgjed" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifOrgjed
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Pred" Label="Pred" Name="Pred" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: pred" Category="EntityType" Group="Expanded" />
+<Node Id = "Orgjed.SifOrgjed" Label="SifOrgjed" Name="SifOrgjed" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifOrgjed
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Orgjed.InverseSifNadorgjedNavigation" Label="InverseSifNadorgjedNavigation (1)" Name="InverseSifNadorgjedNavigation" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Orgjed&gt;" Dependent="Orgjed" Principal="" Inverse="SifNadorgjedNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Orgjed.Nastavnik" Label="Nastavnik (1)" Name="Nastavnik" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Nastavnik&gt;" Dependent="Nastavnik" Principal="" Inverse="SifOrgjedNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Orgjed.Pred" Label="Pred (1)" Name="Pred" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Pred&gt;" Dependent="Pred" Principal="" Inverse="SifOrgjedNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Orgjed.SifNadorgjedNavigation" Label="SifNadorgjedNavigation (1)" Name="SifNadorgjedNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Orgjed" Dependent="" Principal="" Inverse="InverseSifNadorgjedNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Orgjed.NazOrgjed" Label="NazOrgjed" Name="NazOrgjed" Category="Property Required" Type="string" MaxLength="60" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 60
+Relational:ColumnName: nazOrgjed
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Orgjed.SifNadorgjed" Label="SifNadorgjed" Name="SifNadorgjed" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifNadorgjed
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Rezervacija" Label="Rezervacija" Name="Rezervacija" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: rezervacija" Category="EntityType" Group="Expanded" />
+<Node Id = "Pred.SifPred" Label="SifPred" Name="SifPred" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifPred
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Pred.SifOrgjedNavigation" Label="SifOrgjedNavigation (1)" Name="SifOrgjedNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Orgjed" Dependent="" Principal="" Inverse="Pred" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Pred.BrojSatiTjedno" Label="BrojSatiTjedno" Name="BrojSatiTjedno" Category="Property Optional" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: brojSatiTjedno
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Pred.KratPred" Label="KratPred" Name="KratPred" Category="Property Optional" Type="string" MaxLength="8" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 8
+Relational:ColumnName: kratPred
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping
+Unicode: False" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="False" ValueGenerated="None" />
+<Node Id = "Pred.NazPred" Label="NazPred" Name="NazPred" Category="Property Required" Type="string" MaxLength="60" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 60
+Relational:ColumnName: nazPred
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Pred.SifOrgjed" Label="SifOrgjed" Name="SifOrgjed" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifOrgjed
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Pred.UpisanoStud" Label="UpisanoStud" Name="UpisanoStud" Category="Property Optional" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: upisanoStud
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud" Label="Stud" Name="Stud" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: stud" Category="EntityType" Group="Expanded" />
+<Node Id = "Rezervacija.OznDvorana" Label="OznDvorana" Name="OznDvorana" Category="Property Foreign" Type="string" MaxLength="5" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 5
+Relational:ColumnName: oznDvorana
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping
+Unicode: False" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="False" ValueGenerated="None" />
+<Node Id = "Rezervacija.OznDvoranaNavigation" Label="OznDvoranaNavigation (1)" Name="OznDvoranaNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Dvorana" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Rezervacija.SifPredNavigation" Label="SifPredNavigation (1)" Name="SifPredNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Pred" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Rezervacija.Rezervacija" Label="Rezervacija (1)" Name="Rezervacija" Category="Navigation Property" Type="-"  Field="&apos;OznDvorana&apos;" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Rezervacija.Rezervacija" Label="Rezervacija (1)" Name="Rezervacija" Category="Navigation Property" Type="-"  Field="&apos;SifPred&apos;" Dependent="" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Rezervacija.OznVrstaDan" Label="OznVrstaDan" Name="OznVrstaDan" Category="Property Required" Type="string" MaxLength="2" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 2
+Relational:ColumnName: oznVrstaDan
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping
+Unicode: False" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="False" ValueGenerated="None" />
+<Node Id = "Rezervacija.Sat" Label="Sat" Name="Sat" Category="Property Required" Type="short" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sat
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Rezervacija.SifPred" Label="SifPred" Name="SifPred" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifPred
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Zupanija" Label="Zupanija" Name="Zupanija" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+Relational:TableName: zupanija" Category="EntityType" Group="Expanded" />
+<Node Id = "Stud.MbrStud" Label="MbrStud" Name="MbrStud" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: mbrStud
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud.PbrRodNavigation" Label="PbrRodNavigation (1)" Name="PbrRodNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Mjesto" Dependent="" Principal="" Inverse="StudPbrRodNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Stud.PbrStanNavigation" Label="PbrStanNavigation (1)" Name="PbrStanNavigation" Category="Navigation Property" Type="ToPrincipa"  Field="Mjesto" Dependent="" Principal="" Inverse="StudPbrStanNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Stud.DatRodStud" Label="DatRodStud" Name="DatRodStud" Category="Property Optional" Type="Nullable&lt;DateTime&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: datRodStud
+Relational:ColumnType: datetime
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud.ImeStud" Label="ImeStud" Name="ImeStud" Category="Property Required" Type="string" MaxLength="25" Field="imeStud" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 25
+Relational:ColumnName: imeStud
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud.JmbgStud" Label="JmbgStud" Name="JmbgStud" Category="Property Optional" Type="string" MaxLength="13" Field="jmbgStud" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 13
+Relational:ColumnName: jmbgStud
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping
+Unicode: False" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="False" ValueGenerated="None" />
+<Node Id = "Stud.PbrRod" Label="PbrRod" Name="PbrRod" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: pbrRod
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud.PbrStan" Label="PbrStan" Name="PbrStan" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: pbrStan
+TypeMapping: Microsoft.EntityFrameworkCore.Storage.IntTypeMapping" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Stud.PrezStud" Label="PrezStud" Name="PrezStud" Category="Property Required" Type="string" MaxLength="25" Field="prezStud" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 25
+Relational:ColumnName: prezStud
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Zupanija" Label="Zupanija" Name="Zupanija" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "Zupanija.SifZupanija" Label="SifZupanija" Name="SifZupanija" Category="Property Primary" Type="short" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:ColumnName: sifZupanija
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Zupanija.Mjesto" Label="Mjesto (1)" Name="Mjesto" Category="Navigation Property" Type="Collectio"  Field="ICollection&lt;Mjesto&gt;" Dependent="Mjesto" Principal="" Inverse="SifZupanijaNavigation" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Zupanija.NazZupanija" Label="NazZupanija" Name="NazZupanija" Category="Property Required" Type="string" MaxLength="40" Field="nazZupanija" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="MaxLength: 40
+Relational:ColumnName: nazZupanija
+Relational:IsFixedLength: True
+TypeMapping: Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="Dvorana" Category="Contains" />
+<Link Source = "IModel" Target="Ispit" Category="Contains" />
+<Link Source = "Dvorana" Target="Dvorana.OznDvorana" Category="Contains" />
+<Link Source = "Dvorana" Target="Dvorana.Kapacitet" Category="Contains" />
+<Link Source = "IModel" Target="Mjesto" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.MbrStudNavigation" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.SifNastavnikNavigation" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.SifPredNavigation" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.Ispit" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.DatIspit" Category="Contains" />
+<Link Source="Ispit" Target="Stud" From="Ispit.MbrStud" To="Stud.MbrStud" Name="Ispit -> Stud" Annotations="Relational:Name: FK_ispit_stud" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Ispit" Target="Nastavnik" From="Ispit.SifNastavnik" To="Nastavnik.SifNastavnik" Name="Ispit -> Nastavnik" Annotations="Relational:Name: FK_ispit_nastavnik" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Ispit" Target="Pred" From="Ispit.SifPred" To="Pred.SifPred" Name="Ispit -> Pred" Annotations="Relational:Name: FK_ispit_pred" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Ispit" Target="Ispit.MbrStud" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.Ocjena" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.SifNastavnik" Category="Contains" />
+<Link Source = "Ispit" Target="Ispit.SifPred" Category="Contains" />
+<Link Source = "IModel" Target="Nastavnik" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.Nastavnik" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.SifZupanijaNavigation" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.StudPbrRodNavigation" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.StudPbrStanNavigation" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.Pbr" Category="Contains" />
+<Link Source="Mjesto" Target="Zupanija" From="Mjesto.SifZupanija" To="Zupanija.SifZupanija" Name="Mjesto -> Zupanija" Annotations="Relational:Name: FK_mjesto_zupanija" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Mjesto" Target="Mjesto.NazMjesto" Category="Contains" />
+<Link Source = "Mjesto" Target="Mjesto.SifZupanija" Category="Contains" />
+<Link Source = "IModel" Target="Orgjed" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.PbrStanNavigation" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.SifOrgjedNavigation" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.SifNastavnik" Category="Contains" />
+<Link Source="Nastavnik" Target="Mjesto" From="Nastavnik.PbrStan" To="Mjesto.Pbr" Name="Nastavnik -> Mjesto" Annotations="Relational:Name: FK_nastavnik_mjesto" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Nastavnik" Target="Orgjed" From="Nastavnik.SifOrgjed" To="Orgjed.SifOrgjed" Name="Nastavnik -> Orgjed" Annotations="Relational:Name: FK_nastavnik_orgjed" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Nastavnik" Target="Nastavnik.ImeNastavnik" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.Koef" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.PbrStan" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.PrezNastavnik" Category="Contains" />
+<Link Source = "Nastavnik" Target="Nastavnik.SifOrgjed" Category="Contains" />
+<Link Source = "IModel" Target="Pred" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.InverseSifNadorgjedNavigation" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.Nastavnik" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.Pred" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.SifNadorgjedNavigation" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.SifOrgjed" Category="Contains" />
+<Link Source="Orgjed" Target="Orgjed" From="Orgjed.SifNadorgjed" To="Orgjed.SifOrgjed" Name="Orgjed -> Orgjed" Annotations="Relational:Name: FK_orgjed_orgjed" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Orgjed" Target="Orgjed.NazOrgjed" Category="Contains" />
+<Link Source = "Orgjed" Target="Orgjed.SifNadorgjed" Category="Contains" />
+<Link Source = "IModel" Target="Rezervacija" Category="Contains" />
+<Link Source = "Pred" Target="Pred.SifOrgjedNavigation" Category="Contains" />
+<Link Source = "Pred" Target="Pred.SifPred" Category="Contains" />
+<Link Source="Pred" Target="Orgjed" From="Pred.SifOrgjed" To="Orgjed.SifOrgjed" Name="Pred -> Orgjed" Annotations="Relational:Name: FK_pred_orgjed" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Pred" Target="Pred.BrojSatiTjedno" Category="Contains" />
+<Link Source = "Pred" Target="Pred.KratPred" Category="Contains" />
+<Link Source = "Pred" Target="Pred.NazPred" Category="Contains" />
+<Link Source = "Pred" Target="Pred.SifOrgjed" Category="Contains" />
+<Link Source = "Pred" Target="Pred.UpisanoStud" Category="Contains" />
+<Link Source = "IModel" Target="Stud" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.OznDvoranaNavigation" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.SifPredNavigation" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.Rezervacija" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.OznDvorana" Category="Contains" />
+<Link Source="Rezervacija" Target="Dvorana" From="Rezervacija.OznDvorana" To="Dvorana.OznDvorana" Name="Rezervacija -> Dvorana" Annotations="Relational:Name: FK_rezervacija_dvorana" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Rezervacija" Target="Pred" From="Rezervacija.SifPred" To="Pred.SifPred" Name="Rezervacija -> Pred" Annotations="Relational:Name: FK_rezervacija_pred" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Rezervacija" Target="Rezervacija.OznVrstaDan" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.Sat" Category="Contains" />
+<Link Source = "Rezervacija" Target="Rezervacija.SifPred" Category="Contains" />
+<Link Source = "IModel" Target="Zupanija" Category="Contains" />
+<Link Source = "Stud" Target="Stud.PbrRodNavigation" Category="Contains" />
+<Link Source = "Stud" Target="Stud.PbrStanNavigation" Category="Contains" />
+<Link Source = "Stud" Target="Stud.MbrStud" Category="Contains" />
+<Link Source="Stud" Target="Mjesto" From="Stud.PbrRod" To="Mjesto.Pbr" Name="Stud -> Mjesto" Annotations="Relational:Name: FK_stud_mjesto" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Stud" Target="Mjesto" From="Stud.PbrStan" To="Mjesto.Pbr" Name="Stud -> Mjesto" Annotations="Relational:Name: FK_stud_mjesto1" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Stud" Target="Stud.DatRodStud" Category="Contains" />
+<Link Source = "Stud" Target="Stud.ImeStud" Category="Contains" />
+<Link Source = "Stud" Target="Stud.JmbgStud" Category="Contains" />
+<Link Source = "Stud" Target="Stud.PbrRod" Category="Contains" />
+<Link Source = "Stud" Target="Stud.PbrStan" Category="Contains" />
+<Link Source = "Stud" Target="Stud.PrezStud" Category="Contains" />
+<Link Source = "IModel" Target="Zupanija" Category="Contains" />
+<Link Source = "Zupanija" Target="Zupanija.Mjesto" Category="Contains" />
+<Link Source = "Zupanija" Target="Zupanija.SifZupanija" Category="Contains" />
+<Link Source = "Zupanija" Target="Zupanija.NazZupanija" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

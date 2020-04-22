@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index  <span class="badge-info">302 </span></h1> 
+<h1>Index  <span class="badge badge-info">@ViewData["Count"] / @ViewData["TotalCount"]</span></h1> 
 <p><a asp-action="Index" asp-route-hrana="Pizza">neki link sa varijablom hrana</a></p>
 <div>
     <form asp-action="Index" method="get">
@@ -21,13 +21,13 @@
     <thead>
         <tr>
             <th>
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.ImeStud)</a>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-searchString="@ViewData["currentFilter"]">@Html.DisplayNameFor(model => model.ImeStud)</a>
 </th>
             <th>
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["LastNameSortParm"]">@Html.DisplayNameFor(model => model.PrezStud)</a>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["LastNameSortParm"]" asp-route-searchString="@ViewData["currentFilter"]">@Html.DisplayNameFor(model => model.PrezStud)</a>
             </th>
             <th>
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">@Html.DisplayNameFor(model => model.DatRodStud)</a>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-searchString="@ViewData["currentFilter"]">@Html.DisplayNameFor(model => model.DatRodStud)</a>
 </th>
             <th>
                 @Html.DisplayNameFor(model => model.JmbgStud)

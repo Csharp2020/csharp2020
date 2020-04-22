@@ -16,6 +16,7 @@ namespace Fakultet.Controllers
         public StudsController(FakultetContext context)
         {
             _context = context;
+            
         }
 
         // GET: Studs
@@ -23,14 +24,14 @@ namespace Fakultet.Controllers
         {
             var fakultetContext = from s 
                                   in _context.Stud.Include(s => s.PbrRodNavigation)
-                                  .Include(s => s.PbrStanNavigation) 
+                                  .Include(s => s.PbrStanNavigation).Skip(10).Take(10) 
                                   select s;
             
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["LastNameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "last_name_desc" : "";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
             ViewData["currentFilter"]= String.IsNullOrEmpty(searchString) ?  "": searchString;
-
+            ViewData["TotalCount"] = fakultetContext.Count();
             //var students = from s in _context.Stud select s;
 
             switch (sortOrder)
@@ -58,7 +59,7 @@ namespace Fakultet.Controllers
                     s => s.PrezStud.Contains(searchString)
                     || s.ImeStud.Contains(searchString));
             }
-
+            ViewData["Count"] = fakultetContext.Count();
             return View(await fakultetContext.AsNoTracking().ToListAsync());
 
 
