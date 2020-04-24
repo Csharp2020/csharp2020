@@ -11,6 +11,12 @@ namespace Fakultet.Lib
         public int PageIndex { get; private set; }
         public int TotalPages { get; private set; }
 
+        /**
+         * param name="count" ukupan borj zapisa
+         * param name="items" lista zapisa iz baze (tablica)
+         * param name ="pageIndex" broj trenutne stranice
+         * param name="pageSize" broj zapsa po jednoj stranici
+         **/
         public PaginatedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             PageIndex = pageIndex;
