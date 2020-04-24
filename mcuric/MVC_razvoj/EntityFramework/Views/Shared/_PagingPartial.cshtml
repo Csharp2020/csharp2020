@@ -1,0 +1,69 @@
+﻿@model EntityFramework.Lib.PaginatedList<EntityFramework.Models.Stud>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+@if (Model.PageIndex - 3 > 2 && Model.PageIndex != 1)
+{
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-pageNumber="1"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+        &nbsp;1
+    </a><span>....</span>
+}
+else
+{
+    @if(Model.PageIndex != 1)
+    {
+        <a asp-action="Index"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="1"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]">
+            &nbsp;1
+        </a>
+    }
+    
+}
+
+@for (int i = Model.PageIndex - 3; i < Model.PageIndex + 4; i++)
+{
+    @if (i > 1 && i < Model.TotalPages && i != Model.PageIndex)
+    {
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData[" CurrentSort"]"
+   asp-route-pageNumber="@i"
+   asp-route-currentFilter="@ViewData[" CurrentFilter"]">
+    &nbsp;@i
+</a>
+    }
+    @if (i == Model.PageIndex)
+    {
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData[" CurrentSort"]"
+   asp-route-pageNumber="@i"
+   asp-route-currentFilter="@ViewData[" CurrentFilter"]"
+   style="color:red;">
+    &nbsp;@i
+</a>
+    }
+}
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData[" CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData[" CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
