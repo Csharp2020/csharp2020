@@ -15,6 +15,7 @@ namespace Fakultet.Models
         {
         }
 
+        public virtual DbSet<PredNastavnik> PredNastavnik { get; set; }
         public virtual DbSet<Dvorana> Dvorana { get; set; }
         public virtual DbSet<Ispit> Ispit { get; set; }
         public virtual DbSet<Mjesto> Mjesto { get; set; }
@@ -36,6 +37,15 @@ namespace Fakultet.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<PredNastavnik>(entity =>
+            {
+                entity.HasKey(e => new { e.SifNastavnik, e.SifPred }); // kompozitni primarni kljuc je po defaultu unique
+
+                entity.ToTable("pred_nastavnik");
+            });
+
+
+
             modelBuilder.Entity<Dvorana>(entity =>
             {
                 entity.HasKey(e => e.OznDvorana);
