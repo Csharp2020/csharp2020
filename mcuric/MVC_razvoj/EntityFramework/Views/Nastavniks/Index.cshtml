@@ -1,0 +1,61 @@
+﻿@model IEnumerable<EntityFramework.Models.Nastavnik>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImeNastavnik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrezNastavnik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koef)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PbrStanNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SifOrgjedNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImeNastavnik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrezNastavnik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Koef)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PbrStanNavigation.NazMjesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SifOrgjedNavigation.NazOrgjed)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SifNastavnik">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.SifNastavnik">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.SifNastavnik">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<partial name="_NastavnikPaging" />

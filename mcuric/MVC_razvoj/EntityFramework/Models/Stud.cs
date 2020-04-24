@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace EntityFramework.Models
 {
@@ -32,6 +33,7 @@ namespace EntityFramework.Models
         }
         public int? PbrRod { get; set; }
         public int PbrStan { get; set; }
+        [DataType(DataType.Date)]
         public DateTime? DatRodStud { get; set; }
         public string JmbgStud { get; set; }
 
