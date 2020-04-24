@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fakultet.Migrations
 {
     [DbContext(typeof(FakultetContext))]
-    [Migration("20200424181327_Initial")]
+    [Migration("20200424191036_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -225,6 +225,21 @@ namespace Fakultet.Migrations
                     b.ToTable("pred");
                 });
 
+            modelBuilder.Entity("Fakultet.Models.PredNastavnik", b =>
+                {
+                    b.Property<int>("SifNastavnik")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SifPred")
+                        .HasColumnType("int");
+
+                    b.HasKey("SifNastavnik", "SifPred");
+
+                    b.HasIndex("SifPred");
+
+                    b.ToTable("pred_nastavnik");
+                });
+
             modelBuilder.Entity("Fakultet.Models.Rezervacija", b =>
                 {
                     b.Property<string>("OznDvorana")
@@ -388,6 +403,21 @@ namespace Fakultet.Migrations
                         .WithMany("Pred")
                         .HasForeignKey("SifOrgjed")
                         .HasConstraintName("FK_pred_orgjed");
+                });
+
+            modelBuilder.Entity("Fakultet.Models.PredNastavnik", b =>
+                {
+                    b.HasOne("Fakultet.Models.Nastavnik", "Nastavnik")
+                        .WithMany()
+                        .HasForeignKey("SifNastavnik")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Fakultet.Models.Pred", "Predmet")
+                        .WithMany()
+                        .HasForeignKey("SifPred")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Fakultet.Models.Rezervacija", b =>

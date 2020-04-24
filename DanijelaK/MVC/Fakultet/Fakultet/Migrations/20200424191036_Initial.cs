@@ -174,6 +174,30 @@ namespace Fakultet.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "pred_nastavnik",
+                columns: table => new
+                {
+                    SifNastavnik = table.Column<int>(nullable: false),
+                    SifPred = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_pred_nastavnik", x => new { x.SifNastavnik, x.SifPred });
+                    table.ForeignKey(
+                        name: "FK_pred_nastavnik_nastavnik_SifNastavnik",
+                        column: x => x.SifNastavnik,
+                        principalTable: "nastavnik",
+                        principalColumn: "sifNastavnik",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_pred_nastavnik_pred_SifPred",
+                        column: x => x.SifPred,
+                        principalTable: "pred",
+                        principalColumn: "sifPred",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ispit",
                 columns: table => new
                 {
@@ -281,6 +305,11 @@ namespace Fakultet.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_pred_nastavnik_SifPred",
+                table: "pred_nastavnik",
+                column: "SifPred");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_rezervacija_oznDvorana",
                 table: "rezervacija",
                 column: "oznDvorana");
@@ -317,6 +346,9 @@ namespace Fakultet.Migrations
         {
             migrationBuilder.DropTable(
                 name: "ispit");
+
+            migrationBuilder.DropTable(
+                name: "pred_nastavnik");
 
             migrationBuilder.DropTable(
                 name: "rezervacija");
