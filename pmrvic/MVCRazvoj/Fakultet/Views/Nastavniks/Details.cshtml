@@ -42,6 +42,22 @@
         </dd>
     </dl>
 </div>
+<h3>Predmeti koje predaje:</h3>
+<div>
+    <!-- (View<Fakultet.Models.PredNastavnik>(nastavnik.PredNastavnik).Items[0]).Predmet.NazPred-->
+    <ul>
+
+        @foreach (var item in Model.PredNastavnik)
+        {
+        <li>
+            <a asp-controller="Preds" asp-action="Details" asp-route-id="@item.SifPred">@item.Predmet.NazPred</a>
+        </li>
+        }
+    </ul>
+</div>
+
+
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model.SifNastavnik">Edit</a> |
     <a asp-action="Index">Back to List</a>
