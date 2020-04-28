@@ -1,0 +1,17 @@
+{
+  "ApiKeys": {
+    "googleMaps": "AIzaSyAWl7kwrpobWXdVJvkoZ1Z7nh3DcbUFtUs"
+  },
+  "ConnectionStrings": {
+    "FakultetDatabase": "Server=POWERRYZEN\\SQLEXPRESS;Initial Catalog=Fakultet;Integrated Security=True",
+    "FakultetDatabaseLocal": "Server=(localdb)\\MSSQLLocalDB;Initial Catalog=Fakultet;Integrated Security=True"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}

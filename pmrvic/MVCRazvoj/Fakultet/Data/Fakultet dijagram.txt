@@ -1,0 +1,9 @@
+﻿dbo.dvorana
+dbo.ispit
+dbo.mjesto
+dbo.nastavnik
+dbo.orgjed
+dbo.pred
+dbo.rezervacija
+dbo.stud
+dbo.zupanija

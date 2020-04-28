@@ -25,8 +25,8 @@ namespace Fakultet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-    //        services.AddDbContext<Models.FakultetContext>(options =>
-    //   options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
+            services.AddDbContext<Models.FakultetContext>(options =>
+       options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

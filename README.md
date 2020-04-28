@@ -1,3 +1,16 @@
+#NAGRADNA ZADACA za 28.04.2020
+
+#  Marko veliki +
+
+Unijeti randomno 150 zapisa nastavnik-predmet
+
+USE fakultet
+GO
+
+INSERT INTO fakultet.dbo.pred_nastavnik(SifNastavnik,SifPred) 
+VALUES (130, (SELECT TOP (1) pred.sifPred FROM [fakultet].[dbo].[pred] as pred ORDER BY NEWID()) )
+
+
 # csharp2020
 
 # git
