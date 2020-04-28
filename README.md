@@ -1,4 +1,7 @@
 #NAGRADNA ZADACA za 28.04.2020
+
+#  Marko veliki +
+
 Unijeti randomno 150 zapisa nastavnik-predmet
 
 USE fakultet
