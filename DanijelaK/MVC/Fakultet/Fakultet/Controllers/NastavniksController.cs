@@ -141,6 +141,7 @@ namespace Fakultet.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
+                //.Include(n => n.PredNastavnikNavigation)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {

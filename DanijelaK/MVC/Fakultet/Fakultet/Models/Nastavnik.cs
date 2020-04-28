@@ -12,6 +12,7 @@ namespace Fakultet.Models
         public int SifOrgjed { get; set; }
         public decimal Koef { get; set; }
 
+        public virtual PredNastavnik PredNastavnikNavigation { get; set; }
         public virtual Mjesto PbrStanNavigation { get; set; }
         public virtual Orgjed SifOrgjedNavigation { get; set; }
     }

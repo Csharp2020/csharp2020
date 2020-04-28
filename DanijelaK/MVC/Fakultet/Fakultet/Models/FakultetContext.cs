@@ -41,6 +41,13 @@ namespace Fakultet.Models
                 entity.HasKey(e => new {e.SifNastavnik, e.SifPred }); // kompozitni primarni ključ je po defaultu unique
 
                 entity.ToTable("pred_nastavnik");
+                
+                entity.HasOne(d => d.MbrStudNavigation)
+                    .WithMany()
+                    .HasForeignKey(d => d.MbrStud)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ispit_stud");
+
             });
 
             modelBuilder.Entity<Dvorana>(entity =>
