@@ -28,7 +28,7 @@ namespace Fakultet.Controllers
             return View(await fakultetContext.ToListAsync());
         }
 
-        // GET: Nastavniks/Details/5
+        // GET: Nastavniks/Details/122
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,6 +39,8 @@ namespace Fakultet.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
+                .Include(n => n.PredNastavnik)      // dodano za many2many vezu
+                    .ThenInclude(n => n.Predmet)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {

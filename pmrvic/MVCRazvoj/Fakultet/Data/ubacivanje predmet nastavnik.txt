@@ -1,0 +1,18 @@
+﻿USE fakultet
+GO
+
+INSERT INTO fakultet.dbo.pred_nastavnik(SifNastavnik,SifPred) 
+VALUES ((SELECT TOP (1) [sifNastavnik]
+  FROM [fakultet].[dbo].[nastavnik]
+  ORDER BY NEWID()), (SELECT TOP (1) pred.sifPred FROM [fakultet].[dbo].[pred] as pred ORDER BY NEWID()) )
+
+
+
+-- Ubacivanje postojecih parova nastavnik:predmet iz tablice ispiti
+
+  INSERT INTO fakultet.dbo.pred_nastavnik(SifNastavnik,SifPred) 
+SELECT DISTINCT [sifNastavnik],SifPred
+  FROM [fakultet].[dbo].ispit AS t
+WHERE NOT EXISTS (SELECT 1 FROM fakultet.dbo.pred_nastavnik AS d
+WHERE sifNastavnik = t.sifNastavnik
+AND sifPred = t.sifPred);
