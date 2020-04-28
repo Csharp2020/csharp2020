@@ -39,6 +39,8 @@ namespace EntityFramework.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
+                .Include(n => n.PredNastavnik)
+                .ThenInclude(p => p.Predmet)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {

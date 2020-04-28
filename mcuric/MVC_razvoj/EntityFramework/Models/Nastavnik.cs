@@ -14,5 +14,9 @@ namespace EntityFramework.Models
 
         public virtual Mjesto PbrStanNavigation { get; set; }
         public virtual Orgjed SifOrgjedNavigation { get; set; }
+
+        public ICollection<PredNastavnik> PredNastavnik { get; set; }
+
+       // public virtual PredNastavnik PredNastavnikNavigation { get; set; }
     }
 }
