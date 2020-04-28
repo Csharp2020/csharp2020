@@ -35,6 +35,8 @@ namespace Fakultet.Controllers
 
             var pred = await _context.Pred
                 .Include(p => p.SifOrgjedNavigation)
+                .Include(p => p.PredNastavnik)      // dodano za many2many vezu
+                    .ThenInclude(p => p.Nastavnik)
                 .FirstOrDefaultAsync(m => m.SifPred == id);
             if (pred == null)
             {

@@ -39,7 +39,7 @@ namespace Fakultet.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
-                .Include(n => n.PredNastavnik)
+                .Include(n => n.PredNastavnik)      // dodano za many2many vezu
                     .ThenInclude(n => n.Predmet)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)

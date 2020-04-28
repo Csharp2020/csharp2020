@@ -4,44 +4,59 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
+    <h1>@Html.DisplayFor(model => model.NazPred)</h1>
+<h2>Prosjecna ocjena: <span class="badge badge-info">3,54</span></h2>
 <div>
     <h4>Pred</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.KratPred)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.KratPred)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.NazPred)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.NazPred)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.UpisanoStud)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.UpisanoStud)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.BrojSatiTjedno)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.BrojSatiTjedno)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.SifOrgjedNavigation)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SifOrgjedNavigation.NazOrgjed)
         </dd>
     </dl>
 </div>
+<h3>Nastavnici koji predaju ovaj predmet:</h3>
+<div>
+    <!-- (View<Fakultet.Models.PredNastavnik>(nastavnik.PredNastavnik).Items[0]).Predmet.NazPred-->
+    <ul>
+
+        @foreach (var item in Model.PredNastavnik)
+        {
+            <li>
+                <a asp-controller="Nastavniks" asp-action="Details" asp-route-id="@item.SifNastavnik">@item.Nastavnik.PrezNastavnik, @item.Nastavnik.ImeNastavnik</a>
+            </li>
+        }
+    </ul>
+</div>
+
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model.SifPred">Edit</a> |
     <a asp-action="Index">Back to List</a>
