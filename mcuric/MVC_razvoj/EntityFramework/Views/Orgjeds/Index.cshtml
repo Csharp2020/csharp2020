@@ -3,13 +3,52 @@
 @{
     ViewData["Title"] = "Index";
 }
+    <style>
+        ul, #myUL {
+            list-style-type: none;
+        }
+
+        #myUL {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caret {
+            cursor: pointer;
+            -webkit-user-select: none; /* Safari 3.1+ */
+            -moz-user-select: none; /* Firefox 2+ */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none;
+        }
+
+            .caret::before {
+                content: "\25B6";
+                color: black;
+                display: inline-block;
+                margin-right: 6px;
+            }
+
+        .caret-down::before {
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Safari */
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
 
 <h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+@*<table class="table">
     <thead>
         <tr>
             <th>
@@ -22,20 +61,53 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NazOrgjed)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.SifNadorgjed">@Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)</a> 
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SifOrgjed">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SifOrgjed">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SifOrgjed">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NazOrgjed)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.SifNadorgjed">@Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)</a>
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.SifOrgjed">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.SifOrgjed">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.SifOrgjed">Delete</a>
+                    </td>
+                </tr>
+        } *@
+<ul id="myUL">
+    @foreach (var item in Model)
+    {
+        if (item.SifNadorgjed == null)
+        {
+            <li><span class="caret">@item.NazOrgjed</span>
+                <ul class="nested">
+                @foreach (var org in Model)
+                {
+                    if (org.SifNadorgjed == item.SifOrgjed)
+                    {
+                        <li><a asp-action="Details" asp-route-id="@org.SifOrgjed">@org.NazOrgjed</a></li>
+                    }
+                }
+                </ul>
+            </li>
+            
+        }
+    }
+</ul>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function () {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+        });
+    }
+</script>
+
+@*</tbody>
+    </table>*@
