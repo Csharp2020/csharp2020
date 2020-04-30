@@ -14,6 +14,7 @@ namespace Fakultet.Models
             : base(options)
         {
         }
+
         public virtual DbSet<PredNastavnik> PredNastavnik { get; set; }
         public virtual DbSet<Dvorana> Dvorana { get; set; }
         public virtual DbSet<Ispit> Ispit { get; set; }
@@ -30,7 +31,7 @@ namespace Fakultet.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-SIEN3GS\\SQLEXPRESS;Initial Catalog=Fakultet;Integrated Security=True;");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-TF3CV7HA\\SQLEXPRESS;Initial Catalog=fakultet;Integrated Security=True;");
             }
         }
 
@@ -38,17 +39,20 @@ namespace Fakultet.Models
         {
             modelBuilder.Entity<PredNastavnik>(entity =>
             {
-                entity.HasKey(e => new {e.SifNastavnik, e.SifPred }); // kompozitni primarni ključ je po defaultu unique
+                entity.HasKey(e => new { e.SifNastavnik, e.SifPred }); // kompozitni primarni kljuc je po defaultu unique
 
                 entity.ToTable("pred_nastavnik");
-                
-                entity.HasOne(d => d.MbrStudNavigation)
-                    .WithMany()
-                    .HasForeignKey(d => d.MbrStud)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ispit_stud");
+                /*
+                 entity.HasOne(d => d.SifNastavnikNavigation)
+                     .WithMany()
+                     .HasForeignKey(d => d.SifNastavnik)
+                     .OnDelete(DeleteBehavior.ClientSetNull)
+                     .HasConstraintName("FK_ispit_nastavnik");
 
+     */
             });
+
+
 
             modelBuilder.Entity<Dvorana>(entity =>
             {
@@ -360,6 +364,7 @@ namespace Fakultet.Models
                     .HasColumnName("nazZupanija")
                     .HasMaxLength(40)
                     .IsFixedLength();
+
             });
 
             OnModelCreatingPartial(modelBuilder);
