@@ -18,31 +18,6 @@ namespace EntityFramework.Controllers
             _context = context;
         }
 
-        public decimal prosjecnaOcjena(int? id)
-        {
-            var ispit = _context.Ispit;
-            int broj_ocjena = 0;
-            int ukupno = 0;
-            foreach (var item in ispit)
-            {
-                if (item.SifPred == id)
-                {
-                    ukupno += item.Ocjena;
-                    broj_ocjena++;
-                }
-            }
-            if (broj_ocjena != 0) {
-                decimal prosjecna_ocjena = Math.Truncate(ukupno*1000 / (decimal)broj_ocjena)/1000;
-
-                return prosjecna_ocjena;
-            }
-            else { 
-                decimal prosjecna_ocjena = 0;
-                return prosjecna_ocjena;
-            }
-
-        }
-
         // GET: Preds
         public async Task<IActionResult> Index()
         {
@@ -58,13 +33,28 @@ namespace EntityFramework.Controllers
                 return NotFound();
             }
 
-            ViewData["prosjecna_ocjena"] = prosjecnaOcjena(id);
+            var TheQuery = (from a in _context.Ispit
+
+                            where a.SifPred == id
+
+                            select a.Ocjena).ToList();
+            if (TheQuery.Count != 0)
+            {
+                double prosjek = TheQuery.Average(a => a);
+                ViewData["prosjecna_ocjena"] = Math.Truncate(prosjek*100)/100;
+            }
+            else
+            {
+                ViewData["prosjecna_ocjena"] = 0;
+            }
+
 
             var pred = await _context.Pred
                 .Include(p => p.SifOrgjedNavigation)
                 .Include(p => p.PredNastavnik)
                     .ThenInclude(p => p.Nastavnik)
                 .FirstOrDefaultAsync(m => m.SifPred == id);
+
             if (pred == null)
             {
                 return NotFound();

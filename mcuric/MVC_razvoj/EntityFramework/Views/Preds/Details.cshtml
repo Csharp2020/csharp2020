@@ -2,8 +2,7 @@
 
 @{
     ViewData["Title"] = "Details";
-    ViewBag.ocjena = ViewData["prosjecna_ocjena"];
-    if (ViewBag.ocjena == 0)
+    if (ViewData["prosjecna_ocjena"].Equals(0))
     {
         ViewData["prosjecna_ocjena"] = "Ovaj predmet još nitko nije polagao!";
     }
