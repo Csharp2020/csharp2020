@@ -13,6 +13,6 @@ namespace Fakultet.Models
         public int? BrojSatiTjedno { get; set; }
 
         public virtual Orgjed SifOrgjedNavigation { get; set; }
-
+        public ICollection<PredNastavnik> PredNastavnik { get; set; }
     }
 }
