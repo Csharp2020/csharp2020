@@ -8,6 +8,7 @@ namespace EntityFramework.Models
     {
         public int MbrStud { get; set; }
         private string imeStud;
+        [Display(Name = "Ime studenta")]
         public string ImeStud
         {
             get
@@ -20,6 +21,7 @@ namespace EntityFramework.Models
             }
         }
         private string prezStud;
+        [Display(Name = "Prezime studenta")]
         public string PrezStud
         {
             get
@@ -34,10 +36,14 @@ namespace EntityFramework.Models
         public int? PbrRod { get; set; }
         public int PbrStan { get; set; }
         [DataType(DataType.Date)]
+        [Display(Name = "Datum rođenja")]
         public DateTime? DatRodStud { get; set; }
+        [Display(Name = "JMBG")]
         public string JmbgStud { get; set; }
 
+        [Display(Name = "Mjesto rođenja")]
         public virtual Mjesto PbrRodNavigation { get; set; }
+        [Display(Name = "Boravište/Prebivalište")]
         public virtual Mjesto PbrStanNavigation { get; set; }
     }
 }

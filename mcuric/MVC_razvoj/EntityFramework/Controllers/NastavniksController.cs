@@ -39,8 +39,8 @@ namespace EntityFramework.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
-                .Include(n => n.PredNastavnik)
-                .ThenInclude(n => n.Predmet)
+                .Include(n => n.PredNastavnik)      // dodano za many2many vezu
+                    .ThenInclude(n => n.Predmet)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {
@@ -49,6 +49,7 @@ namespace EntityFramework.Controllers
 
             return View(nastavnik);
         }
+
 
         // GET: Nastavniks/Create
         public IActionResult Create()

@@ -43,13 +43,15 @@
     </dl>
 </div>
 <div>
+    <span>Predmeti koje predaje:</span>
     <ul>
         @foreach (var item in Model.PredNastavnik)
         {
-            <li>@item.Predmet.NazPred</li>
+            <li>
+                <a asp-controller="Preds" asp-action="Details" asp-route-id="@item.SifPred">@item.Predmet.NazPred</a>
+            </li>
         }
-    </ul>
-    
+    </ul>    
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.SifNastavnik">Edit</a> |

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using EntityFramework.Lib;
 
@@ -18,6 +19,7 @@ namespace EntityFramework.Models
         //public virtual short SifZupanija { get; set; }
 
         public short SifZupanija { get; set; }
+        [Display(Name = "Naziv županije")]
         public string NazZupanija { 
             get {
                 return Lib.FirstUpper.UCFirst(nazZupanija.Trim());
