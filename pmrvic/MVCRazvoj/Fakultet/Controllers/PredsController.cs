@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
+using System.Globalization;
 
 namespace Fakultet.Controllers
 {
@@ -25,6 +26,32 @@ namespace Fakultet.Controllers
             return View(await fakultetContext.ToListAsync());
         }
 
+        public decimal prosjecnaOcjena(int? id)
+        {
+            var ispit = _context.Ispit;
+            int broj_ocjena = 0;
+            int ukupno = 0;
+            foreach (var item in ispit)
+            {
+                if (item.SifPred == id)
+                {
+                    ukupno += item.Ocjena;
+                    broj_ocjena++;
+                }
+            }
+            if (broj_ocjena != 0)
+            {
+                decimal prosjecna_ocjena = Math.Truncate(ukupno * 1000 / (decimal)broj_ocjena) / 1000;
+
+                return prosjecna_ocjena;
+            }
+            else
+            {
+                decimal prosjecna_ocjena = 0;
+                return prosjecna_ocjena;
+            }
+
+        }
         // GET: Preds/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -32,6 +59,33 @@ namespace Fakultet.Controllers
             {
                 return NotFound();
             }
+            //   ViewData["prosjecna_ocjena"] = prosjecnaOcjena(id);
+
+
+            /**
+             * 
+             * */
+            var ispit_detalji = from ispit in _context.Ispit
+                       .Where(i => i.SifPred == id)
+                          group ispit by ispit.SifPred into g
+                          select new
+                          {
+                              // g.Key,
+                              Prosjek = g.Average(ispit => ispit.Ocjena),
+                              SumaOcjena = g.Sum(ispit => ispit.Ocjena),
+                              MaxOcjena = g.Max(ispit => ispit.Ocjena)
+                          };
+                                           
+
+
+            ViewData["prosjecna_ocjena"] = ispit_detalji.FirstOrDefault().Prosjek.ToString("F2", CultureInfo.InvariantCulture);
+            ViewData["najveca_ocjena"] = ispit_detalji.FirstOrDefault().MaxOcjena.ToString("F2", CultureInfo.InvariantCulture);
+            ViewData["zbroj_ocjena"] = ispit_detalji.FirstOrDefault().SumaOcjena.ToString("F2", CultureInfo.InvariantCulture);
+
+            // uzmi samo ocjene iz ispita i stavi u listu, nakon toga izracunaj prosjek liste
+            var TheQuery = (from a in _context.Ispit where a.SifPred == id select a.Ocjena).ToList().Average(a => a);
+           // ViewData["prosjecna_ocjena"] = TheQuery.ToString("F2", CultureInfo.InvariantCulture);
+
 
             var pred = await _context.Pred
                 .Include(p => p.SifOrgjedNavigation)

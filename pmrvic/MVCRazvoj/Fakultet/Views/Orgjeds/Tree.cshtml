@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Fakultet.Models.Orgjed>
+
+@{
+    ViewData["Title"] = "Tree";
+}
+
+<h1>Hijerarhija sveucilista u RH</h1>
+<p><div> <hr /></div></p>
+<div id="jstree">
+    <!-- in this example the tree is populated from inline HTML -->
+    <ul>
+        <li>
+            Root node 1
+            <ul>
+                <li id="child_node_1">Child node 1</li>
+                <li>Child node 2</li>
+            </ul>
+        </li>
+        <li>Root node 2</li>
+    </ul>
+</div>
+
+@section Scripts {
+
+    <!-- 4 include the jQuery library -->
+    <!--<script src="dist/libs/jquery.js"></script> -->
+    <!-- 5 include the minified jstree source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script>
+        $(function () {
+            // 6 create an instance when the DOM is ready
+          //  $('#jstree').jstree();
+            // 7 bind to events triggered on the tree
+            $('#jstree').on("changed.jstree", function (e, data) {
+                window.location.href = "/Orgjeds/Details/" + data.selected;
+                console.log(data.selected);
+            });
+            $('#jstree').jstree({
+                'core': {
+                    'data': [
+                        @{var parent = "#";
+                            var icon = "fas fa-chalkboard - teacher";
+                            }
+                         @foreach (var item in Model)
+                         {
+                            @if(item.NazOrgjed.Contains("Sveu", StringComparison.OrdinalIgnoreCase))
+                            {
+                                icon = "fas fa-archway";
+                            }
+                            else if (item.NazOrgjed.Contains("fakultet", StringComparison.OrdinalIgnoreCase))
+                            {
+                                icon = "far fa-building";
+                            }
+                            else if (item.NazOrgjed.Contains("Zavod", StringComparison.OrdinalIgnoreCase))
+                            {
+                                icon = "fas fa-campground";
+                            }
+                            else if (item.NazOrgjed.Contains("Grupa", StringComparison.OrdinalIgnoreCase))
+                            {
+                                icon = "fas fa-users";
+                            }
+                            else if (item.NazOrgjed.Contains("odjel",StringComparison.OrdinalIgnoreCase))
+                            {
+                                icon = "fas fa-flask";
+                            }
+
+
+                             @if (String.IsNullOrEmpty(item.SifNadorgjed.ToString()))
+                            {
+                                 parent = "#";
+                             }
+                            else
+                             {
+                                 parent = item.SifNadorgjed.ToString();
+                             }
+                          <text>{ "id": "@item.SifOrgjed", "parent": "@parent", "text": "@item.NazOrgjed", "icon": "@icon" }, </text>
+                         }
+                      ]
+                }
+            });
+            // 8 interact with the tree - either way is OK
+            $('button').on('click', function () {
+                $('#jstree').jstree(true).select_node('child_node_1');
+                $('#jstree').jstree('select_node', 'child_node_1');
+                $.jstree.reference('#jstree').select_node('child_node_1');
+            });
+        });
+    </script>
+}
