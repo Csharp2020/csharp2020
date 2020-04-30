@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace EntityFramework.Models
 {
@@ -13,9 +14,11 @@ namespace EntityFramework.Models
         }
 
         public int SifOrgjed { get; set; }
+        [Display(Name = "Organizacijska jedinica")]
         public string NazOrgjed { get; set; }
         public int? SifNadorgjed { get; set; }
 
+        [Display(Name = "Nadređena org. jedinica")]
         public virtual Orgjed SifNadorgjedNavigation { get; set; }
         public virtual ICollection<Orgjed> InverseSifNadorgjedNavigation { get; set; }
         public virtual ICollection<Nastavnik> Nastavnik { get; set; }
