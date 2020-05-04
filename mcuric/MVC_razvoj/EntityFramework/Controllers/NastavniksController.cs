@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EntityFramework.Models;
 using EntityFramework.Lib;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EntityFramework.Controllers
 {

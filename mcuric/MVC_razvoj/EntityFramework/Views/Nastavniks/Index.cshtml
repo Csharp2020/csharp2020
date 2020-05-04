@@ -2,12 +2,14 @@
 
 @{
     ViewData["Title"] = "Index";
+    ViewData["user"] = "Niste prijavljeni!";
 }
 
 <h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
+    <label>Prijavljeni kao: @ViewData["user"]</label>
 </p>
 <table class="table">
     <thead>
