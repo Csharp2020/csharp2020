@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using TestUserAuth.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Fakultet
+namespace TestUserAuth
 {
     public class Startup
     {
@@ -25,23 +27,13 @@ namespace Fakultet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
-            /*
-            services.AddDbContext<Models.FakultetContext>(options =>
-       options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
-       */
-       
-            services.AddDbContext<Models.FakultetContext>(options =>
-                   options.UseSqlServer(Configuration.GetConnectionString("AuthContextConnection")));
-            
-            services.AddDbContext<Data.AuthContext>(options =>
-            options.UseSqlServer(
-                Configuration.GetConnectionString("AuthContextConnection")));
-/*
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                //.AddEntityFrameworkStores<ApplicationDbContext>();       
-                .AddEntityFrameworkStores<Data.AuthContext>();
-                */
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +42,7 @@ namespace Fakultet
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
             else
             {
