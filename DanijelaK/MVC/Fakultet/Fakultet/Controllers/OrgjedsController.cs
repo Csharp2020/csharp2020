@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
+using Newtonsoft.Json;
 
 namespace Fakultet.Controllers
 {
@@ -20,6 +21,11 @@ namespace Fakultet.Controllers
 
         // GET: Orgjeds
         public async Task<IActionResult> Index()
+        {
+            var fakultetContext = _context.Orgjed.Include(o => o.SifNadorgjedNavigation);
+            return View(await fakultetContext.ToListAsync());
+        }
+        public async Task<IActionResult> Tree()
         {
             var fakultetContext = _context.Orgjed.Include(o => o.SifNadorgjedNavigation);
             return View(await fakultetContext.ToListAsync());
@@ -52,8 +58,8 @@ namespace Fakultet.Controllers
         }
 
         // POST: Orgjeds/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("SifOrgjed,NazOrgjed,SifNadorgjed")] Orgjed orgjed)
@@ -86,8 +92,8 @@ namespace Fakultet.Controllers
         }
 
         // POST: Orgjeds/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("SifOrgjed,NazOrgjed,SifNadorgjed")] Orgjed orgjed)

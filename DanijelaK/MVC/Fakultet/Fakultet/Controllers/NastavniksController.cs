@@ -11,7 +11,6 @@ namespace Fakultet.Controllers
 {
     public class NastavniksController : Controller
     {
-        int? pageNumber;
         private readonly FakultetContext _context;
 
         public NastavniksController(FakultetContext context)
@@ -20,16 +19,16 @@ namespace Fakultet.Controllers
         }
 
         // GET: Nastavniks
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? pageNumber)
         {
             var fakultetContext = _context.Nastavnik.Include(n => n.PbrStanNavigation).Include(n => n.SifOrgjedNavigation);
-            int pageSize = 6;  // broj rekorda koje zelimo prikazati
 
+            int pageSize = 6;  // broj rekorda koje zelimo prikazati
             return View(await Lib.PaginatedList<Nastavnik>.CreateAsync(fakultetContext.AsNoTracking(), pageNumber ?? 1, pageSize));
             //return View(await fakultetContext.ToListAsync());
         }
 
-        // GET: Nastavniks/Details/5
+        // GET: Nastavniks/Details/122
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -40,6 +39,8 @@ namespace Fakultet.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
+                .Include(n => n.PredNastavnik)      // dodano za many2many vezu
+                    .ThenInclude(n => n.Predmet)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {
@@ -141,7 +142,6 @@ namespace Fakultet.Controllers
             var nastavnik = await _context.Nastavnik
                 .Include(n => n.PbrStanNavigation)
                 .Include(n => n.SifOrgjedNavigation)
-                //.Include(n => n.PredNastavnikNavigation)
                 .FirstOrDefaultAsync(m => m.SifNastavnik == id);
             if (nastavnik == null)
             {
