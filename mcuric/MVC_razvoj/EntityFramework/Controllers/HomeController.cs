@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EntityFramework.Models;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace EntityFramework.Controllers
 {

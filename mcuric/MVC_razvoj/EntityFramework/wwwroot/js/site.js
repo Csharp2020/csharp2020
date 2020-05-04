@@ -4,6 +4,3 @@
 // Write your JavaScript code.
 
 
-
-
-
