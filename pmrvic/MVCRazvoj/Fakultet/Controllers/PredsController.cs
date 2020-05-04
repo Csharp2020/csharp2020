@@ -25,7 +25,7 @@ namespace Fakultet.Controllers
             var fakultetContext = _context.Pred.Include(p => p.SifOrgjedNavigation);
             return View(await fakultetContext.ToListAsync());
         }
-
+        
         public decimal prosjecnaOcjena(int? id)
         {
             var ispit = _context.Ispit;
