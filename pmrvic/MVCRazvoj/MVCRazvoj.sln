@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakultet", "Fakultet\Fakult
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "..\..\mcuric\MVC_razvoj\EntityFramework\EntityFramework.csproj", "{D370346B-3F80-4B91-A127-76F43F5083F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUserAuth", "TestUserAuth\TestUserAuth.csproj", "{25C817E2-5232-4ADC-AD5D-474036E8C8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUserAuth", "TestUserAuth\TestUserAuth.csproj", "{25C817E2-5232-4ADC-AD5D-474036E8C8EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
