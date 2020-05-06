@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Fakultet.Controllers
 {
+    [Authorize]
     public class OrgjedsController : Controller
     {
         private readonly FakultetContext _context;

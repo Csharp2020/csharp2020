@@ -26,14 +26,22 @@ namespace Fakultet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            /* services.AddDbContext<Models.FakultetContext>(
-            options => options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase1")));*/
+            /*
+            services.AddDbContext<Models.FakultetContext>(options =>
+       options.UseSqlServer(Configuration.GetConnectionString("FakultetDatabase")));
+       */
 
-            services.AddDbContext<Models.FakultetContext>(
-           options => options.UseSqlServer(Configuration.GetConnectionString("AuthContextConnection")));
+            services.AddDbContext<Models.FakultetContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("AuthContextConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-            .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContext<Data.AuthContext>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("AuthContextConnection")));
+            /*
+                        services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                            //.AddEntityFrameworkStores<ApplicationDbContext>();       
+                            .AddEntityFrameworkStores<Data.AuthContext>();
+                            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +62,7 @@ namespace Fakultet
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -61,6 +70,7 @@ namespace Fakultet
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }
