@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakultet", "Fakultet.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testAuth", "..\testAuth\testAuth.csproj", "{62E838F3-6939-4458-BCEE-94C220FD20C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgebraWebApi2020", "..\AlgebraWebApi2020\AlgebraWebApi2020.csproj", "{A22F458D-424C-4425-94CA-6DB6FAFB7010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{62E838F3-6939-4458-BCEE-94C220FD20C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E838F3-6939-4458-BCEE-94C220FD20C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E838F3-6939-4458-BCEE-94C220FD20C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22F458D-424C-4425-94CA-6DB6FAFB7010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22F458D-424C-4425-94CA-6DB6FAFB7010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22F458D-424C-4425-94CA-6DB6FAFB7010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22F458D-424C-4425-94CA-6DB6FAFB7010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
