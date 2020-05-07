@@ -12,8 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-
-namespace AlgebraWebApi2020
+namespace AlgebraWebAPI2020
 {
     public class Startup
     {
@@ -27,12 +26,8 @@ namespace AlgebraWebApi2020
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          /*  services.AddDbContext<Models.TodoContext>(opt =>
-               opt.UseInMemoryDatabase("TodoList"));*/
-           
-
-            services.AddDbContext<Models.TodoContext>(options =>
-                 options.UseSqlServer(Configuration.GetConnectionString("TODODatabase")));
+            services.AddDbContext<Models.TodoContext>(opt =>
+               opt.UseInMemoryDatabase("TodoList"));
             services.AddControllers();
         }
 

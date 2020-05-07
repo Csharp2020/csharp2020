@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AlgebraWebApi2020.Models;
+using AlgebraWebAPI2020.Models;
 
-namespace AlgebraWebApi2020.Controllers
+namespace AlgebraWebAPI2020.Controllers
 {
-    [Route("api/TodoItems")]
+    [Route("api/[controller]")]
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
@@ -82,8 +82,7 @@ namespace AlgebraWebApi2020.Controllers
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
-            //return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
-            return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
+            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
         }
 
         // DELETE: api/TodoItems/5

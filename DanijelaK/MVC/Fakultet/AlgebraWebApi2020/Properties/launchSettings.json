@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:61642",
-      "sslPort": 44311
+      "applicationUrl": "http://localhost:56053",
+      "sslPort": 44352
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AlgebraWebApi2020": {
+    "AlgebraWebAPI2020": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AlgebraWebApi2020
+namespace AlgebraWebAPI2020
 {
     public class Program
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace AlgebraWebApi2020
+namespace AlgebraWebAPI2020
 {
     public class WeatherForecast
     {

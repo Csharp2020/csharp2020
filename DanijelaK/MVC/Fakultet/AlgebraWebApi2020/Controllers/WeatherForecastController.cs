@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AlgebraWebApi2020.Controllers
+namespace AlgebraWebAPI2020.Controllers
 {
     [ApiController]
     [Route("[controller]")]

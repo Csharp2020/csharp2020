@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AlgebraWebApi2020.Models
+namespace AlgebraWebAPI2020.Models
 {
     public class TodoContext : DbContext
     {
@@ -16,4 +16,3 @@ namespace AlgebraWebApi2020.Models
         public DbSet<TodoItem> TodoItems { get; set; }
     }
 }
-
