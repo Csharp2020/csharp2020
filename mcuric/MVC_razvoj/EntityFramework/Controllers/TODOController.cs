@@ -1,46 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using EntityFramework.Factory;
 using EntityFramework.Models;
 using EntityFramework.Utility;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 
 namespace EntityFramework.Controllers
 {
     public class TODOController : Controller
     {
+        private readonly IConfiguration Configuration;
         private readonly IOptions<MySettingsModel> appSettings;
-        public TODOController(IOptions<MySettingsModel> app)
+        private readonly HttpClient _httpClient;
+        public TODOController(IOptions<MySettingsModel> app, IConfiguration configuration)
         {
+            this.Configuration = configuration;
             appSettings = app;
-            //ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;
+            //TODO rijesi ovo sa settingsima
+            // ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;
             ApplicationSettings.WebApiUrl = "https://localhost:44372/api/";
         }
-        // GET: TODO
-        // prikazuje sve TODO iteme
+
+        // GET: ZaNapraviti
+        /*
+         * Ovo prikazuje sve TODOITEMS 
+         * https://localhost:44385/api/TodoItems
+         * */
         public async Task<IActionResult> Index()
         {
             var data = await ApiClientFactory.Instance.GetUsers();
-            return View();
+            //var response = await SaveUser();
+            return View(data);
         }
 
-        // GET: TODO/Details/5
+        // GET: ZaNapraviti/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: TODO/Create
+        // GET: ZaNapraviti/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: TODO/Create
+        // POST: ZaNapraviti/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -57,13 +69,13 @@ namespace EntityFramework.Controllers
             }
         }
 
-        // GET: TODO/Edit/5
+        // GET: ZaNapraviti/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: TODO/Edit/5
+        // POST: ZaNapraviti/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -80,13 +92,13 @@ namespace EntityFramework.Controllers
             }
         }
 
-        // GET: TODO/Delete/5
+        // GET: ZaNapraviti/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: TODO/Delete/5
+        // POST: ZaNapraviti/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

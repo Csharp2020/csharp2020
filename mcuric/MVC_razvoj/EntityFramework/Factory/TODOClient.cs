@@ -11,7 +11,7 @@ namespace EntityFramework.Models
         public async Task<List<TODO>> GetUsers()
         {
             var requestUrl = CreateRequestUri(string.Format(System.Globalization.CultureInfo.InvariantCulture,
-                "User/GetAllUsers"));
+                "TodoItems"));
             return await GetAsync<List<TODO>>(requestUrl);
         }
 

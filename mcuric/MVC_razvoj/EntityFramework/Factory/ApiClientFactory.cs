@@ -17,7 +17,7 @@ namespace EntityFramework.Factory
         static ApiClientFactory()
         {
             // apiUri = new Uri(ApplicationSettings.WebApiUrl);
-            apiUri = new Uri("https://localhost:44385/api/");
+            apiUri = new Uri("https://localhost:44372/api/");
         }
 
         public static APIClient Instance

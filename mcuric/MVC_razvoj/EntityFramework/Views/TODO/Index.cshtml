@@ -12,15 +12,6 @@
     <thead>
         <tr>
             <th>
-                <a asp-action="Index">@Html.DisplayNameFor(model => model.Id)</a>
-            </th>
-            <th>
-                <a asp-action="Index">@Html.DisplayNameFor(model => model.Name)</a>
-            </th>
-            <th>
-                <a asp-action="Index">@Html.DisplayNameFor(model => model.IsComplete)</a>
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
@@ -29,7 +20,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.IsComplete)
             </th>
-            <th></th>
+            <th>
+
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -45,9 +38,12 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.IsComplete)
                 </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="">Edit</a> |
+                    <a asp-action="Details" asp-route-id="">Details</a> |
+                    <a asp-action="Delete" asp-route-id="">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
-
-
