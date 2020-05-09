@@ -32,34 +32,35 @@
     }
 </ul>
 
-@*<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NazOrgjed)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SifNadorgjedNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model) {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NazOrgjed)
-                    </td>
-                    <td>
-                        <a asp-action="Details" asp-route-id="@item.SifNadorgjed">@Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)</a>
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.SifOrgjed">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.SifOrgjed">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.SifOrgjed">Delete</a>
-                    </td>
-                </tr>
-        } 
 
-</tbody>
-    </table>*@
+@*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NazOrgjed)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SifNadorgjedNavigation)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NazOrgjed)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.SifNadorgjed">@Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)</a>
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.SifOrgjed">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.SifOrgjed">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.SifOrgjed">Delete</a>
+                        </td>
+                    </tr>
+            }
+
+    </tbody>
+        </table>*@

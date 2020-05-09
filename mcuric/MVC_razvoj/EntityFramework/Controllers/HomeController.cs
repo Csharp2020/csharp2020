@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EntityFramework.Models;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.Extensions.Options;
+using EntityFramework.Utility;
+using EntityFramework.Factory;
 
 namespace EntityFramework.Controllers
 {
@@ -18,6 +21,7 @@ namespace EntityFramework.Controllers
         {
             _logger = logger;
         }
+
 
         public IActionResult Index()
         {
