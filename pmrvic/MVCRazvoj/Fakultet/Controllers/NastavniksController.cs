@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Fakultet.Controllers
 {
+    [Authorize]
     public class NastavniksController : Controller
     {
         private readonly FakultetContext _context;

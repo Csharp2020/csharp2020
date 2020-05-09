@@ -28,7 +28,7 @@
                 @Html.DisplayFor(modelItem => item.NazOrgjed)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)
+                <a asp-action="Details" asp-route-id="@item.SifNadorgjed">@Html.DisplayFor(modelItem => item.SifNadorgjedNavigation.NazOrgjed)</a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.SifOrgjed">Edit</a> |

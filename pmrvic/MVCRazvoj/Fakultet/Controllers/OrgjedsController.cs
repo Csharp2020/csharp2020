@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Fakultet.Models;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Fakultet.Controllers
 {
+    [Authorize]
     public class OrgjedsController : Controller
     {
         private readonly FakultetContext _context;
@@ -19,7 +22,13 @@ namespace Fakultet.Controllers
         }
 
         // GET: Orgjeds
+
         public async Task<IActionResult> Index()
+        {
+            var fakultetContext = _context.Orgjed.Include(o => o.SifNadorgjedNavigation);
+            return View(await fakultetContext.ToListAsync());
+        }
+          public async Task<IActionResult> Tree()
         {
             var fakultetContext = _context.Orgjed.Include(o => o.SifNadorgjedNavigation);
             return View(await fakultetContext.ToListAsync());

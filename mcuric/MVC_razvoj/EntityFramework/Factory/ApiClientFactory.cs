@@ -16,7 +16,8 @@ namespace EntityFramework.Factory
             LazyThreadSafetyMode.ExecutionAndPublication);
         static ApiClientFactory()
         {
-             apiUri = new Uri(ApplicationSettings.WebApiUrl);
+            // apiUri = new Uri(ApplicationSettings.WebApiUrl);
+            apiUri = new Uri("https://localhost:44385/api/");
         }
 
         public static APIClient Instance

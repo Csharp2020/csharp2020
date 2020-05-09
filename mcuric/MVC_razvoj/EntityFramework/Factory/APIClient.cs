@@ -33,7 +33,7 @@ namespace EntityFramework.Models
             response.EnsureSuccessStatusCode();
             var data = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(data);
-        }
+        } 
 
         /// <summary>  
         /// Common method for making POST calls  
@@ -85,6 +85,6 @@ namespace EntityFramework.Models
         {
             _httpClient.DefaultRequestHeaders.Remove("userIP");
             _httpClient.DefaultRequestHeaders.Add("userIP", "192.168.1.1");
-        }
+        } 
     }
 }

@@ -15,6 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakultet", "Fakultet\Fakult
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "..\..\mcuric\MVC_razvoj\EntityFramework\EntityFramework.csproj", "{D370346B-3F80-4B91-A127-76F43F5083F0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgebraWebAPI2020", "AlgebraWebAPI2020\AlgebraWebAPI2020.csproj", "{9BFD7388-BE39-4933-99BE-66AD92D3E255}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiClient", "..\..\..\AspCoreConsumingWebAPI\AspCoreConsumingWebApi\CoreApiClient\CoreApiClient.csproj", "{FDEE1BF4-6E43-4027-80DE-8A579825E03E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspCoreConsumingWebApi", "..\..\..\AspCoreConsumingWebAPI\AspCoreConsumingWebApi\AspCoreConsumingWebApi\AspCoreConsumingWebApi.csproj", "{2C4E3193-7A44-45F3-8D39-8BFF030916D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{D370346B-3F80-4B91-A127-76F43F5083F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D370346B-3F80-4B91-A127-76F43F5083F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D370346B-3F80-4B91-A127-76F43F5083F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFD7388-BE39-4933-99BE-66AD92D3E255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFD7388-BE39-4933-99BE-66AD92D3E255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFD7388-BE39-4933-99BE-66AD92D3E255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFD7388-BE39-4933-99BE-66AD92D3E255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEE1BF4-6E43-4027-80DE-8A579825E03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEE1BF4-6E43-4027-80DE-8A579825E03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEE1BF4-6E43-4027-80DE-8A579825E03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEE1BF4-6E43-4027-80DE-8A579825E03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4E3193-7A44-45F3-8D39-8BFF030916D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4E3193-7A44-45F3-8D39-8BFF030916D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4E3193-7A44-45F3-8D39-8BFF030916D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4E3193-7A44-45F3-8D39-8BFF030916D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
