@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -16,16 +17,16 @@ namespace EntityFramework.Controllers
 {
     public class TODOController : Controller
     {
-        private readonly IConfiguration Configuration;
-        private readonly IOptions<MySettingsModel> appSettings;
+        private IConfiguration Configuration;
+        private IOptions<MySettingsModel> appSettings;
         private readonly HttpClient _httpClient;
         public TODOController(IOptions<MySettingsModel> app, IConfiguration configuration)
         {
             this.Configuration = configuration;
             appSettings = app;
             //TODO rijesi ovo sa settingsima
-            // ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;
-            ApplicationSettings.WebApiUrl = "https://localhost:44372/api/";
+            ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;
+            //ApplicationSettings.WebApiUrl = "https://localhost:44372/api/";
         }
 
         // GET: ZaNapraviti

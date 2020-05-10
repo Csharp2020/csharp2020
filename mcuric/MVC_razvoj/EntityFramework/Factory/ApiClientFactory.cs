@@ -10,14 +10,14 @@ namespace EntityFramework.Factory
 {
     internal static class ApiClientFactory
     {
-        private static Uri apiUri;
-        private static Lazy<APIClient> restClient = new Lazy<APIClient>(
+        private static readonly Uri apiUri;
+        private static readonly Lazy<APIClient> restClient = new Lazy<APIClient>(
             () => new APIClient(apiUri),
             LazyThreadSafetyMode.ExecutionAndPublication);
         static ApiClientFactory()
         {
-            // apiUri = new Uri(ApplicationSettings.WebApiUrl);
-            apiUri = new Uri("https://localhost:44372/api/");
+           apiUri = new Uri(ApplicationSettings.WebApiUrl);
+           //apiUri = new Uri("https://localhost:44372/api/");
         }
 
         public static APIClient Instance
