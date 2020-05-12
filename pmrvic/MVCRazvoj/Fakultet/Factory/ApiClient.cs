@@ -36,7 +36,7 @@ namespace Fakultet.Factory
         /// Common method for making POST calls
         /// </summary>
         /// 
-        /*
+       /*
         private async Task<Message<T>> PostAsync<T>(Uri requestUrl, T content)
         {
             addHeaders();
@@ -45,7 +45,7 @@ namespace Fakultet.Factory
             var data = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<Message<T>>(data);
         }
-        private async Task<Message<T1>> PostAsync<T1, T2>(Uri requestUrl, T2 content)
+         private async Task<Message<T1>> PostAsync<T1, T2>(Uri requestUrl, T2 content)
         {
             addHeaders();
             var response = await _httpClient.PostAsync(requestUrl.ToString(), CreateHttpContent<T2>(content));

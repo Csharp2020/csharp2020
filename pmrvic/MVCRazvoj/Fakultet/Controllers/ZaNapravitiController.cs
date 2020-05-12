@@ -23,9 +23,9 @@ namespace Fakultet.Controllers
         {
             this.Configuration = configuration;
             appSettings = app;
-           //TODO rijesi ovo sa settingsima
-            // ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;
-       ApplicationSettings.WebApiUrl = "localhost:44385/api/";
+             ApplicationSettings.WebApiUrl = appSettings.Value.WebApiBaseUrl;      
+            //ApplicationSettings.WebApiUrl = "localhost:44385/api/";
+            //ApplicationSettings.WebApiUrl = Configuration.GetSection("MySettings").GetSection("WebApiBaseUrl").Value;
         }
         
         // GET: ZaNapraviti
@@ -35,8 +35,10 @@ namespace Fakultet.Controllers
          * */
         public async Task<IActionResult> Index()
         {
-            var data = await ApiClientFactory.Instance.GetTODOS();
+            //var data = await ApiClientFactory.Instance.GetTODOS();
             //var response = await SaveUser();
+            ApiClient apiClient = new ApiClient(new Uri(Configuration.GetSection("MySettings").GetSection("WebApiBaseUrl").Value));
+            var data = await apiClient.GetTODOS();
             return View(data);
         }
 

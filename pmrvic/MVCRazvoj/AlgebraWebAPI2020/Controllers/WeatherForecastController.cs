@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace AlgebraWebAPI2020.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     //public class WeatherForecastController : ControllerBase
     public class WeatherForecastController : Controller
     {

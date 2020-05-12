@@ -37,11 +37,15 @@ namespace Fakultet
             services.AddDbContext<Data.AuthContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("AuthContextConnection")));
-/*
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                //.AddEntityFrameworkStores<ApplicationDbContext>();       
-                .AddEntityFrameworkStores<Data.AuthContext>();
-                */
+
+            //Ovaj servis nam omogucuje dohvacanje postavki iz appsettiongs.json
+            services.Configure<Models.MySettingsModel>(Configuration.GetSection("MySettings"));
+
+            /*
+                        services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                            //.AddEntityFrameworkStores<ApplicationDbContext>();       
+                            .AddEntityFrameworkStores<Data.AuthContext>();
+                            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

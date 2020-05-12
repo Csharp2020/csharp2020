@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Fakultet.Models.VremenskaPrognoza>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.date)</th>
+            <th>@Html.DisplayNameFor(model => model.temperatureC)</th>
+            <th>@Html.DisplayNameFor(model => model.temperatureF)</th>
+            <th>@Html.DisplayNameFor(model => model.summary)</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => item.date)
+                    </td>
+            <td>
+                @Html.DisplayFor(mmm=> item.temperatureC)
+                    </td>
+            <td>
+                @Html.DisplayFor(m => item.temperatureF)
+                    </td>
+            <td>
+                @Html.DisplayFor(m=> item.summary)
+            @if (item.summary == "Hot" || item.summary == "Hot") { 
+                <i class="far fa-sun" style="color:darkorange"></i>
+            }
+
+                    </td>
+        </tr>
+}
+    </tbody>
+</table>
