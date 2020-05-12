@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EntityFramework.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EntityFramework.Controllers
 {
+    [Authorize]
     public class OrgjedsController : Controller
     {
         private readonly fakultetContext _context;
