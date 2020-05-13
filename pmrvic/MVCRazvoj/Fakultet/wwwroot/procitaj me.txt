@@ -10,7 +10,7 @@ Data Source=POWERRYZEN\SQLEXPRESS;Initial Catalog=Fakultet;Integrated Security=T
 
 3) Dodati u appsettings.json:
 "ConnectionStrings": {
-    "FakultetDatabase": "Server=POWERRYZEN\\SQLEXPRESS;Initial Catalog=Fakultet;Integrated Security=True"
+    "FakultetDatabase": "LAPTOP-TF3CV7HA\SQLEXPRESS;Initial Catalog=Pokloni;Integrated Security=True"
   },
 
 4)

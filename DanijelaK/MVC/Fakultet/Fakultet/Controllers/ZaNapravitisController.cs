@@ -18,7 +18,7 @@ namespace Fakultet.Controllers
          * */
         public async Task<IActionResult> Index()
         {
-           var data = await
+           //var data = await
            return View();
         }
 
