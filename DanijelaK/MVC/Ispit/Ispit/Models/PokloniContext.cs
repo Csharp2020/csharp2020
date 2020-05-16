@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Ispit.Models;
 
 namespace Ispit.Models
 {
@@ -30,5 +31,7 @@ namespace Ispit.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<Ispit.Models.Pokloni> Pokloni { get; set; }
     }
 }
