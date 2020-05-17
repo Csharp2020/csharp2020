@@ -29,6 +29,43 @@ namespace Ispit.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Kupljeno()
+        {
+            return View(await _context.Pokloni.ToListAsync());
+        }
+        public async Task<IActionResult> Kupi(int id, [Bind("Id,NazivPoklona,Iznos,Kupljeno")] Pokloni pokloni)
+        {
+            if (id != pokloni.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    pokloni = await _context.Pokloni.FindAsync(id);
+                    pokloni.Kupljeno = true;
+                    _context.Update(pokloni);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!PokloniExists(pokloni.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(pokloni);
+        }
+
+
         // GET: Ispit/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -1,24 +1,21 @@
 ﻿@model IEnumerable<Ispit.Models.Pokloni>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Kupljeno";
 }
 
-<h1>Božični pokloni</h1>
+<h1>Popis kupljenih poklona</h1>
 
-<p>
-    <a asp-action="Create">Dodaj novi poklon</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th style="color:darkred">
+            <th>
                 @Html.DisplayNameFor(model => model.NazivPoklona)
             </th>
-            <th style="color:darkred">
+            <th>
                 @Html.DisplayNameFor(model => model.Iznos)
             </th>
-            <th style="color:darkred">
+            <th>
                 @Html.DisplayNameFor(model => model.Kupljeno)
             </th>
             <th></th>
@@ -26,10 +23,8 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-    @if (item.Kupljeno!=true)
+    @if (item.Kupljeno)
     {
-
-    
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.NazivPoklona)
@@ -40,14 +35,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Kupljeno)
             </td>
-            <td>
-                <a asp-action="Kupi" asp-route-id="@item.Id" class="alert-primary" >Kupi</a> |
-                <a asp-action="Edit" asp-route-id="@item.Id">Uredi</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalji</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Obriši</a>
-            </td>
+            
         </tr>}
-    
 }
     </tbody>
 </table>
