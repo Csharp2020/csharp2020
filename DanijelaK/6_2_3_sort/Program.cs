@@ -19,7 +19,7 @@ namespace _6_2_3_sort
 
             foreach (var item in prirodni)
             {
-                Console.Write(item + " ");
+                Console.Write(item + " ");   
             }
             
         }

@@ -14,7 +14,7 @@
 
         public override string ToString()
         {
-            return $"Voće: banana, duljina {Duljina}";
+            return $"Voće: banana, duljina {Duljina}";   
         }
     }
 }

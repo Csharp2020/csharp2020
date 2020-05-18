@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Ispit.Models.Pokloni>
+
+@{
+    ViewData["Title"] = "Kupljeno";
+}
+
+<h1>Popis kupljenih poklona</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NazivPoklona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Iznos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kupljeno)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    @if (item.Kupljeno)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazivPoklona)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Iznos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kupljeno)
+            </td>
+            
+        </tr>}
+}
+    </tbody>
+</table>
